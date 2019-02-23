@@ -1,4 +1,8 @@
 {
   "name": "sergeyfilimonov.com",
-  "version": 2
+  "alias": ["sergeyfilimonov.com", "sergeyfilimonov.com"],
+  "version": 2,
+  "github": {
+    "enabled": false
+  }
 }

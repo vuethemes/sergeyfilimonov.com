@@ -22,7 +22,7 @@ export default {
   		  show: true,
   		  text: '👋 Хотите начать проект?'
   	  },
-  	  source: ''
+  	  source: this.$route.query.utm_source
     }
   },
   methods: {
@@ -54,7 +54,7 @@ export default {
   mounted() {
   },
   created() {
-    this.updateBubbleText();
+    this.updateBubbleText()
   }
 }
 </script>

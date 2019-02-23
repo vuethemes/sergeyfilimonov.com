@@ -1,7 +1,10 @@
+import '~/assets/style/index.scss'
+
 import DefaultLayout from '~/layouts/Default.vue'
 import VueMq from 'vue-mq'
 import Bulma from 'bulma'
 import VueScrollTo from 'vue-scrollto'
+import VueYandexMetrika from 'vue-yandex-metrika'
 
 export default function (Vue, {router, head, isClient}) {
   Vue.component('Layout', DefaultLayout)

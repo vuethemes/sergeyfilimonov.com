@@ -3,13 +3,18 @@ module.exports = {
   siteUrl: "https://sergeyfilimonov.com",
   siteDescription: "Сергей Филимонов",
   titleTemplate: '%s - Сергей Филимонов',
-  icon: "static/favicon.jpg",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
       options: {
         path: "blog/**/*.md",
         typeName: "Post"
+      }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-135079945-1'
       }
     }
   ]
