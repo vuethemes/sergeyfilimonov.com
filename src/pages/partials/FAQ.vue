@@ -26,3 +26,10 @@ export default {
   name: 'FAQ'
 }
 </script>
+
+<style lang="scss">
+#faq {
+  background: #fefefe;
+  border-top: 1px solid #eee;
+}
+</style>

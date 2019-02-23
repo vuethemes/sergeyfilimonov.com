@@ -4,7 +4,7 @@
 			<div style="padding: 6px; background: #fff !important; border: 1px solid #dadada; border-radius: 4px; width: 140px; text-align: center; line-height: 1.4;margin: auto; z-index: 1000000 !important;position: relative;font-weight: 400;text-transform: uppercase;letter-spacing: 2px;">
 				<div style="padding-top: 2px;font-size: 10px !important;color:#656565;">Мои работы</div>
 			</div>
-			<div class="projects has-background-white-ter" style="margin-top: -16px;">
+			<div class="projects" style="margin-top: -16px;">
 				<div class="columns">
 				  <div class="column">
 				    <a id="arttsapko" href="https://arttsapko.ru" target="_blank">arttsapkó.ru</a>
@@ -57,3 +57,9 @@ export default {
   name: 'Works'
 }
 </script>
+
+<style lang="scss">
+.projects {
+  background: #fefefe;
+}
+</style>

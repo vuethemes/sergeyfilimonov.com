@@ -1,7 +1,8 @@
 <template>
   <div id="messenger">
-  	<a id="whatsapp-button" class="messenger-button" target="_blank" href="https://api.whatsapp.com/send?phone=79261118328&text=Здравствуйте!%20Меня%20интересует%20..."><i class="fab fa-whatsapp"></i></a>
-  	<a id="telegram-button" class="messenger-button" target="_blank" href="https://t-do.ru/sfilimonov"><i class="fab fa-telegram"></i></a>
+  	<a id="messenger-button" target="_blank" :href="href">
+      <i class="fab" :class="iconClass"></i>
+    </a>
   	<div id="messenger-bubble" v-if="bubble.show">
   		<div id="messenger-bubble-close" @click="close()">✕</div>
   		<div id="messenger-bubble-text">
@@ -12,11 +13,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-
 export default {
-  props: ['source'],
   name: 'Messenger',
   data() {
     return {
@@ -30,19 +27,29 @@ export default {
   },
   methods: {
     close(){
-      this.bubble.show = false;
-      ym(this.ym, 'reachGoal', 'close');
+      this.bubble.show = false
+      ym(this.ym, 'reachGoal', 'close')
     },
     message(){
-      ym(this.ym, 'reachGoal', 'message');
+      ym(this.ym, 'reachGoal', 'message')
     },
     updateBubbleText(){
       if(this.source){
-        this.bubble.text = '👋 Понравился ' + this.source + '.ru? Хотите такой же сайт?';
+        this.bubble.text = '👋 Понравился ' + this.source + '.ru? Хотите такой же сайт?'
       }
     }
   },
   computed: {
+    href() {
+      return this.$mq === 'mobile'
+      ? 'https://api.whatsapp.com/send?phone=79261118328&text=Здравствуйте!%20Меня%20интересует%20'
+      : 'https://t-do.ru/sfilimonov'
+    },
+    iconClass() {
+      return this.$mq === 'mobile'
+      ? 'fa-whatsapp'
+      : 'fa-telegram'
+    }
   },
   mounted() {
   },
@@ -53,7 +60,8 @@ export default {
 </script>
 
 <style>
-.messenger-button {
+#messenger-button {
+  display: flex;
   z-index: 10000;
   background: #fff;
   width: 70px;
@@ -68,10 +76,10 @@ export default {
   right: 26px;
   transition: .4s;
 }
-.messenger-button:hover {
+#messenger-button:hover {
   box-shadow: 0px 4px 10px #d2d2d2;
 }
-.messenger-button i {
+#messenger-button i {
   font-size: 40px;
   margin-right: 0;
 }

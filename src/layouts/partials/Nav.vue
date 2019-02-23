@@ -13,10 +13,22 @@
       </div>
       <div class="navbar-menu" :class="{ 'is-active' : isActive }">
         <div class="navbar-end">
-          <g-link class="navbar-item" :to="{ name: 'pricing' }">Стоимость</g-link>
-          <a class="navbar-item" href="https://blog.bookform.ru" target="_blank">Блог</a>
-          <a class="navbar-item" href="https://app.bookform.ru" target="_blank">Попробовать бесплатно</a>
-          <a class="navbar-item" href="https://app.bookform.ru" target="_blank">Вход</a>
+          <a class="navbar-item" href="#" v-scroll-to="'#works'">Работы</a>
+          <a class="navbar-item" href="#" v-scroll-to="'#faq'">FAQ</a>
+          <a class="navbar-item" href="#" v-scroll-to="'#blog'">Блог</a>
+          <a class="navbar-item" href="#" v-scroll-to="'#contact'">Контакты</a>
+          <a class="navbar-item" href="https://www.facebook.com/tunecatcher" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="navbar-item" href="https://instagram.com/sergey_v_filimonov" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="navbar-item" href="http://t-do.ru/fullstackdesign" target="_blank">
+            <i class="fab fa-telegram"></i>
+          </a>
+          <a class="navbar-item" href="https://github.com/sergeyfilimonov" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -45,8 +57,11 @@ export default {
 .navbar-menu .navbar-item:hover,
 .footer-links a:hover {
   background: none !important;
-  border-bottom: 4px solid #8786FE;
+  border-bottom: 4px solid #3273dc;
   color: black !important;
+}
+.navbar-menu i {
+  font-weight: 400;
 }
 @media only screen and (max-width: 568px) {
   .navbar-menu .navbar-item:hover,
