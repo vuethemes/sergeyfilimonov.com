@@ -1,7 +1,10 @@
 <template>
   <section id="faq" class="section">
     <div class="container">
-      <h2 class="has-text-centered"><span class="is-size-3 is-size-4-mobile has-text-weight-bold">Ответы на частые вопросы</span></h2>
+      <div class="is-size-3 is-size-3-mobile has-text-centered" style="margin-bottom: 1rem;">❓</div>
+      <h2 class="has-text-centered is-size-3 is-size-4-mobile has-text-weight-bold">
+        Ответы на частые вопросы
+      </h2>
       <br>
       <div class="columns" style="margin: 0 !important;">
         <div class="column has-text-left">

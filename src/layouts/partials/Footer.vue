@@ -1,7 +1,7 @@
 <template>
   <footer id="more" class="section">
 		<div class="container has-text-centered">
-			<p>Хотите на свой сайт такую же кнопку для WhatsApp и Telegram? Возьмите <a class="my-link" href="http://whatsappbtn.site" target="_blank">здесь</a>.</p>
+			<p>© Сергей Филимонов 2019 ∙ <a class="my-link" href="https://github.com/sergeyfilimonov/sergeyfilimonov.com" target="_blank">Этот сайт на GitHub</a></p>
 		</div>
 	</footer>
 </template>

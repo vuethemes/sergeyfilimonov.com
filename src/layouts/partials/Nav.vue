@@ -14,22 +14,9 @@
       <div class="navbar-menu" :class="{ 'is-active' : isActive }">
         <div class="navbar-end">
           <a class="navbar-item" href="#" v-scroll-to="'#works'">Работы</a>
+          <a class="navbar-item" href="#" v-scroll-to="'#features'">Процесс разработки</a>
           <a class="navbar-item" href="#" v-scroll-to="'#contact'">Контакты</a>
           <a class="navbar-item" href="#" v-scroll-to="'#faq'">FAQ</a>
-          <div class="navbar-item">
-            <a href="https://www.facebook.com/tunecatcher" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://instagram.com/sergey_v_filimonov" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="http://t-do.ru/fullstackdesign" target="_blank">
-              <i class="fab fa-telegram"></i>
-            </a>
-            <a href="https://github.com/sergeyfilimonov" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
         </div>
       </div>
     </div>
