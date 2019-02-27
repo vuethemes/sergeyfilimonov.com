@@ -28,10 +28,10 @@ export default function (Vue, {router, head, isClient}) {
     }
   })
 
-  Vue.use(VueGtm, {
+  /*Vue.use(VueGtm, {
     id: 'GTM-WH2RFDV',
     enabled: true,
     debug: true,
     vueRouter: router
-  })
+  })*/
 }
