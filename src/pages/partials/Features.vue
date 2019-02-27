@@ -8,7 +8,7 @@
       <br>
       <div class="columns feature">
         <div class="column">
-          <img src="@/assets/images/данные.jpg">
+          <img src="@/assets/images/data.jpg">
           <h3 class="is-size-5 is-size-5-mobile has-text-weight-bold">
             1. Проектирование
           </h3>
@@ -17,7 +17,7 @@
           </p>
         </div>
         <div class="column">
-          <img src="@/assets/images/дизайн.jpg">
+          <img src="@/assets/images/design.jpg">
           <h3 class="is-size-5 is-size-5-mobile has-text-weight-bold">
             2. Дизайн
           </h3>
@@ -26,7 +26,7 @@
           </p>
         </div>
         <div class="column">
-          <img src="@/assets/images/код.jpg">
+          <img src="@/assets/images/code.jpg">
           <h3 class="is-size-5 is-size-5-mobile has-text-weight-bold">
             3. Запуск
           </h3>
