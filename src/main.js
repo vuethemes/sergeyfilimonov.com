@@ -4,7 +4,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 import VueMq from 'vue-mq'
 import Bulma from 'bulma'
 import VueScrollTo from 'vue-scrollto'
-import VueYandexMetrika from 'vue-yandex-metrika'
+import VueGtm from 'vue-gtm'
 
 export default function (Vue, {router, head, isClient}) {
   Vue.component('Layout', DefaultLayout)
@@ -26,5 +26,12 @@ export default function (Vue, {router, head, isClient}) {
       laptop: 1250,
       desktop: Infinity,
     }
+  })
+
+  Vue.use(VueGtm, {
+    id: 'GTM-WH2RFDV',
+    enabled: true,
+    debug: true,
+    vueRouter: router
   })
 }

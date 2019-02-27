@@ -16,12 +16,6 @@ module.exports = {
       options: {
         id: 'UA-135079945-1'
       }
-    },
-    {
-      use: 'gridsome-plugin-yandex-metrika',
-      options: {
-        id: '50285131'
-      }
     }
   ]
 }
