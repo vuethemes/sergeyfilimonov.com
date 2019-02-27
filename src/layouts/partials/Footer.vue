@@ -8,13 +8,13 @@
 
 <script>
 export default {
-  name: 'Footer'
+  //
 }
 </script>
 
 <style>
-footer {
-  font-size: 14px;
+footer p {
+  font-size: 14px !important;
 }
 .footer-links {
   display: flex;

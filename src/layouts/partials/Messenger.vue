@@ -14,7 +14,6 @@
 
 <script>
 export default {
-  name: 'Messenger',
   data() {
     return {
   	  bubble: {
@@ -122,8 +121,8 @@ export default {
         cursor: pointer;
       }
     }
-    .text {
-      @media only screen and (max-width: 568px) {
+    @media only screen and (max-width: 568px) {
+      .text {
         font-size: 16px !important;
       }
     }
