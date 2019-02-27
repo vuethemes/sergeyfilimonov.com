@@ -6,6 +6,9 @@ body {
 h1, h2, h3 {
 	line-height: 1.1 !important;
 }
+p {
+  line-height: 1.4 !important;
+}
 #hero {
   padding-top: 1rem !important;
 }
@@ -17,7 +20,6 @@ h1, h2, h3 {
 	padding-top: 1.8rem !important;
 	padding-bottom: 1.8rem !important;
 }
-
 .projects {
 	max-width: 960px;
 	margin: auto;
@@ -35,9 +37,10 @@ a i {
 	margin-right: 6px;
 }
 .button {
-	border: 1px solid #000;
 	border-bottom: 2px solid #000;
 	transition: .2s;
+  background: #25D366 !important;
+  color: #fff !important;
 }
 .button:hover {
 	color: #fff !important;

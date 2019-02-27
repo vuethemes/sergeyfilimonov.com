@@ -3,7 +3,7 @@
     <div class="container has-text-centered">
       <div class="is-size-3 is-size-3-mobile has-text-centered" style="margin-bottom: 1rem;">💬</div>
       <h3>
-        <span class="is-size-3 is-size-3-mobile has-text-weight-bold">
+        <span class="is-size-3 is-size-4-mobile has-text-weight-bold">
           Хотите обсудить проект?
         </span>
       </h3>
