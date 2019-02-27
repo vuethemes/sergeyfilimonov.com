@@ -26,10 +26,8 @@ export default {
   methods: {
     close(){
       this.bubble.show = false
-      //ym(this.ym, 'reachGoal', 'close')
     },
     message(){
-      //ym(this.ym, 'reachGoal', 'message')
     },
     updateBubbleText(){
       if(this.source){
@@ -54,78 +52,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.messenger {
-  .btn {
-    display: flex;
-    z-index: 10000;
-    background: #fff;
-    width: 64px;
-    height: 64px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1000px;
-    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
-    color: black;
-    position: fixed;
-    bottom: 26px;
-    right: 26px;
-    transition: .4s;
-    i {
-      font-size: 36px;
-      margin-right: 0;
-    }
-    .fa-telegram-plane {
-      position: relative;
-      left: -2px;
-      top: 1px
-    }
-    &:hover {
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    }
-    .fa-whatsapp {
-      color: #25D366;
-    }
-    .fa-telegram-plane {
-      color: #36ADE1;
-    }
-  }
-  .bubble {
-    box-shadow: 0px 4px 26px -4px rgba(0,0,0,0.2);
-    padding: 1rem;
-    z-index: 10000;
-    bottom: 26px;
-    right: 100px;
-    transition: .4s;
-    position: fixed;
-    border-radius: 8px;
-    background: #fff;
-    max-width: 240px;
-    line-height: 1.4;
-    &:hover {
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    }
-    span {
-      font-weight: 700;
-    }
-    .close {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      left: -12px;
-      top: -12px;
-      font-size: 12px;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    @media only screen and (max-width: 568px) {
-      .text {
-        font-size: 16px !important;
-      }
-    }
-  }
-}
-</style>
