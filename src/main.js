@@ -29,7 +29,7 @@ export default function (Vue, {router, head, isClient}) {
     }
   })
 
-  if (process.isClient) {
+  if(process.isClient) {
     const { default: VueGtm } = require('vue-gtm')
     Vue.use(VueGtm, {
       id: 'GTM-WH2RFDV',

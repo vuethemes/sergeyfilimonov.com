@@ -29,8 +29,7 @@ export default {
     close() {
       this.bubble.show = false
     },
-    message() {
-    },
+    message() {},
     updateBubbleText() {
       if(this.source){
         this.bubble.text = '👋 Понравился ' + this.source + '.ru? Хотите такой же сайт?'
