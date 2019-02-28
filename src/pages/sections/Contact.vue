@@ -10,7 +10,7 @@
       <p style="margin-top: 1rem; margin-bottom: 1rem;">
         <a
           href="https://api.whatsapp.com/send?phone=79261118328&text=Здравствуйте!%20Меня%20интересует%20сайт..."
-          class="button is-large is-outlined">
+          class="button button__whatsapp is-large is-outlined">
           <i class="fab fa-whatsapp"></i>
           Напишите в WhatsApp
         </a>

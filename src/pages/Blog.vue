@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div>Блог</div>
+    <div style="text-align: center; height: 40vh; padding: 2rem;">Скоро</div>
   </Layout>
 </template>
 

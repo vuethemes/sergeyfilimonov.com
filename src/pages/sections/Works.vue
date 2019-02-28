@@ -27,6 +27,17 @@
 				    <a id="erapoznaniya" href="https://erapoznaniya.ru" target="_blank">erapoznaniya.ru</a>
 				  </div>
 				</div>
+        <div class="columns">
+				  <div class="column">
+				    <a id="msp" href="https://мсп.москва" target="_blank">мсп.москва</a>
+				  </div>
+          <div class="column">
+				    <a id="loffi" href="https://loffi.ru" target="_blank">loffi.ru</a>
+				  </div>
+          <div class="column">
+				    <a id="bookform" href="https://blog.bookform.ru" target="_blank">blog.bookform.ru</a>
+				  </div>
+				</div>
 			</div>
     </div>
 		</section>

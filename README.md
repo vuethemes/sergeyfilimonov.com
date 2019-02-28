@@ -1,13 +1,1 @@
-v 1.0
-
-- [x] Переписать сайт на Gridsome
-- [x] Перенести сайт с Timeweb на Now
-- [ ] Подключить Google Tag Manager
-- [ ] О преимуществах работы со мной
-- [x] О процессе разработки
-- [ ] Обычная форма связи
-
-v 2.0
-
-- [ ] Отзывы
-- [ ] Блог
+This website is made with [Gridsome](https://gridsome.org). You can explore it to find something to use in your projects.

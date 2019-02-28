@@ -10,7 +10,7 @@
 <script>
 import Nav from './partials/Nav'
 import Footer from './partials/Footer'
-import Messenger from './partials/Messenger'
+import Messenger from '@/components/Messenger'
 
 export default {
   props: ['nav', 'footer'],

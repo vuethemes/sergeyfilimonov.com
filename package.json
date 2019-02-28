@@ -4,10 +4,12 @@
   "scripts": {
     "build": "export NODE_ENV=production && gridsome build",
     "develop": "export NODE_ENV=development && gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "now-build": "npm run build"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
+    "animate.css": "^3.7.0",
     "bulma": "^0.7.4",
     "gridsome": "^0.5.3",
     "gridsome-plugin-yandex-metrika": "^0.1.1",
@@ -16,7 +18,8 @@
     "vue-markdown": "^2.2.4",
     "vue-mq": "^1.0.1",
     "vue-scrollto": "^2.13.0",
-    "vue-typer": "^1.2.0"
+    "vue-typer": "^1.2.0",
+    "vue2-animate": "^2.1.0"
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.3.0",

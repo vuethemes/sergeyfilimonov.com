@@ -1,10 +1,11 @@
-import '~/assets/style/index.scss'
-
 import DefaultLayout from '~/layouts/Default.vue'
 import VueMq from 'vue-mq'
 import Bulma from 'bulma'
 import VueScrollTo from 'vue-scrollto'
 import VueGtm from 'vue-gtm'
+
+import '~/assets/style/index.scss'
+import('animate.css');
 
 export default function (Vue, {router, head, isClient}) {
   Vue.component('Layout', DefaultLayout)
@@ -28,10 +29,13 @@ export default function (Vue, {router, head, isClient}) {
     }
   })
 
-  /*Vue.use(VueGtm, {
-    id: 'GTM-WH2RFDV',
-    enabled: true,
-    debug: true,
-    vueRouter: router
-  })*/
+  if (process.isClient) {
+    const { default: VueGtm } = require('vue-gtm')
+    Vue.use(VueGtm, {
+      id: 'GTM-WH2RFDV',
+      enabled: true,
+      debug: true,
+      vueRouter: router
+    })
+  }
 }

@@ -5,15 +5,17 @@
     <Features/>
     <Contact/>
     <FAQ/>
+    <About/>
   </Layout>
 </template>
 
 <script>
-import Intro from '@/pages/partials/Intro'
-import Works from '@/pages/partials/Works'
-import Features from '@/pages/partials/Features'
-import Contact from '@/pages/partials/Contact'
-import FAQ from '@/pages/partials/FAQ'
+import Intro from '@/pages/sections/Intro'
+import Works from '@/pages/sections/Works'
+import Features from '@/pages/sections/Features'
+import Contact from '@/pages/sections/Contact'
+import FAQ from '@/pages/sections/FAQ'
+import About from '@/pages/sections/About'
 
 export default {
   components: {
@@ -21,7 +23,8 @@ export default {
     Features,
     Works,
     Contact,
-    FAQ
+    FAQ,
+    About
   },
   data() {
     return {
