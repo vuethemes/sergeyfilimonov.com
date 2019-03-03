@@ -1,0 +1,23 @@
+article {
+  max-width: 720px;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0 var(--space);
+  h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+.post-card {
+  padding: 2rem;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  max-width: 720px;
+  margin: auto;
+  margin-top: 2rem;
+  transition: .2s;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px -6px rgba(0,0,0,0.2);
+  }
+}

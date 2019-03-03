@@ -2,10 +2,8 @@
 title: Bulma
 author: [sergey]
 date: 2019-02-10
-excerpt: "We're really excited to release Gridsome 0.5. The biggest update yet. It has many important features that make data handling easier and a lot more flexible. It opens up a whole new world of what you can build with Gridsome. Easily build Taxonomy pages and connections for any data."
+excerpt: "А вы знали про Bulma? Это отноcительно новый CSS-фреймворк, наподобие популярного Bootstrap."
 ---
-
-А вы знали про **Bulma**? Это отноcительно новый CSS-фреймворк, наподобие популярного **Bootstrap**.
 
 ## Чем он лучше?
 

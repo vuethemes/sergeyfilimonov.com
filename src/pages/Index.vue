@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import Intro from '@/pages/sections/Intro'
-import Works from '@/pages/sections/Works'
-import Features from '@/pages/sections/Features'
-import Contact from '@/pages/sections/Contact'
-import FAQ from '@/pages/sections/FAQ'
-import About from '@/pages/sections/About'
+import Intro from '@/components/sections/Intro'
+import Works from '@/components/sections/Works'
+import Features from '@/components/sections/Features'
+import Contact from '@/components/sections/Contact'
+import FAQ from '@/components/sections/FAQ'
+import About from '@/components/sections/About'
 
 export default {
   components: {

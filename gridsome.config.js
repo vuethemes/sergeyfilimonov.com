@@ -4,7 +4,14 @@ module.exports = {
   siteDescription: "Сергей Филимонов",
   titleTemplate: '%s - Сергей Филимонов',
   transformers: {
-    remark: {}
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        //
+      ]
+    }
   },
   plugins: [
     {
@@ -25,7 +32,15 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'BlogPost',
-        path: "blog/**/*.md"
+        path: "blog/**/*.md",
+        route: "blog/:slug"
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000,
+        exclude: ['/exclude-me']
       }
     }
   ]

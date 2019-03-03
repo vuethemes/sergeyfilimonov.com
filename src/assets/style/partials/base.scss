@@ -9,17 +9,6 @@ h1, h2, h3 {
 p {
   line-height: 1.4 !important;
 }
-.section {
-  padding-top: 2rem !important;
-}
-#intro,
-#works {
-	padding-bottom: 0 !important;
-}
-#more {
-	padding-top: 1.8rem !important;
-	padding-bottom: 1.8rem !important;
-}
 .projects {
 	max-width: 960px;
 	margin: auto;
@@ -93,4 +82,7 @@ li i {
 	.button {
 		width: 100%;
 	}
+  .button.is-large {
+    font-size: 1.2rem !important;
+  }
 }

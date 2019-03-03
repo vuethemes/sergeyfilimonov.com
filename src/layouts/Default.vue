@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Nav from './partials/Nav'
-import Footer from './partials/Footer'
+import Nav from '@/components/layout/Nav'
+import Footer from '@/components/layout/Footer'
 import Messenger from '@/components/Messenger'
 
 export default {
