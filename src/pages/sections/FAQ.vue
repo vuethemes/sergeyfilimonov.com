@@ -5,11 +5,10 @@
       <h2 class="has-text-centered is-size-3 is-size-4-mobile has-text-weight-bold">
         Ответы на частые вопросы
       </h2>
-      <br>
       <div class="columns" style="margin: 0 !important;">
         <div class="column has-text-left">
           <h4 class="is-size-5 has-text-weight-bold ">Вы работаете с Tilda?</h4>
-          <p class="has-text-left">Нет. И против Tilda ничего не имею — конструктор отличный, но это конструктор. Я работаю с WordPress и <a href="https://jamstack.org/" class="my-link" target="_blank">JAMstack</a> — набором технологий, которые позволяют создавать самые быстрые, гибкие и надёжные сайты на сегодняшний день.</p>
+          <p class="has-text-left">Нет. И против Tilda ничего не имею — конструктор отличный, но это конструктор. Я работаю с <a href="https://jamstack.org/" class="my-link" target="_blank">JAMstack</a> — набором технологий, которые позволяют создавать самые быстрые, гибкие и надёжные сайты на сегодняшний день.</p>
         </div>
         <div class="column has-text-left">
           <h4 class="is-size-5 has-text-weight-bold">Вы ведёте проект полностью?</h4>
@@ -25,13 +24,5 @@
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>
-
-<style lang="scss">
-#faq {
-  background: #fefefe;
-  border-top: 1px solid #eee;
-}
-</style>

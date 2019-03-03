@@ -15,19 +15,32 @@
           Напишите в WhatsApp
         </a>
       </p>
-      <p>или <a class="my-link" href="http://t-do.ru/sfilimonov">Telegram</a>, <a class="my-link" href="mailto:email@sergeyfilimonov.com">email@sergeyfilimonov.com</a>, <a class="my-link" href="https://www.facebook.com/tunecatcher" target="_blank">Facebook</a>, <a class="my-link" target="_blank" href="https://vk.com/sfilimonov">VK</a>, <a class="my-link" target="_blank" href="https://www.instagram.com/sergey_v_filimonov/">Instagram</a></p>
+      <div class="contacts-additional">
+        <a class="button telegram" href="http://t-do.ru/sfilimonov">
+          <i class="fab fa-telegram"></i>
+          Telegram
+        </a>
+        <a class="button email" href="mailto:email@sergeyfilimonov.com">
+          <i class="fa fa-envelope"></i>
+          Email
+        </a>
+        <a class="button facebook" href="https://www.facebook.com/tunecatcher" target="_blank">
+          <i class="fab fa-facebook"></i>
+          Facebook
+        </a>
+        <a class="button vk" target="_blank" href="https://vk.com/sfilimonov">
+          <i class="fab fa-vk"></i>
+          VK
+        </a>
+        <a class="button instagram" target="_blank" href="https://www.instagram.com/sergey_v_filimonov/">
+          <i class="fab fa-instagram"></i>
+          Instagram
+        </a>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>
-
-<style lang="scss">
-#contact {
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(247,247,247,1) 100%);
-}
-</style>

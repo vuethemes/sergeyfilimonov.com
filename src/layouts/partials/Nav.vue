@@ -17,11 +17,11 @@
       </div>
       <div class="navbar-menu" :class="{ 'is-active' : isActive }">
         <div class="navbar-end">
-          <a class="navbar-item" v-scroll-to="'#works'" @click="isActive = false">Работы</a>
-          <a class="navbar-item" v-scroll-to="'#features'" @click="isActive = false">Процесс разработки</a>
-          <a class="navbar-item" v-scroll-to="'#contact'" @click="isActive = false">Контакты</a>
-          <a class="navbar-item" v-scroll-to="'#faq'" @click="isActive = false">FAQ</a>
-          <a class="navbar-item" v-scroll-to="'#about'" @click="isActive = false">Обо мне</a>
+          <a class="navbar-item" href="/" v-scroll-to="'#works'" @click="isActive = false">Работы</a>
+          <a class="navbar-item" href="/" v-scroll-to="'#features'" @click="isActive = false">Процесс разработки</a>
+          <a class="navbar-item" href="/" v-scroll-to="'#contact'" @click="isActive = false">Контакты</a>
+          <a class="navbar-item" href="/" v-scroll-to="'#faq'" @click="isActive = false">FAQ</a>
+          <a class="navbar-item" href="/" v-scroll-to="'#about'" @click="isActive = false">Обо мне</a>
           <a
             class="navbar-item"
             href="http://t-do.ru/fullstackdesign"

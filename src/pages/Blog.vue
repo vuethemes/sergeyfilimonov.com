@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <div style="text-align: center; height: 40vh; padding: 2rem;">Скоро</div>
+    <main class="section">
+      <h1 class="is-size-1" style="text-align: center;">Блог</h1>
+      <a href="/blog/bulma">Ссылка</a>
+    </main>
   </Layout>
 </template>
 

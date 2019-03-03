@@ -5,7 +5,6 @@
       <h2 class="has-text-centered is-size-3 is-size-4-mobile has-text-weight-bold">
         Как выстроен процесс разработки
       </h2>
-      <br>
       <div class="columns feature">
         <div class="column">
           <img src="@/assets/images/data.jpg">
