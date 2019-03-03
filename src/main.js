@@ -1,8 +1,8 @@
-// Import global styles
+// Global styles
 import '~/assets/style/index.scss'
 import('animate.css')
 
-// Add global components
+// Global components
 import DefaultLayout from '~/layouts/Default.vue'
 import VueMq from 'vue-mq'
 import Bulma from 'bulma'
@@ -39,7 +39,7 @@ export default function (Vue, {router, head, isClient}) {
 
   head.style.push({
     type: 'text/css',
-    cssText: typography.toString()
+    cssText: typography.injectStyles()
   })
 
   head.link.push({
