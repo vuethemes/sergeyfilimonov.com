@@ -1,23 +1,28 @@
 <template>
-  <div class="layout">
-    <Nav v-if="nav !== false" />
-    <slot/>
-    <Footer v-if="footer !== false" />
-    <Messenger/>
-  </div>
+  <transition name="fade" appear>
+    <div class="layout">
+      <Topline/>
+      <Nav v-if="nav !== false" />
+      <slot/>
+      <Footer v-if="footer !== false" />
+      <Messenger/>
+    </div>
+  </transition>
 </template>
 
 <script>
 import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
 import Messenger from '@/components/Messenger'
+import Topline from '@/components/Topline'
 
 export default {
   props: ['nav', 'footer'],
   components: {
     Nav,
     Footer,
-    Messenger
+    Messenger,
+    Topline
   },
   metaInfo: {
     titleTemplate: '%s | Сергей Филимонов',

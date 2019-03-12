@@ -1,6 +1,7 @@
 // Global styles
-import '~/assets/style/index.scss'
+import 'prismjs/themes/prism.css'
 import('animate.css')
+import '~/assets/style/index.scss'
 
 // Global components
 import DefaultLayout from '~/layouts/Default.vue'

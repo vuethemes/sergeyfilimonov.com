@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <article class="section">
-      <h1 class="is-size-1" v-html="$page.post.title"/>
+      <h1 class="is-size-1 is-size-3-mobile" v-html="$page.post.title"/>
       <p class="lead" v-html="$page.post.excerpt"/>
       <div v-html="$page.post.content"/>
     </article>

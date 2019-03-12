@@ -6,6 +6,7 @@
     <Contact/>
     <FAQ/>
     <About/>
+    <BlogPosts/>
   </Layout>
 </template>
 
@@ -16,6 +17,7 @@ import Features from '@/components/sections/Features'
 import Contact from '@/components/sections/Contact'
 import FAQ from '@/components/sections/FAQ'
 import About from '@/components/sections/About'
+import BlogPosts from '@/components/sections/BlogPosts'
 
 export default {
   components: {
@@ -24,17 +26,13 @@ export default {
     Works,
     Contact,
     FAQ,
-    About
-  },
-  data() {
-    return {
-      //
-    }
+    About,
+    BlogPosts
   },
   metaInfo: {
     title: 'Быстрые и удобные сайты для образовательных проектов',
     meta: [
-      { vmid: 'description', name: 'description', content: 'Сергей Филимонов' }
+      { vmid: 'description', name: 'description', content: 'Среди моих работ: edmarket.ru, hr.netology.ru, spiridonov.ru, arttsapko.ru и др.' }
     ]
   }
 }

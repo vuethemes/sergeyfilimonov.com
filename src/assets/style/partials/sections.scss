@@ -1,5 +1,13 @@
 .section {
   padding-top: 2rem !important;
+  .desc {
+    max-width: 720px;
+    margin: auto;
+  }
+}
+.backgrouned {
+  border-top: 1px solid #eee;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(247,247,247,1) 100%);
 }
 #intro,
 #works {
@@ -12,7 +20,6 @@
 
 #features {
   background: #fefefe;
-  border-top: 1px solid #eee;
   .feature {
     img {
       border-radius: 8px;
@@ -102,10 +109,6 @@
 
 #faq {
   background: #fefefe;
-  border-top: 1px solid #eee;
-  .column {
-
-  }
 }
 @media only screen and (max-width: 568px) {
   #intro {

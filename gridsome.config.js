@@ -8,12 +8,18 @@ module.exports = {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
-      plugins: [
-        //
-      ]
+      autolinkHeadings: {
+        content: {
+          type: 'text',
+          value: '#'
+        }
+      }
     }
   },
   plugins: [
+    {
+      use: 'gridsome-plugin-modal'
+    },
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
@@ -33,7 +39,12 @@ module.exports = {
       options: {
         typeName: 'BlogPost',
         path: "blog/**/*.md",
-        route: "blog/:slug"
+        route: "blog/:slug",
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
       }
     },
     {

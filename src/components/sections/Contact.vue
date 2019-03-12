@@ -42,5 +42,19 @@
 </template>
 
 <script>
-export default {}
+import Callback from '@/components/Callback'
+
+export default {
+  components: {
+    Callback
+  },
+  methods: {
+    show () {
+      this.$modal.show('callback');
+    },
+    hide () {
+      this.$modal.hide('callback');
+    }
+  }
+}
 </script>

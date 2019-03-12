@@ -1,0 +1,38 @@
+.callback {
+  background: #fff;
+  border: 2px solid #eee;
+  padding: 2rem;
+  font-weight: bold;
+  input[type="tel"] {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 2px solid #eee;
+    margin-bottom: 1rem;
+  }
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .numpad {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    .numpad-btn {
+      text-align: center;
+      border: 1px solid #eee;
+      width: 33.3%;
+      padding: 1rem;
+      &:active {
+        background: rgba(0,0,0,0.1);
+      }
+      &:hover {
+        background: rgba(0,0,0,0.025);
+        cursor: pointer;
+      }
+    }
+  }
+}
