@@ -23,19 +23,19 @@ nav {
     }
   }
 }
-.navbar-menu .navbar-item {
+.navbar-item {
   border-radius: 0 !important;
   transition: .2s !important;
   font-weight: 600;
+  i {
+    font-weight: 400;
+  }
+  &:hover {
+    background: none !important;
+    color: --primary-color;
+  }
 }
-.navbar-menu .navbar-item:hover {
-  background: none !important;
-  border-bottom: 4px solid var(--primary-color);
-  color: black !important;
-}
-.navbar-menu i {
-  font-weight: 400;
-}
+
 @media only screen and (max-width: 568px) {
   .navbar-brand {
     align-items: center !important;

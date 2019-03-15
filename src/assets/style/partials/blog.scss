@@ -1,16 +1,26 @@
 article {
   max-width: 720px;
   margin: auto;
-  margin-top: 2rem;
   padding: 0 var(--space);
   h1 {
     margin-bottom: 1rem;
   }
+  ul {
+    margin-left: 0;
+  }
+}
+
+.ya-share2 {
+  margin-bottom: 1.5rem;
+}
+
+#disqus_thread {
+  margin-top: 2rem;
 }
 
 .post-card {
-  padding: 2rem;
-  border: 2px solid #eee;
+  padding: 1.6rem;
+  border: 1px solid #eee;
   border-radius: 6px;
   max-width: 720px;
   margin: auto;
@@ -20,5 +30,14 @@ article {
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 20px -6px rgba(0,0,0,0.2);
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  article {
+    margin-top: -1rem !important;
+  }
+  .ya-share2, .ya-share2 * {
+    line-height: 1 !important;
   }
 }

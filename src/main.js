@@ -10,9 +10,15 @@ import Bulma from 'bulma'
 import VueScrollTo from 'vue-scrollto'
 import VueGtm from 'vue-gtm'
 import Typography from 'typography'
+import VueDisqus from 'vue-disqus'
+//import Parallax from 'vue-parallaxy'
 
 export default function (Vue, {router, head, isClient}) {
   Vue.component('Layout', DefaultLayout)
+
+  Vue.use(VueDisqus)
+
+  //Vue.use(Parallax)
 
   Vue.use(VueScrollTo, {
     duration: 500,
@@ -27,6 +33,11 @@ export default function (Vue, {router, head, isClient}) {
       desktop: Infinity,
     }
   })
+
+  if(process.isClient) {
+    const { default: VueScrollProgressBar } = require('vue-scroll-progressbar')
+    Vue.use(VueScrollProgressBar)
+  }
 
   const typography = new Typography({
     baseFontSize: '18px',

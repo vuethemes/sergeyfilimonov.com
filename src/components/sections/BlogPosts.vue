@@ -1,8 +1,8 @@
 <template>
   <section id="blog-posts" class="section backgrouned">
-    <h2 class="is-size-3 is-size-3-mobile has-text-centered">Блог</h2>
-    <p class="desc has-text-centered">В блоге я делюсь не только о том, что делаю профессионально — <a href="/">разработку сайтов</a>, — но и своими исследованиями в других областях: искусственный интеллект, чатботы и прочее.</p>
-    <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node"/>
+    <h2 class="is-size-3 is-size-3-mobile has-text-centered">{{headingText}}</h2>
+    <p class="desc has-text-centered">В блоге я делюсь не только о том, что делаю профессионально — разработку сайтов, — но и своими исследованиями в других областях: искусственный интеллект, чатботы и прочее.</p>
+    <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="slug"/>
   </section>
 </template>
 
@@ -18,6 +18,7 @@ query BlogPosts {
         timeToRead
         excerpt
         content
+        slug
       }
     }
   }
@@ -28,6 +29,11 @@ query BlogPosts {
 import PostCard from '@/components/PostCard.vue'
 
 export default {
+  props: {
+    headingText: String,
+    currentPage: String,
+    slug: String
+  },
   components: {
     PostCard
   }

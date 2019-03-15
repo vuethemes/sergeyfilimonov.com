@@ -1,6 +1,7 @@
 <template>
   <transition name="fade" appear>
     <div class="layout">
+      <vue-scroll-progress-bar height="2px" backgroundColor="#3273dc"/>
       <Topline/>
       <Nav v-if="nav !== false" />
       <slot/>

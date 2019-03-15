@@ -1,5 +1,5 @@
 <template>
-  <div class="post-card">
+  <div v-if="post.slug != currentPage" class="post-card">
     <h3 v-html="post.title"/>
     <p v-html="post.excerpt"/>
     <g-link :to="post.path">
@@ -11,7 +11,8 @@
 <script>
 export default {
   props: {
-    post: { type: Object, required: true }
+    post: { type: Object, required: true },
+    currentPage: String
   }
 }
 </script>

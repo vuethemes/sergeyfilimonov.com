@@ -6,7 +6,7 @@
     <Contact/>
     <FAQ/>
     <About/>
-    <BlogPosts/>
+    <BlogPosts :headingText="'Блог'"/>
   </Layout>
 </template>
 

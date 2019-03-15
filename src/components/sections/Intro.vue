@@ -1,8 +1,7 @@
 <template>
   <section id="intro" class="section">
     <div class="container">
-      <div class="is-size-1 is-size-3-mobile has-text-centered" style="margin-bottom: 1rem;">🚀</div>
-      <h1 class="has-text-black has-text-centered">
+      <h1 class="has-text-black has-text-centered" style="margin-bottom: 0;">
         <span class="is-size-1 is-size-3-mobile">
           Создаю быстрые и удобные сайты для
           <br>

@@ -6,9 +6,10 @@
   color: #fff;
   a {
     color: #fff;
-    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    text-decoration: underline;
     &:hover {
-      border-bottom: 2px solid rgba(0,0,0,0);
+      text-decoration: none;
       color: #fff;
     }
   }
