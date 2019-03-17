@@ -126,8 +126,8 @@ export default {
       },
   	  commit: {
         update: 'Обновление',
-        hash: 'd07924c',
-        date: '20190315'
+        hash: 'c2800d9',
+        date: '20190317'
       }
     }
   },
