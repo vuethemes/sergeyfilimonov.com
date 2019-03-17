@@ -62,7 +62,7 @@
           href="https://github.com/sergeyfilimonov/sergeyfilimonov.com"
           target="_blank">sergeyfilimonov.com</a>
         </p>
-        <p style="opacity: 0.5; margin-bottom: 1rem !important;">Обновление <code>{{commit.hash}}</code> <span v-if="ago != 0">{{ago}}</span> {{days}}</p>
+        <p style="opacity: 0.5; margin-bottom: 1rem !important;">{{commit.update}} <code>{{commit.hash}}</code> <span v-if="ago != 0">{{ago}}</span> {{days}}</p>
         <div class="lang">
           <a v-if="lang != 'en'" href="/en">🇬🇧In English</a>
           <a v-if="lang == 'en'" href="/">🇷🇺На русском</a>
@@ -125,6 +125,7 @@ export default {
         }
       },
   	  commit: {
+        update: 'Обновление',
         hash: 'd07924c',
         date: '20190315'
       }
@@ -148,13 +149,17 @@ export default {
       return today - this.commit.date
     },
     days() {
-      return this.ago === 1 || this.ago === 21
-      ? 'день назад'
-      : this.ago === 2 || this.ago === 3
-      ? 'дня назад'
-      : this.ago === 0
-      ? 'сегодня'
-      : 'дней назад'
+      var daysAgo = ''
+
+      if(this.lang != 'en'){
+        this.ago === 1 || this.ago === 21 ? daysAgo = 'день назад'
+        : this.ago === 2 || this.ago === 3 ? daysAgo = 'дня назад'
+        : this.ago === 0 ? daysAgo = 'сегодня'
+        : 'дней назад'
+      } else {
+        daysAgo = 'day(s) ago'
+      }
+      return daysAgo
     }
   },
   mounted() {
@@ -176,6 +181,8 @@ export default {
       this.text.faq.more = 'Ask another question →'
 
       this.text.contacts.header = 'Contacts'
+
+      this.commit.update = 'Latest commit'
     }
   }
 }
