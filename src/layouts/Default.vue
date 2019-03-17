@@ -1,11 +1,11 @@
 <template>
   <transition name="fade" appear>
     <div class="layout">
-      <Topline/>
-      <Nav v-if="nav !== false" />
+      <Topline :lang="lang"/>
+      <Nav v-if="nav !== false" :lang="lang"/>
       <slot/>
-      <Footer v-if="footer !== false" />
-      <Messenger/>
+      <Footer v-if="footer !== false" :lang="lang"/>
+      <Messenger :lang="lang"/>
     </div>
   </transition>
 </template>
@@ -18,7 +18,7 @@ import Topline from '@/components/Topline'
 import Notifications from '@/components/Notifications'
 
 export default {
-  props: ['nav', 'footer'],
+  props: ['nav', 'footer', 'lang'],
   components: {
     Nav,
     Footer,

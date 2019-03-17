@@ -1,0 +1,16 @@
+@media only screen and (max-width: 568px) {
+  .vue-typer {
+    font-size: 29px;
+    .custom.char {
+      font-size: 2rem;
+    }
+  }
+}
+@keyframes Type {
+  from  {
+    transform: translateX(-5px);
+    color: var(--primary-color);
+  } to  {
+    color: currentColor;
+  }
+}

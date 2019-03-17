@@ -1,10 +1,10 @@
 <template>
-  <section id="intro" class="section" data-lax-preset="spin fadeInOut">
+  <section id="intro" class="section">
     <div class="container">
       <h1 class="has-text-black has-text-centered" style="margin-bottom: 0;">
         <span class="is-size-1 is-size-3-mobile">
-          Создаю быстрые и удобные сайты для
-          <br>
+          {{textService}}
+          <br/>
           <VueTyper
             :text="words"
             :type-delay="60"
@@ -20,6 +20,7 @@
 var words = ''
 
 export default {
+  props: ['lang'],
   components: {
     VueTyper: process.isServer
       ? { inheritAttrs: false, render: h => h('span', null, [words[0]]) }
@@ -27,29 +28,16 @@ export default {
   },
   computed: {
     words() {
-      return this.$mq === 'mobile'
-      ? ['SaaS-проектов ☁️', 'образования 👩‍🎓', 'стартапов 🚀']
-      : ['SaaS-проектов ☁️', 'онлайн-образования 👩‍🎓', 'стартапов на рынки России и США 🚀']
+      return this.$mq === 'mobile' && this.lang != 'en' ? ['SaaS-проектов ☁️', 'образования 👩‍🎓', 'стартапов 🚀']
+      : this.$mq != 'mobile' && this.lang != 'en' ? ['SaaS-проектов ☁️', 'онлайн-образования 👩‍🎓', 'стартапов на рынки России и США 🚀']
+      : this.lang == 'en' ? ['SaaS ☁️', 'EdTech 👩‍🎓', 'startups 🚀']
+      : ''
+    },
+    textService() {
+      return this.lang == 'en'
+      ? 'Need a website? I create ones for'
+      : 'Создаю быстрые и удобные сайты для'
     }
   }
 }
 </script>
-
-<style lang="scss">
-@media only screen and (max-width: 568px) {
-  .vue-typer {
-    font-size: 29px;
-    .custom.char {
-      font-size: 2rem;
-    }
-  }
-}
-@keyframes Type {
-  from  {
-    transform: translateX(-5px);
-    color: var(--primary-color);
-  } to  {
-    color: currentColor;
-  }
-}
-</style>

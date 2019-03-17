@@ -2,7 +2,7 @@
   <section id="works" class="section">
 		<div class="container">
 			<div style="padding: 6px; background: #fff !important; border: 1px solid #dadada; border-radius: 4px; width: 140px; text-align: center; line-height: 1.4;margin: auto; z-index: 1000000 !important;position: relative;font-weight: 400;text-transform: uppercase;letter-spacing: 2px;">
-				<div style="padding-top: 2px;font-size: 10px !important;color:#656565;">Мои работы</div>
+				<div style="padding-top: 2px;font-size: 10px !important;color:#656565;">{{text.works}}</div>
 			</div>
 			<div class="projects has-text-centered" style="margin-top: -16px;">
 				<div class="columns">
@@ -44,11 +44,19 @@
 </template>
 
 <script>
-export default {}
-</script>
-
-<style lang="scss">
-.projects {
-  background: #fefefe;
+export default {
+  props: ['lang'],
+  data() {
+    return {
+      text: {
+        works: 'Мои работы'
+      }
+    }
+  },
+  mounted() {
+    if(this.lang == 'en') {
+      this.text.works = 'Works'
+    }
+  }
 }
-</style>
+</script>

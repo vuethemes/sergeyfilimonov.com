@@ -4,34 +4,34 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <h4 class="is-size-5">Проекты</h4>
+            <h4 class="is-size-5" v-html="text.works.header"/>
             <ul>
               <li><a href="https://arttsapko.ru" target="_blank">arttsapkó.ru</a></li>
               <li><a href="https://hr.netology.ru" target="_blank">hr.netology.ru</a></li>
               <li><a href="https://edmarket.ru" target="_blank">edmarket.ru</a></li>
-              <li><a href="/#works">Другие проекты →</a></li>
+              <li><a :href="text.works.more.link" v-html="text.works.more.text"/></li>
             </ul>
           </div>
           <div class="column">
-            <h4 class="is-size-5">Блог</h4>
+            <h4 class="is-size-5" v-html="text.blog.header"/>
             <ul>
-              <li><a href="/blog/wordpress-vs-static">Статика vs. WordPress</a></li>
-              <li><a href="/blog/work-outside">Рейтинг кафе и коворкингов</a></li>
-              <li><a href="/blog/fullstack-design">Fullstack-дизайн</a></li>
+              <li v-for="item in text.blog.posts">
+                <a :href="item.link">{{item.question}}</a>
+              </li>
               <li><a href="/blog">Другие посты →</a></li>
             </ul>
           </div>
           <div class="column">
-            <h4 class="is-size-5">FAQ</h4>
+            <h4 class="is-size-5" v-html="text.faq.header"/>
             <ul>
-              <li><a href="/#faq">Вы работаете с Tilda?</a></li>
-              <li><a href="/#faq">Вы ведёте проект полностью?</a></li>
-              <li><a href="/#faq">Сколько стоит работа?</a></li>
-              <li><a href="/#contact">Задать другой вопрос →</a></li>
+              <li v-for="item in text.faq.questions">
+                <a :href="item.link">{{item.question}}</a>
+              </li>
+              <li><a href="/#contact" v-html="text.faq.more"/></li>
             </ul>
           </div>
           <div class="column">
-            <h4 class="is-size-5">Контакты</h4>
+            <h4 class="is-size-5" v-html="text.contacts.header"/>
             <ul>
               <li>
                 <a href="https://api.whatsapp.com/send?phone=79261118328&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D1%81%D0%B0%D0%B9%D1%82..." target="_blank">
@@ -62,7 +62,11 @@
           href="https://github.com/sergeyfilimonov/sergeyfilimonov.com"
           target="_blank">sergeyfilimonov.com</a>
         </p>
-        <p style="opacity: 0.5;">Обновление <code>{{commit.hash}}</code> <span v-if="ago != 0">{{ago}}</span> {{days}}</p>
+        <p style="opacity: 0.5; margin-bottom: 1rem !important;">Обновление <code>{{commit.hash}}</code> <span v-if="ago != 0">{{ago}}</span> {{days}}</p>
+        <div class="lang">
+          <a v-if="lang != 'en'" href="/en">🇬🇧In English</a>
+          <a v-if="lang == 'en'" href="/">🇷🇺На русском</a>
+        </div>
       </div>
 		</div>
 	</footer>
@@ -70,8 +74,56 @@
 
 <script>
 export default {
+  props: ['lang'],
   data() {
     return {
+      text: {
+        works: {
+          header: 'Работы',
+          more: {
+            text: 'Другие проекты →',
+            link: '/#works'
+          }
+        },
+        blog: {
+          header: 'Блог',
+          posts: {
+            1: {
+              question: 'Статика vs. WordPress',
+              link: '/blog/wordpress-vs-static'
+            },
+            2: {
+              question: 'Рейтинг кафе и коворкингов',
+              link: '/blog/work-outside'
+            },
+            3: {
+              question: 'Fullstack-дизайн',
+              link: '/blog/fullstack-design'
+            }
+          }
+        },
+        faq: {
+          header: 'FAQ',
+          questions: {
+            one: {
+              question: 'Вы работаете с Tilda?',
+              link: '/#faq'
+            },
+            two: {
+              question: 'Вы ведёте проект полностью?',
+              link: '/#faq'
+            },
+            three: {
+              question: 'Сколько стоит работа?',
+              link: '/#faq'
+            }
+          },
+          more: 'Задать другой вопрос →'
+        },
+        contacts: {
+          header: 'Контакты'
+        }
+      },
   	  commit: {
         hash: 'd07924c',
         date: '20190315'
@@ -103,6 +155,27 @@ export default {
       : this.ago === 0
       ? 'сегодня'
       : 'дней назад'
+    }
+  },
+  mounted() {
+    if(this.lang == 'en') {
+      this.text.works.header = 'Works'
+      this.text.works.more.text = 'More →'
+      this.text.works.more.link = '/en#works'
+
+      this.text.blog.header = 'Blog (in Russian)'
+
+      this.text.faq.header = 'FAQ'
+      this.text.faq.questions.one.question = 'Do you work with Webflow?'
+      this.text.faq.questions.one.link = '/en#faq'
+      this.text.faq.questions.two.question = 'Do you both design and code?'
+      this.text.faq.questions.two.link = '/en#faq'
+      this.text.faq.questions.three.question = 'How much?'
+      this.text.faq.questions.three.link = '/en#faq'
+
+      this.text.faq.more = 'Ask another question →'
+
+      this.text.contacts.header = 'Contacts'
     }
   }
 }
