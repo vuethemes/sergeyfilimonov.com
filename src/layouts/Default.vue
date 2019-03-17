@@ -27,7 +27,7 @@ export default {
     Notifications
   },
   metaInfo: {
-    titleTemplate: '%s | Сергей Филимонов',
+    titleTemplate: '%s ∙ Сергей Филимонов',
     htmlAttrs: {
       lang: 'ru'
     },

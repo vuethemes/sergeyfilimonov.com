@@ -8,6 +8,22 @@
   border-top: 1px solid #eee;
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(247,247,247,1) 100%);
 }
+
+#works {
+  .label {
+    padding: 6px;
+    background: #fff !important;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    width: 140px;
+    text-align: center; line-height: 1.4;margin: auto; z-index: 10 !important;
+    position: relative;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
 #intro,
 #works {
 	padding-bottom: 0 !important;
@@ -58,7 +74,7 @@
   background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(247,247,247,1) 100%);
   .contacts-additional {
-    max-width: 640px;
+    max-width: 840px;
     margin: auto;
     display: flex;
     justify-content: space-between;

@@ -15,9 +15,8 @@
       <div class="numpad-btn" @click="add(0)">0</div>
       <div class="numpad-btn" @click="clear()">←</div>
     </div>
-    <input
+    <input type="submit"
       @click="send()"
-      type="submit"
       class="button button__whatsapp is-large is-outlined"
       value="Отправить заявку"/>
     {{response}}
@@ -44,7 +43,10 @@ export default {
     },
     send(){
       axios.post('https://hooks.zapier.com/hooks/catch/608402/n2xs0z/', {
-        body: this.number
+        body: this.number,
+        headers: {
+          'Content-Type': 'application/json'
+        }
       })
       .then(response => {
         this.response = response
@@ -53,12 +55,6 @@ export default {
         this.errors.push(e)
       })
     }
-  },
-  computed: {
-    //
-  },
-  mounted() {
-    //
   }
 }
 </script>

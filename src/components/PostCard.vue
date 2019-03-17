@@ -3,6 +3,7 @@
     <div v-if="post.slug != currentPage" class="post-card">
       <h3 v-html="post.title"/>
       <p v-html="post.excerpt"/>
+      <button class="button">{{post.action}} →</button>
     </div>
   </g-link>
 </template>

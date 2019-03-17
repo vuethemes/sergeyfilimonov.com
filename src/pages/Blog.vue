@@ -19,6 +19,7 @@ query BlogPosts {
         date (format: "D. MMMM YYYY")
         timeToRead
         excerpt
+        action
         content
       }
     }

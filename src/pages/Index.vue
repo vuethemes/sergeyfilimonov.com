@@ -6,7 +6,7 @@
     <Contact/>
     <FAQ/>
     <About/>
-    <BlogPosts :headingText="'Блог'" :currentPage="'home'"/>
+    <BlogPosts headingText="Недавние статьи из блога" currentPage="home"/>
   </Layout>
 </template>
 

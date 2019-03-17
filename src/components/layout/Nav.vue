@@ -5,7 +5,7 @@
         <a class="navbar-item sergeyfilimonov" href="/">
           <img src="@/assets/images/emojime.jpg" alt="emoji">
           <div class="text">
-            <div class="is-size-4 is-size-5-mobile has-text-weight-bold" v-html="navbar.name"/>
+            <div class="is-size-5 is-size-5-mobile has-text-weight-bold" v-html="navbar.name"/>
             <div class="whatdoyoudo" v-html="navbar.profession"/>
           </div>
         </a>

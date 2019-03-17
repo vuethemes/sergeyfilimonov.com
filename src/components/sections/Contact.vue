@@ -11,7 +11,7 @@
           {{contacts.whatsapp.cta}}
         </a>
       </p>
-      <div class="contacts-additional">
+      <div class="contacts-additional" :style="lang == 'en' ? 'max-width: 640px' : ''">
         <a class="button telegram" href="http://t-do.ru/sfilimonov">
           <i class="fab fa-telegram"></i>
           Telegram
@@ -32,6 +32,19 @@
           <i class="fab fa-instagram"></i>
           Instagram
         </a>
+        <a v-if="lang != 'en'" class="button email" target="_blank" @click="show()">
+          <i class="fas fa-phone"></i>
+          Обратный звонок
+        </a>
+        <ClientOnly>
+          <modal
+            name="callback"
+            height="auto"
+            :maxWidth="400"
+            :adaptive="true">
+            <Callback/>
+          </modal>
+        </ClientOnly>
       </div>
     </div>
   </section>

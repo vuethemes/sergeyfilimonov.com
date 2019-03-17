@@ -63,7 +63,7 @@
           target="_blank">sergeyfilimonov.com</a>
         </p>
         <p style="opacity: 0.5; margin-bottom: 1rem !important;">{{commit.update}} <code>{{commit.hash}}</code> <span v-if="ago != 0">{{ago}}</span> {{days}}</p>
-        <div class="lang">
+        <div class="lang" style="margin-bottom: -4px;">
           <a v-if="lang != 'en'" href="/en">🇬🇧In English</a>
           <a v-if="lang == 'en'" href="/">🇷🇺На русском</a>
         </div>
@@ -157,7 +157,8 @@ export default {
         : this.ago === 0 ? daysAgo = 'сегодня'
         : 'дней назад'
       } else {
-        daysAgo = 'day(s) ago'
+        this.ago === 0 ? daysAgo = 'today'
+        : 'day(s) ago'
       }
       return daysAgo
     }

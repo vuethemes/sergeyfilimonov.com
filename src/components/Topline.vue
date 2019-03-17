@@ -1,5 +1,5 @@
 <template>
-  <div class="topline" v-if="$route.path != link && lang != 'en'">
+  <div class="topline" v-if="$route.path != link && lang != 'en'" v-rellax="{speed: -4}">
     🆕 Свежий пост в блоге: <a :href="link">«Статичный сайт vs. сайт на WordPress»</a>
   </div>
 </template>
