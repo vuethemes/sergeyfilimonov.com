@@ -1,5 +1,16 @@
 nav {
   border-bottom: 1px solid #eee;
+  .button {
+    &:hover {
+      border-color: #36ADE1;
+      i {
+        color: #36ADE1;
+      }
+    }
+  }
+  .active {
+    color: var(--primary-color);
+  }
 }
 .sergeyfilimonov {
   display: flex;
@@ -23,6 +34,7 @@ nav {
     }
   }
 }
+
 .navbar-item {
   border-radius: 0 !important;
   transition: .2s !important;
@@ -32,7 +44,7 @@ nav {
   }
   &:hover {
     background: none !important;
-    color: --primary-color;
+    color: var(--primary-color);
   }
 }
 

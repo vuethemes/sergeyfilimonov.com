@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <vue-scroll-progress-bar height="2px" backgroundColor="#3273dc"/>
     <article class="section">
       <yandex-share :services="['facebook','vkontakte','telegram','whatsapp']" counter />
       <h1 class="is-size-1 is-size-3-mobile" v-html="$page.post.title"/>
@@ -11,7 +12,7 @@
         :url="'https://sergeyfilimonov.com/' + $route.path">
       </vue-disqus>
     </article>
-    <BlogPosts :headingText="'Другие статьи'" :slug="this.$page.post.slug"/>
+    <BlogPosts :headingText="'Другие статьи'" :currentPage="$page.post.slug"/>
   </Layout>
 </template>
 
@@ -31,9 +32,6 @@ import YandexShare from '@cookieseater/vue-yandex-share'
 import BlogPosts from '@/components/sections/BlogPosts'
 
 export default {
-  props: {
-    slug: String
-  },
   components: {
     YandexShare,
     BlogPosts

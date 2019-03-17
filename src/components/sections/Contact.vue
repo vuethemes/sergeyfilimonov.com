@@ -49,11 +49,11 @@ export default {
     Callback
   },
   methods: {
-    show () {
-      this.$modal.show('callback');
+    show() {
+      this.$modal.show('callback')
     },
-    hide () {
-      this.$modal.hide('callback');
+    hide() {
+      this.$modal.hide('callback')
     }
   }
 }

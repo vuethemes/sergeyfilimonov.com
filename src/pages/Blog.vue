@@ -27,17 +27,17 @@ query BlogPosts {
 </page-query>
 
 <script>
-import PostCard from '@/components/PostCard.vue'
+import PostCard from '@/components/PostCard'
 
 export default {
-  props: {
-    currentPage: String
-  },
   components: {
     PostCard
   },
   metaInfo: {
-    title: 'Блог'
+    title: 'Блог',
+    meta: [
+      { vmid: 'description', name: 'description', content: 'Среди моих работ: edmarket.ru, hr.netology.ru, spiridonov.ru, arttsapko.ru и др.' }
+    ]
   }
 }
 </script>

@@ -27,14 +27,13 @@
           <a v-if="!home" class="navbar-item" href="/#faq" @click="isActive = false">FAQ</a>
           <a v-if="home" class="navbar-item" v-scroll-to="'#about'" @click="isActive = false">Обо мне</a>
           <a v-if="!home" class="navbar-item" href="/#about" @click="isActive = false">Обо мне</a>
-          <a class="navbar-item" href="/blog" @click="isActive = false">Блог</a>
-          <a
-            class="navbar-item"
-            href="http://t-do.ru/fullstackdesign"
-            @click="isActive = false"
-            target="_blank">
-            <i class="fab fa-telegram"></i> Telegram-канал
-          </a>
+          <a class="navbar-item" href="/blog" :class="$route.path == '/blog' ? 'active' : ''" @click="isActive = false">Блог</a>
+          <div class="navbar-item">
+            <a href="http://t-do.ru/fullstackdesign"
+              click="isActive = false"
+              class="button"
+              target="_blank"><i class="fab fa-telegram"></i>Telegram-канал</a>
+          </div>
         </div>
       </div>
     </div>

@@ -73,8 +73,8 @@ export default {
   data() {
     return {
   	  commit: {
-        hash: 'bf9f079',
-        date: '20190312'
+        hash: 'd07924c',
+        date: '20190315'
       }
     }
   },

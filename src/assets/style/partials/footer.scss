@@ -29,15 +29,15 @@ footer {
     padding-bottom: 2rem !important;
     padding-top: 2rem !important;
     background: #292C34;
-    p, a, code, i {
+    p, a, code, i, span {
       font-size: 14px !important;
       color: #D7DADF;
     }
     code {
       border-radius: 2px;
-      padding: 0.25em 0.40em 0.25em;
+      padding: 0.2em 0.40em 0.25em;
       margin-left: 0.25em;
-      margin-right: 0.25em;
+      margin-right: 0.4em;
     }
     a {
       &:hover {

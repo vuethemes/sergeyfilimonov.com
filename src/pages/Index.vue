@@ -6,7 +6,7 @@
     <Contact/>
     <FAQ/>
     <About/>
-    <BlogPosts :headingText="'Блог'"/>
+    <BlogPosts :headingText="'Блог'" :currentPage="'home'"/>
   </Layout>
 </template>
 
@@ -30,9 +30,9 @@ export default {
     BlogPosts
   },
   metaInfo: {
-    title: 'Быстрые и удобные сайты для образовательных проектов',
+    title: 'Создаю статичные сайты по JAMstack',
     meta: [
-      { vmid: 'description', name: 'description', content: 'Среди моих работ: edmarket.ru, hr.netology.ru, spiridonov.ru, arttsapko.ru и др.' }
+      { vmid: 'description', name: 'description', content: 'Работаю с SaaS-проектами ☁️, EdTech 👩‍🎓, стартапами 🚀' }
     ]
   }
 }

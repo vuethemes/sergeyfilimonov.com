@@ -1,5 +1,5 @@
 <template>
-  <section id="intro" class="section">
+  <section id="intro" class="section" data-lax-preset="spin fadeInOut">
     <div class="container">
       <h1 class="has-text-black has-text-centered" style="margin-bottom: 0;">
         <span class="is-size-1 is-size-3-mobile">
@@ -28,8 +28,8 @@ export default {
   computed: {
     words() {
       return this.$mq === 'mobile'
-      ? ['онлайн-образования', 'и хороших продуктов']
-      : ['образовательных проектов…', 'и хороших продуктов 👍']
+      ? ['SaaS-проектов ☁️', 'образования 👩‍🎓', 'стартапов 🚀']
+      : ['SaaS-проектов ☁️', 'онлайн-образования 👩‍🎓', 'стартапов на рынки России и США 🚀']
     }
   }
 }

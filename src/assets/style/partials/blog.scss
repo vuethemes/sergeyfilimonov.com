@@ -27,6 +27,7 @@ article {
   margin-top: 2rem;
   transition: .2s;
   background: #fff;
+  color: var(--color) !important;
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 20px -6px rgba(0,0,0,0.2);

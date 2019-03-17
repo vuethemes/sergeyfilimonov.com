@@ -7,7 +7,9 @@
     	<div class="bubble" v-if="bubble.show" :key="1" style="animation-duration: 0.3s">
     		<div class="close" @click="close()">✕</div>
     		<div class="text">
-    			<span>{{bubble.text}}</span> Предлагаю обсудить в {{messenger}} 😉 Если {{messenger}} неудобен, <a v-scroll-to="{el: '#contact', onDone: function(element){close()} }" class="my-link">здесь</a> все способы связаться
+    			<span>{{bubble.text}}</span> Предлагаю обсудить в {{messenger}} 😉 Если {{messenger}} неудобен,
+          <a v-if="$route.path != '/'" href="/#contact" class="my-link" @click="close()">здесь</a>
+          <a v-if="$route.path == '/'" v-scroll-to="{el: '#contact', onDone: function(element){close()}}" class="my-link">здесь</a> все способы связаться
     		</div>
     	</div>
     </transition>
@@ -19,7 +21,7 @@ export default {
   data() {
     return {
   	  bubble: {
-  		  show: true,
+        show: false,
   		  text: 'Готовы обсудить проект?'
   	  },
   	  source: this.$route.query.utm_source
@@ -28,6 +30,7 @@ export default {
   methods: {
     close() {
       this.bubble.show = false
+      localStorage.show = 0
     },
     message() {},
     updateBubbleText() {
@@ -60,6 +63,14 @@ export default {
   },
   mounted() {
     this.updateBubbleText()
+
+    setTimeout(function () {
+      if(localStorage.show == 0) {
+        this.bubble.show = false
+      } else {
+        this.bubble.show = true
+      }
+    }.bind(this), 4000)
   }
 }
 </script>

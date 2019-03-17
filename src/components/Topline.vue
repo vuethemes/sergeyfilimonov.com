@@ -1,9 +1,15 @@
 <template>
-  <div class="topline">
-    🆕 Свежий пост в блоге: <a href="/blog/wordpress-vs-static">«Статичный сайт vs. сайт на WordPress»</a>
+  <div class="topline" v-if="$route.path != link">
+    🆕 Свежий пост в блоге: <a :href="link">«Статичный сайт vs. сайт на WordPress»</a>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      link: '/blog/wordpress-vs-static'
+    }
+  }
+}
 </script>

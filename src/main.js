@@ -11,14 +11,14 @@ import VueScrollTo from 'vue-scrollto'
 import VueGtm from 'vue-gtm'
 import Typography from 'typography'
 import VueDisqus from 'vue-disqus'
-//import Parallax from 'vue-parallaxy'
+import lax from 'lax.js'
 
 export default function (Vue, {router, head, isClient}) {
   Vue.component('Layout', DefaultLayout)
 
   Vue.use(VueDisqus)
 
-  //Vue.use(Parallax)
+  Vue.use(lax)
 
   Vue.use(VueScrollTo, {
     duration: 500,
@@ -35,8 +35,11 @@ export default function (Vue, {router, head, isClient}) {
   })
 
   if(process.isClient) {
-    const { default: VueScrollProgressBar } = require('vue-scroll-progressbar')
+    const { default: VueScrollProgressBar } = require('~/components/modules/vue-scroll-progressbar')
     Vue.use(VueScrollProgressBar)
+
+    //const { default: VueRellax } = require('vue-rellax')
+    //Vue.use(VueRellax)
   }
 
   const typography = new Typography({

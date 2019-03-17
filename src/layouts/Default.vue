@@ -1,7 +1,6 @@
 <template>
   <transition name="fade" appear>
     <div class="layout">
-      <vue-scroll-progress-bar height="2px" backgroundColor="#3273dc"/>
       <Topline/>
       <Nav v-if="nav !== false" />
       <slot/>
@@ -16,6 +15,7 @@ import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
 import Messenger from '@/components/Messenger'
 import Topline from '@/components/Topline'
+import Notifications from '@/components/Notifications'
 
 export default {
   props: ['nav', 'footer'],
@@ -23,7 +23,8 @@ export default {
     Nav,
     Footer,
     Messenger,
-    Topline
+    Topline,
+    Notifications
   },
   metaInfo: {
     titleTemplate: '%s | Сергей Филимонов',
@@ -34,6 +35,12 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ]
+  },
+  mounted() {
+    if(!localStorage.views){
+      localStorage.views = 0
+    }
+    localStorage.views = Number(localStorage.views) + 1
   }
 }
 </script>
