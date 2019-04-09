@@ -3,7 +3,7 @@
   "alias": "sergeyfilimonov.com",
   "version": 2,
   "github": {
-    "enabled": true
+    "enabled": false
   },
   "builds": [
     {

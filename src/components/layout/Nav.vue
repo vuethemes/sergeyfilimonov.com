@@ -17,7 +17,7 @@
       </div>
       <div class="navbar-menu" :class="{ 'is-active' : isActive }">
         <div class="navbar-end">
-          <a v-if="home" class="navbar-item" v-scroll-to="'#works'" v-html="navbar.items.works.text" @click="isActive = false"/>
+          <a v-if="home" class="navbar-item" v-scroll-to="'#showcase'" v-html="navbar.items.works.text" @click="isActive = false"/>
           <a v-if="!home" class="navbar-item" :href="navbar.items.works.link" v-html="navbar.items.works.text" @click="isActive = false"/>
 
           <a v-if="home" class="navbar-item" v-html="navbar.items.process.text" v-scroll-to="'#features'" @click="isActive = false"/>
@@ -111,3 +111,82 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+nav {
+  border-bottom: 1px solid #eee;
+  .button {
+    &:hover {
+      border-color: #36ADE1;
+      i {
+        color: #36ADE1;
+      }
+    }
+  }
+  .active {
+    color: var(--primary-color);
+  }
+}
+.sergeyfilimonov {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    max-height: none !important;
+    width: 50px;
+    margin-left: -18px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start !important;
+    .whatdoyoudo {
+      font-size: 8px;
+      letter-spacing: 1px;
+      text-transform: uppercase;;
+    }
+  }
+}
+
+.navbar-item {
+  border-radius: 0 !important;
+  transition: .2s !important;
+  font-weight: 600;
+  i {
+    font-weight: 400;
+  }
+  &:hover {
+    background: none !important;
+    color: var(--primary-color);
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .navbar-brand {
+    align-items: center !important;
+  }
+  .navbar-burger {
+    &:hover {
+      border-radius: 100px;
+    }
+  }
+  .navbar-menu {
+    padding: 1rem !important;
+    border-radius: 8px;
+  }
+  .navbar-menu .navbar-item:hover {
+    color: #8786FE !important;
+  }
+  .sergeyfilimonov {
+    img {
+      margin-left: -18px;
+    }
+  }
+  .navbar {
+    padding: 0rem 1rem;
+    padding-top: 0rem;
+  }
+}
+</style>

@@ -1,14 +1,15 @@
-@import '/partials/vars';
+//General
 @import '/partials/typography';
 @import '/partials/animations';
 @import '/partials/base';
-@import '/partials/nav';
-@import '/partials/footer';
-@import '/partials/modal';
-@import '/partials/blog';
-@import '/partials/sections';
+
+//Project cpecific
 @import '/partials/modal';
 @import '/partials/typer';
-@import '/partials/messenger';
-@import '/partials/callback';
-@import '/partials/topline';
+
+//Bulma & variables
+@import '~bulma/sass/utilities/initial-variables.sass';
+@import '~bulma/sass/utilities/functions.sass';
+@import '/partials/vars'; // placed before `derived-variables.sass` to customize Bulma's variables
+@import '~bulma/sass/utilities/derived-variables.sass';
+@import '~bulma/bulma.sass';

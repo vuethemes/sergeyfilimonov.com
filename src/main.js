@@ -6,7 +6,6 @@ import('animate.css')
 // Global components
 import DefaultLayout from '~/layouts/Default.vue'
 import VueMq from 'vue-mq'
-import Bulma from 'bulma'
 import VueScrollTo from 'vue-scrollto'
 import VueGtm from 'vue-gtm'
 import Typography from 'typography'

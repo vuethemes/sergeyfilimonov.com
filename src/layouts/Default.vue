@@ -15,7 +15,6 @@ import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
 import Messenger from '@/components/Messenger'
 import Topline from '@/components/Topline'
-import Notifications from '@/components/Notifications'
 
 export default {
   props: ['nav', 'footer', 'lang'],
@@ -23,8 +22,7 @@ export default {
     Nav,
     Footer,
     Messenger,
-    Topline,
-    Notifications
+    Topline
   },
   metaInfo: {
     titleTemplate: '%s ∙ Сергей Филимонов',
@@ -36,11 +34,20 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ]
   },
+  data() {
+    return {
+      currentLang: 'ru'
+    }
+  },
   mounted() {
     if(!localStorage.views){
       localStorage.views = 0
     }
     localStorage.views = Number(localStorage.views) + 1
+
+    if(this.lang == 'en') {
+      this.currentLang = 'en'
+    }
   }
 }
 </script>

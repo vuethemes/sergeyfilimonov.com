@@ -19,7 +19,6 @@
       @click="send()"
       class="button button__whatsapp is-large is-outlined"
       value="Отправить заявку"/>
-    {{response}}
   </div>
 </template>
 
@@ -42,19 +41,56 @@ export default {
       this.number = ''
     },
     send(){
-      axios.post('https://hooks.zapier.com/hooks/catch/608402/n2xs0z/', {
-        body: this.number,
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-      .then(response => {
-        this.response = response
-      })
-      .catch(e => {
-        this.errors.push(e)
-      })
+      let data = this.number
+      axios.post('https://hooks.zapier.com/hooks/catch/608402/n2xs0z/', data)
+        .then(response => {
+          this.response = response
+        })
+        .catch(e => {
+          this.errors.push(e)
+        })
     }
   }
 }
 </script>
+
+<style lang="scss">
+.callback {
+  background: #fff;
+  border: 2px solid #eee;
+  padding: 2rem;
+  font-weight: bold;
+  input[type="tel"] {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 2px solid #eee;
+    margin-bottom: 1rem;
+  }
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .numpad {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    .numpad-btn {
+      text-align: center;
+      border: 1px solid #eee;
+      width: 33.3%;
+      padding: 1rem;
+      &:active {
+        background: rgba(0,0,0,0.1);
+      }
+      &:hover {
+        background: rgba(0,0,0,0.025);
+        cursor: pointer;
+      }
+    }
+  }
+}
+</style>

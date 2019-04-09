@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <Intro/>
-    <Works/>
+    <Showcase/>
     <Features/>
     <Contact/>
     <FAQ/>
@@ -12,7 +12,7 @@
 
 <script>
 import Intro from '@/components/sections/Intro'
-import Works from '@/components/sections/Works'
+import Showcase from '@/components/sections/Showcase'
 import Features from '@/components/sections/Features'
 import Contact from '@/components/sections/Contact'
 import FAQ from '@/components/sections/FAQ'
@@ -23,7 +23,7 @@ export default {
   components: {
     Intro,
     Features,
-    Works,
+    Showcase,
     Contact,
     FAQ,
     About,

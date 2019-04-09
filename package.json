@@ -2,8 +2,8 @@
   "name": "sergeyfilimonov.com",
   "private": true,
   "scripts": {
-    "build": "export NODE_ENV=production && gridsome build",
-    "develop": "export NODE_ENV=development && gridsome develop",
+    "build": "gridsome build",
+    "develop": "gridsome develop",
     "explore": "gridsome explore",
     "now-build": "npm run build"
   },
@@ -14,7 +14,7 @@
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
     "bulma": "^0.7.4",
-    "gridsome": "^0.5.4",
+    "gridsome": "^0.5.6",
     "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-modal": "^0.1.1",
     "lax.js": "^1.0.4",

@@ -1,8 +1,8 @@
 module.exports = {
   siteName: 'Сергей Филимонов',
   siteUrl: "https://sergeyfilimonov.com",
-  siteDescription: "Сергей Филимонов",
-  titleTemplate: '%s - Сергей Филимонов',
+  siteDescription: "Разрабатываю статичные сайты с помощью Vue и Gridsome для проектов из SaaS и EdTech. Также создаю навыки для голосового помощника Алиса от Яндекса.",
+  titleTemplate: '%s ∙ Сергей Филимонов',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
@@ -38,7 +38,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'BlogPost',
-        path: "blog/**/*.md",
+        path: "blog/posts/*.md",
         route: "blog/:slug",
         remark: {
           plugins: [
@@ -54,5 +54,8 @@ module.exports = {
         exclude: ['/exclude-me']
       }
     }
-  ]
+  ],
+  chainWebpack (config) {
+    config.mode('development')
+  }
 }

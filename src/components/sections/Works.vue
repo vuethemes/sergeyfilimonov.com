@@ -60,3 +60,23 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+#works a {
+  color: #000 !important;
+  font-weight: 700;
+  transition: .2s !important;
+}
+#works a span {
+	display: inline-block;
+	transition: .2s !important;
+}
+#works a:hover span {
+	transform: translateX(2px);
+}
+#works a:hover,
+.my-link:hover {
+  text-decoration: none;
+  color: #3273dc !important;
+}
+</style>
