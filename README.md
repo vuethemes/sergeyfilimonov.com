@@ -22,6 +22,11 @@ For more information about me, go to my website [sergeyfilimonov.com/en](https:/
 
 You can also track tasks for this [Project](https://github.com/sergeyfilimonov/sergeyfilimonov.com/projects/1).
 
----
-
 If you find a bug or a text mistake, please post it in [Issues](https://github.com/sergeyfilimonov/sergeyfilimonov.com/issues)
+
+## Resources in Russian
+
+-- [My blog](https://sergeyfilimonov.com/blog)
+-- [Telegram channel on Fullstack Design](http://t-do.ru/fullstackdesign)
+-- [Facebook](https://www.facebook.com/tunecatcher)
+-- [Instagram](https://www.instagram.com/sergey_v_filimonov/)
