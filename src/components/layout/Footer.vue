@@ -82,7 +82,7 @@ export default {
           header: 'Работы',
           more: {
             text: 'Другие проекты →',
-            link: '/#works'
+            link: '/#showcase'
           }
         },
         blog: {
@@ -93,8 +93,8 @@ export default {
               link: '/blog/wordpress-vs-static'
             },
             2: {
-              question: 'Рейтинг кафе и коворкингов',
-              link: '/blog/work-outside'
+              question: 'Все headless CMS',
+              link: '/blog/headless-cms'
             },
             3: {
               question: 'Fullstack-дизайн',
@@ -126,8 +126,8 @@ export default {
       },
   	  commit: {
         update: 'Обновление',
-        hash: 'c2800d9',
-        date: '20190317'
+        hash: '889dd02',
+        date: '20190409'
       }
     }
   },
@@ -165,7 +165,7 @@ export default {
   },
   mounted() {
     if(this.lang == 'en') {
-      this.text.works.header = 'Works'
+      this.text.works.header = 'Showcase'
       this.text.works.more.text = 'More →'
       this.text.works.more.link = '/en#works'
 

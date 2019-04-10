@@ -50,7 +50,7 @@ export default {
   },
   mounted() {
     if(this.lang == 'en') {
-      this.text.desc = 'Since 2019 I develop only with JAMstack framework <b>Gatsby</b> leaving WordPress as a headless CMS. So the websites I make cannot be made slow and unsecure.'
+      this.text.desc = 'Since 2019 I develop only with JAMstack framework <b>Gridsome</b> leaving WordPress as a headless CMS. So the websites I make cannot be made slow and unsecure.'
     }
   }
 }
