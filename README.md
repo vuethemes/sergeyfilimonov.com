@@ -26,7 +26,7 @@ If you find a bug or a text mistake, please post it in [Issues](https://github.c
 
 ## Resources in Russian
 
--- [My blog](https://sergeyfilimonov.com/blog)
--- [Telegram channel on Fullstack Design](http://t-do.ru/fullstackdesign)
--- [Facebook](https://www.facebook.com/tunecatcher)
--- [Instagram](https://www.instagram.com/sergey_v_filimonov/)
+- [My blog](https://sergeyfilimonov.com/blog)
+- [Telegram channel on Fullstack Design](http://t-do.ru/fullstackdesign)
+- [Facebook](https://www.facebook.com/tunecatcher)
+- [Instagram](https://www.instagram.com/sergey_v_filimonov/)
