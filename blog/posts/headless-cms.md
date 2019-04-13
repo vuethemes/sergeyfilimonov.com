@@ -2,12 +2,14 @@
 title: Список всех headless CMS для статичных сайтов
 slug: headless-cms
 date: 2019-03-13
-action: Узнать разницу
+category: article
+action: Узнать все headless CMS
 excerpt: "В этом материале я поставил перед собой задачу собрать все существующие headless CMS * для статичных сайтов."
 ---
 
-**healess CMS** — это CMS, не привязанные к шаблонам сайта. То есть сайт и CMS находятся отдельно друг от друга. Это одно из ключевых качеств, определяющих сайт, созданный по технологии JAMstack.
+**headless CMS** — это CMS, не привязанные к шаблонам сайта. То есть сайт и CMS находятся отдельно друг от друга. Это одно из ключевых качеств, определяющих сайт, созданный по технологии JAMstack.
 
+- [Ghost](https://blog.ghost.org/jamstack/)
 - [GraphCMS](https://graphcms.com)
 - [CosmicJS](https://cosmicjs.com)
 - [WordPress](https://wordpress.org)

@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       text: {
-        desc: 'С 2019-го все проекты разрабатываю со статичным фреймворком <b>Gridsome</b>. В чём преимущество статичных фреймворков над монолитными — вроде <b>WordPress</b> или <b>Drupal</b>, — читайте <a href="/blog/wordpress-vs-static">здесь</a>'
+        desc: 'С 2019-го все проекты разрабатываю со статичным фреймворком <b>Gridsome</b>. В чём преимущество статичных фреймворков над монолитными — вроде <b>WordPress</b> или <b>Drupal</b>, — читайте <a class="is-size-5 is-size-5-mobile" href="/blog/wordpress-vs-static">здесь</a>'
       }
     }
   },
