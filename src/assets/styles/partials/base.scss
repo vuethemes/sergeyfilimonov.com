@@ -274,3 +274,46 @@ article {
     }
   }
 }
+
+/* Smaller text for mobile */
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 99%;
+  }
+}
+
+* {
+  font-family: 'Circe';
+}
+
+.lead {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+.lead {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 a,
+h2 a,
+h3 a {
+	display: none;
+}
+
+p {
+  letter-spacing: -.15px;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+li {
+  letter-spacing: -.15px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

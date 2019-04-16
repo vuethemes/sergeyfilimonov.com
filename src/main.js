@@ -1,5 +1,5 @@
 // Global styles
-import '~/assets/style/index.scss'
+import '~/assets/styles/index.scss'
 import 'prismjs/themes/prism.css'
 import('animate.css')
 

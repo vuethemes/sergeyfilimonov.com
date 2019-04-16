@@ -10,11 +10,12 @@ This repo represents the inside of my personal website [sergeyfilimonov.com](htt
 
 🚀 Other static websites I made with Gridsome:
 - [hr.netology.ru](https://hr.netology.ru)
+- [ms.netology.ru](https://ms.netology.ru)
 
 🔜 Coming soon:
-- [ms.netology.ru](https://ms.netology.ru)
 - [msp-moscow.ru](https://msp-moscow.ru)
 - [cbsd.ru](https://cbsd.ru)
+- [erapoznaniya.ru](https://erapoznaniya.ru)
 
 ## More
 

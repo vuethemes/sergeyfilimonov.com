@@ -2,7 +2,6 @@
   <Layout>
     <vue-scroll-progress-bar height="2px" backgroundColor="#3273dc"/>
     <article class="section">
-      
       <h1 class="is-size-1 is-size-3-mobile" v-html="$page.post.title"/>
       <p class="lead" v-html="$page.post.excerpt"/>
       <div v-html="$page.post.content"/>
