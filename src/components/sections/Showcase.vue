@@ -82,14 +82,14 @@
           </article>
           <article class="tile is-child notification has-background-dark is-dark">
             <div class="content">
-              <a class="is-size-4" href="http://spiridonov.ru" target="_blank">spiridonov.ru</a>
+              <a class="is-size-4" href="https://ms.netology.ru" target="_blank">ms.netology.ru</a>
               <div class="tags">
                 <span class="tag is-rounded">#EdTech</span>
-                <span class="tag is-rounded">#HTML</span>
+                <span class="tag is-rounded">#Статичный</span>
               </div>
               <div class="content">
-                <p>Персональный сайт для основателя «Нетологии-групп» Максима Спиридонова.</p>
-                <p>Сейчас разрабатывается улучшенная версия, спроектированная специально для поддержки личного бренда руководителя компании стоимостью $72 млн.</p>
+                <p>Персональный сайт в рамках бренда для сооснователя и генерального директора «Нетологии-групп» Максима Спиридонова.</p>
+                <p>Сайт используется при публичных выступлениях Максима Спиридонова. После выступления всем предлагается перейти на этот сайт, получить там промокод со скидкой, презентацию и другую информацию о спикере и компании.</p>
               </div>
             </div>
           </article>

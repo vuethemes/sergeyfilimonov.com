@@ -27,12 +27,10 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
-import YandexShare from '@cookieseater/vue-yandex-share'
 import BlogPosts from '@/components/sections/BlogPosts'
 
 export default {
   components: {
-    YandexShare,
     BlogPosts
   },
   metaInfo() {

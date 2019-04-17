@@ -21,12 +21,6 @@ module.exports = {
       use: 'gridsome-plugin-modal'
     },
     {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'UA-135079945-1'
-      }
-    },
-    {
       use: 'gridsome-plugin-gtm',
       options: {
         id: 'GTM-WH2RFDV',
@@ -51,11 +45,8 @@ module.exports = {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000,
-        exclude: ['/exclude-me']
+        exclude: ['/404']
       }
     }
-  ],
-  chainWebpack (config) {
-    config.mode('development')
-  }
+  ]
 }
