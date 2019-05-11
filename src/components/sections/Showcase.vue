@@ -54,7 +54,7 @@
             </div>
             <div class="tile is-parent is-vertical">
               <article id="mspmoscow" class="tile is-child notification is-dark">
-                <a class="is-size-4" href="https://мсп.москва" target="_blank">мсп.москва</a>
+                <a class="is-size-4" href="https://msp-moscow.ru" target="_blank">msp-moscow.ru</a>
                 <div class="tags">
                   <span class="tag is-rounded">#Услуги</span>
                   <span class="tag is-rounded">#Статичный</span>

@@ -13,3 +13,5 @@
 @import '/partials/vars'; // placed before `derived-variables.sass` to customize Bulma's variables
 @import '~bulma/sass/utilities/derived-variables.sass';
 @import '~bulma/bulma.sass';
+
+@import '/partials/spacing';

@@ -1,3 +1,5 @@
+require('dotenv').config({path: 'vars.env'})
+
 module.exports = {
   siteName: 'Сергей Филимонов',
   siteUrl: "https://sergeyfilimonov.com",
@@ -19,6 +21,13 @@ module.exports = {
   plugins: [
     {
       use: 'gridsome-plugin-modal'
+    },
+    {
+      use: '~/src/sources/products',
+      options: {
+        apiKey: process.env.AIRTABLE_KEY,
+        base: process.env.AIRTABLE_BASE,
+      },
     },
     {
       use: 'gridsome-plugin-gtm',

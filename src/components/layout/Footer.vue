@@ -56,7 +56,7 @@
     </div>
 		<div class="footer-last section has-text-centered">
       <div class="container">
-        <p style="margin-bottom: 0 !important;">
+        <p class="m-b-md">
           <i class="fas fa-code-branch"></i>
           <a
           href="https://github.com/sergeyfilimonov/sergeyfilimonov.com"

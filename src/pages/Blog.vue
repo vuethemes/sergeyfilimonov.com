@@ -28,8 +28,6 @@ query BlogPosts {
         id
         title
         path
-        date (format: "D. MMMM YYYY")
-        timeToRead
         excerpt
         action
         content

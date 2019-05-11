@@ -8,14 +8,12 @@ The first really good framework [Gatsby](https://gatsbyjs.org) had great impact 
 
 This repo represents the inside of my personal website [sergeyfilimonov.com](https://sergeyfilimonov.com) which is made—as you might guess—with Gridsome. Feel free to explore it and look for something to use in your projects.
 
-🚀 Other static websites I made with Gridsome:
+🚀 All websites I made with Gridsome:
+- [sergeyfilimonov.com](https://sergeyfilimonov.com)
+- [anastasiafilimonova.com](https://anastasiafilimonova.com)
 - [hr.netology.ru](https://hr.netology.ru)
 - [ms.netology.ru](https://ms.netology.ru)
-
-🔜 Coming soon:
 - [msp-moscow.ru](https://msp-moscow.ru)
-- [cbsd.ru](https://cbsd.ru)
-- [erapoznaniya.ru](https://erapoznaniya.ru)
 
 ## More
 

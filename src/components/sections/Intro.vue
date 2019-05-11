@@ -2,18 +2,15 @@
   <section id="intro" class="section">
     <div class="container">
       <h1 class="has-text-black has-text-centered" style="margin-bottom: 0;">
-        <span class="is-size-1 is-size-3-mobile">
+        <span class="is-size-1 is-size-3-mobile has-text-weight-bold">
           {{textService}}
-          <br/>
-          <VueTyper
-            :text="words"
-            :type-delay="60"
-            caret-animation="smooth"
-            class="is-size-1 is-size-3-mobile" />
         </span>
       </h1>
       <br>
       <p class="is-size-5 is-size-5-mobile has-text-centered" style="max-width: 760px; margin: auto;" v-html="text.desc"/>
+      <div class="has-text-centered m-t-lg">
+        <a v-scroll-to="'#contact'" class="button is-large" v-html="'💬 Обсудить проект'"/>
+      </div>
     </div>
   </section>
 </template>
@@ -26,7 +23,7 @@ export default {
   data() {
     return {
       text: {
-        desc: 'С 2019-го все проекты разрабатываю со статичным фреймворком <b>Gridsome</b>. В чём преимущество статичных фреймворков над монолитными — вроде <b>WordPress</b> или <b>Drupal</b>, — читайте <a class="is-size-5 is-size-5-mobile" href="/blog/wordpress-vs-static">здесь</a>'
+        desc: 'Создаю сайты для средних компаний, которым уже не хватает возможностей конструкторов. Гарантирую отличный дизайн, скорость сайта не меньше 95&nbsp;баллов по Google PageSpeed Insights, разумные сроки и стоимость.'
       }
     }
   },
@@ -44,8 +41,8 @@ export default {
     },
     textService() {
       return this.lang == 'en'
-      ? 'Need a website? I create ones for'
-      : 'Создаю быстрые и удобные сайты для'
+      ? 'Need a website?'
+      : 'Создаю быстрые и удобные сайты'
     }
   },
   mounted() {

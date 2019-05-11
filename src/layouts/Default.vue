@@ -24,19 +24,25 @@ export default {
     Messenger,
     Topline
   },
-  metaInfo: {
-    titleTemplate: '%s ∙ Сергей Филимонов',
-    htmlAttrs: {
-      lang: 'ru'
-    },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-    ]
-  },
   data() {
     return {
-      currentLang: 'ru'
+      currentLang: 'ru',
+      canonical: 'https://hr.netology.ru' + this.$route.path
+    }
+  },
+  metaInfo() {
+    return {
+      titleTemplate: '%s ∙ Сергей Филимонов',
+      htmlAttrs: {
+        lang: 'ru'
+      },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ],
+      link: [
+        { rel: 'canonical', href: this.canonical }
+      ]
     }
   },
   mounted() {
