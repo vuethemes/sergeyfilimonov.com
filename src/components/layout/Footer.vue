@@ -4,7 +4,7 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <h4 class="is-size-5" v-html="text.works.header"/>
+            <h4 class="is-size-5 has-text-weight-bold" v-html="text.works.header"/>
             <ul>
               <li><a href="https://arttsapko.ru" target="_blank">arttsapkó.ru</a></li>
               <li><a href="https://hr.netology.ru" target="_blank">hr.netology.ru</a></li>
@@ -13,7 +13,7 @@
             </ul>
           </div>
           <div class="column">
-            <h4 class="is-size-5" v-html="text.blog.header"/>
+            <h4 class="is-size-5 has-text-weight-bold" v-html="text.blog.header"/>
             <ul>
               <li v-for="item in text.blog.posts">
                 <a :href="item.link">{{item.question}}</a>
@@ -22,7 +22,7 @@
             </ul>
           </div>
           <div class="column">
-            <h4 class="is-size-5" v-html="text.faq.header"/>
+            <h4 class="is-size-5 has-text-weight-bold" v-html="text.faq.header"/>
             <ul>
               <li v-for="item in text.faq.questions">
                 <a :href="item.link">{{item.question}}</a>
@@ -31,7 +31,7 @@
             </ul>
           </div>
           <div class="column">
-            <h4 class="is-size-5" v-html="text.contacts.header"/>
+            <h4 class="is-size-5 has-text-weight-bold" v-html="text.contacts.header"/>
             <ul>
               <li>
                 <a href="https://api.whatsapp.com/send?phone=79261118328&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D1%81%D0%B0%D0%B9%D1%82..." target="_blank">
