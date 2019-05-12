@@ -42,13 +42,15 @@
           <div class="tile">
             <div class="tile is-parent">
               <article id="spaceproductsense" class="tile is-child notification is-dark">
-                <a class="is-size-4" href="https://space.productsense.io" target="_blank">space.productsense.io</a>
-                <div class="tags">
-                  <span class="tag is-rounded">#EdTech</span>
-                  <span class="tag is-rounded">#WordPress</span>
-                </div>
                 <div class="content">
-                  Стояла задача в короткие сроки разработать сайт для конференции ProductSense, на котором можно было бы размещать различные материалы: статьи, подкасты и прочее.
+                  <a class="is-size-4" href="https://space.productsense.io" target="_blank">space.productsense.io</a>
+                  <div class="tags">
+                    <span class="tag is-rounded">#EdTech</span>
+                    <span class="tag is-rounded">#WordPress</span>
+                  </div>
+                  <div class="content">
+                    Стояла задача в короткие сроки разработать сайт для конференции ProductSense, на котором можно было бы размещать различные материалы: статьи, подкасты и прочее.
+                  </div>
                 </div>
               </article>
             </div>
@@ -68,6 +70,7 @@
         </div>
         <div class="tile is-parent is-vertical">
           <article id="arttsapko" class="tile is-child notification is-dark">
+            <Overlay opacity="0.6"/>
             <div class="content">
               <a class="is-size-4" href="https://arttsapko.ru" target="_blank">arttsapko.ru</a>
               <div class="tags">
@@ -80,8 +83,9 @@
               </div>
             </div>
           </article>
-          <article class="tile is-child notification has-background-dark is-dark">
-            <div class="content">
+          <article id="msnetology" class="tile is-child notification has-background-dark is-dark">
+            <Overlay opacity="0.4"/>
+            <div class="content" style="position: relative;">
               <a class="is-size-4" href="https://ms.netology.ru" target="_blank">ms.netology.ru</a>
               <div class="tags">
                 <span class="tag is-rounded">#EdTech</span>
@@ -100,8 +104,13 @@
 </template>
 
 <script>
+import Overlay from '@/components/Overlay'
+
 export default {
   props: ['lang'],
+  components: {
+    Overlay
+  },
   data() {
     return {
       text: {
@@ -119,6 +128,11 @@ export default {
 
 <style lang="scss">
 #showcase {
+  article {
+    overflow: auto;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
   .is-size-4 {
     margin-bottom: 1rem;
     font-weight: 700;
@@ -126,6 +140,9 @@ export default {
     &:hover {
       text-decoration: none;
     }
+  }
+  .content {
+    position: relative;
   }
   .tag {
     margin: 0;
@@ -142,7 +159,9 @@ export default {
     }
   }
   #arttsapko {
-    background: linear-gradient(95.37deg, #ff590a 6.9%, #ff0b5d 93.1%);
+    //background: linear-gradient(95.37deg, #ff590a 6.9%, #ff0b5d 93.1%);
+    background: url(/images/showcase/arttsapko.jpg);
+    background-size: cover;
   }
   #edmarket {
     background: linear-gradient(46.31deg, #9650FF 14.64%, #E17EFF 85.36%);
@@ -152,9 +171,14 @@ export default {
   }
   #spaceproductsense {
     background: #25B309;
+    //background: url(/images/showcase/productsense.jpg);
   }
   #mspmoscow {
     background: -webkit-linear-gradient(#eb5757,#ff5e5e);
+  }
+  #msnetology {
+    background: url(/images/showcase/msnetologyru.jpg);
+    background-size: 700px !important;
   }
 }
 </style>
