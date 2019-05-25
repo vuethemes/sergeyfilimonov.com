@@ -13,10 +13,9 @@
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
     "bulma": "^0.7.4",
-    "gridsome": "^0.6.0",
+    "gridsome": "^0.6.2",
     "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-modal": "^0.1.1",
-    "typography": "^0.16.18",
     "vue-awesome-swiper": "^3.1.3",
     "vue-disqus": "^3.0.5",
     "vue-markdown": "^2.2.4",
@@ -34,8 +33,5 @@
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
     "webpack-node-externals": "^1.7.2"
-  },
-  "resolutions": {
-    "gridsome/vue-router": "3.0.2"
   }
 }

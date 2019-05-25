@@ -57,5 +57,8 @@ module.exports = {
         exclude: ['/404']
       }
     }
-  ]
+  ],
+  chainWebpack (config) {
+    config.mode('development')
+  }
 }
