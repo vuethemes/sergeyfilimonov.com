@@ -1,5 +1,5 @@
 <template>
-  <transition name="fade" appear>
+  <transition>
     <div class="layout">
       <Topline :lang="lang"/>
       <Nav v-if="nav !== false" :lang="lang"/>
