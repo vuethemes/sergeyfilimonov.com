@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <Intro/>
-    
+    <Showcase/>
     <Features/>
     <Contact/>
     <FAQ/>
