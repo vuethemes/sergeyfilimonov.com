@@ -38,17 +38,13 @@
                 <a class="navbar-item" @click="go('/blog', 'talks')">
                   Выступления
                 </a>
-                <!--<hr class="navbar-divider">
-                <a class="navbar-item" href="/partners">
-                  Корпоративным блогам
-                </a>-->
               </div>
             </div>
             <div v-if="lang != 'en'" class="navbar-item">
-              <a href="http://t-do.ru/fullstackdesign"
+              <a href="https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber"
                 click="isActive = false"
                 class="button"
-                target="_blank"><i class="fab fa-telegram"></i>Telegram-канал</a>
+                target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
             </div>
             <a v-if="lang != 'en'" class="navbar-item borderCenter" href="/en" @click="isActive = false">🇬🇧In English</a>
             <a v-if="lang == 'en'" class="navbar-item borderCenter" href="/" @click="isActive = false">🇷🇺На русском</a>
@@ -133,9 +129,9 @@ nav {
   border-bottom: 1px solid #eee;
   .button {
     &:hover {
-      border-color: #36ADE1;
+      border-color: red;
       i {
-        color: #36ADE1;
+        color: red;
       }
     }
   }
