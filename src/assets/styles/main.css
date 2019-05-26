@@ -1,0 +1,15 @@
+/*! purgecss start ignore */
+@import 'tailwindcss/base';
+/*! purgecss end ignore */
+
+@import '_base';
+@import '_variables';
+@import '_grid';
+@import '_fonts';
+
+/* start components */
+@import 'tailwindcss/components';
+@import 'components/markdown';
+/* end components */
+
+@import 'tailwindcss/utilities';
