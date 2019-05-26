@@ -27,19 +27,7 @@
             <a v-if="!home" class="navbar-item borderCenter" v-html="navbar.items.faq.text" :href="navbar.items.faq.link" @click="isActive = false"/>
             <a v-if="home" class="navbar-item borderCenter" v-html="navbar.items.about.text" v-scroll-to="'#about'" @click="isActive = false"/>
             <a v-if="!home" class="navbar-item borderCenter" v-html="navbar.items.about.text" :href="navbar.items.about.link" @click="isActive = false"/>
-            <div v-if="lang != 'en'" class="navbar-item has-dropdown is-hoverable borderCenter" href="/blog" :class="$route.path == '/blog' ? 'active' : ''" @click="isActive = false">
-              <a class="navbar-link" href="/blog">
-                Блог
-              </a>
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="/blog">
-                  Все статьи
-                </a>
-                <a class="navbar-item" @click="go('/blog', 'talks')">
-                  Выступления
-                </a>
-              </div>
-            </div>
+            <a v-if="lang != 'en'" class="navbar-item borderCenter" href="/blog" :class="$route.path == '/blog' ? 'active' : ''" @click="isActive = false" v-html="'Блог'"/>
             <div v-if="lang != 'en'" class="navbar-item">
               <a href="https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber"
                 click="isActive = false"
