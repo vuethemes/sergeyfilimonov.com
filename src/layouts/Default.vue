@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       currentLang: 'ru',
-      canonical: 'https://hr.netology.ru' + this.$route.path
+      canonical: 'https://sergeyfilimonov.com' + this.$route.path
     }
   },
   metaInfo() {
