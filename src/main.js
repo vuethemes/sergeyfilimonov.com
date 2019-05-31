@@ -5,12 +5,11 @@ import('animate.css')
 
 // Global components
 import DefaultLayout from '~/layouts/Default.vue'
-import Bulma from 'bulma'
 import VueMq from 'vue-mq'
 import VueScrollTo from 'vue-scrollto'
 import VueDisqus from 'vue-disqus'
 
-export default function (Vue, {router, head, isClient}) {
+export default function (Vue, {head}) {
   Vue.component('Layout', DefaultLayout)
 
   Vue.use(VueDisqus)
