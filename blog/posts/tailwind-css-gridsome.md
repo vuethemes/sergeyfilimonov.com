@@ -1,6 +1,6 @@
 ---
 title: How to add Tailwind CSS to Gridsome
-slug: logo-site
+slug: tailwind-css-gridsome
 date: 2019-06-01 00:00:00 +0300
 category: article
 action: Get Tailwind CSS
