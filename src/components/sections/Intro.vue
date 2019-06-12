@@ -6,7 +6,6 @@
           {{textService}}
         </span>
       </h1>
-      <br>
       <!--
       <p class="is-size-5 is-size-5-mobile has-text-centered" style="max-width: 760px; margin: auto;" v-html="text.desc"/>-->
       <div class="has-text-centered m-t-lg">
