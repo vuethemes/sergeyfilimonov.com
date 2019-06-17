@@ -28,7 +28,7 @@
           <i class="fab fa-vk"></i>
           VK
         </a>
-        <a class="button instagram" target="_blank" href="https://www.instagram.com/sergey_v_filimonov/">
+        <a class="button instagram" target="_blank" href="https://www.instagram.com/sergeyfilimonov_com">
           <i class="fab fa-instagram"></i>
           Instagram
         </a>
