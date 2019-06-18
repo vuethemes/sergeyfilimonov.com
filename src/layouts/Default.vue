@@ -53,26 +53,6 @@ export default {
     if(this.lang == 'en') {
       this.currentLang = 'en'
     }
-
-    (function () {
-        window['yandexChatWidgetCallback'] = function() {
-            try {
-                window.yandexChatWidget = new Ya.ChatWidget({
-                    guid: 'dbc8b5cf-8fc4-4c0f-a8f8-b0d91e691f82',
-                    buttonText: 'Хотите заказать сайт?',
-                    title: 'Задайте вопрос здесь',
-                    theme: 'light',
-                    collapsedDesktop: 'never',
-                    collapsedTouch: 'never'
-                });
-            } catch(e) { }
-        };
-        var n = document.getElementsByTagName('script')[0],
-            s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://chat.s3.yandex.net/widget.js';
-        n.parentNode.insertBefore(s, n);
-    })();
   }
 }
 </script>
