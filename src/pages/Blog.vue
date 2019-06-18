@@ -3,7 +3,7 @@
     <main class="section">
       <h1 class="is-size-1 is-size-3-mobile has-text-centered">Блог</h1>
       <p class="desc has-text-centered lead">В блоге я делюсь не только о том, что делаю профессионально — <a class="is-size-5 is-size-5-mobile" href="/">разработку сайтов</a>, — но и своими исследованиями в других областях: искусственный интеллект, чат-боты и прочее.</p>
-      <div class="tabs is-centered">
+      <!-- <div class="tabs is-centered">
         <ul>
           <li :class="{'is-active' : currentCategory == 'all'}"
             @click="currentCategory = 'all'">
@@ -14,7 +14,7 @@
             <a>Выступления</a>
           </li>
         </ul>
-      </div>
+      </div> -->
       <PostCard v-for="edge in postsFiltered" :key="edge.node.id" :post="edge.node" :currentPage="'blog'"/>
     </main>
   </Layout>
