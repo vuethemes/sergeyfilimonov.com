@@ -24,6 +24,11 @@ export default function (Vue, {head}) {
     Vue.use(VueRellax)
   }
 
+  head.script.push({
+    src: 'https://sergeyfilimonov.com/scripts/teletype.js',
+    body: true
+  })
+
   head.link.push({
     rel: 'stylesheet',
     href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css'
