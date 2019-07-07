@@ -1,10 +1,9 @@
 <template>
   <transition>
     <div class="layout">
-      <Topline :lang="lang"/>
-      <Nav v-if="nav !== false" :lang="lang"/>
+      <Nav/>
       <slot/>
-      <Footer v-if="footer !== false" :lang="lang"/>
+      <Footer/>
     </div>
   </transition>
 </template>
@@ -12,15 +11,12 @@
 <script>
 import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
-import Messenger from '@/components/Messenger'
 import Topline from '@/components/Topline'
 
 export default {
-  props: ['nav', 'footer', 'lang'],
   components: {
     Nav,
     Footer,
-    Messenger,
     Topline
   },
   data() {
@@ -42,16 +38,6 @@ export default {
       link: [
         { rel: 'canonical', href: this.canonical }
       ]
-    }
-  },
-  mounted() {
-    if(!localStorage.views){
-      localStorage.views = 0
-    }
-    localStorage.views = Number(localStorage.views) + 1
-
-    if(this.lang == 'en') {
-      this.currentLang = 'en'
     }
   }
 }

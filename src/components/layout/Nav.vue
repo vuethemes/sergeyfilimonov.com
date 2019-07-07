@@ -3,46 +3,11 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item sergeyfilimonov" href="/">
-          <img src="@/assets/images/emojime.jpg" alt="emoji">
           <div class="text">
-            <div class="is-size-5 is-size-5-mobile has-text-weight-bold" v-html="navbar.name"/>
-            <div class="whatdoyoudo" v-html="navbar.profession"/>
+            <div class="is-size-5 is-size-5-mobile has-text-weight-bold" v-html="'Cергей Филимонов'"/>
+            <div class="whatdoyoudo">Блог</div>
           </div>
         </a>
-        <a role="button" class="navbar-burger burger" @click="isActive = !isActive" :class="{ 'is-active' : isActive }" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div class="navbar-menu" :class="{ 'is-active' : isActive }">
-        <div class="navbar-end">
-          <a v-if="home" class="navbar-item borderCenter" v-scroll-to="'#showcase'" v-html="navbar.items.works.text" @click="isActive = false"/>
-          <a v-if="!home" class="navbar-item borderCenter" :href="navbar.items.works.link" v-html="navbar.items.works.text" @click="isActive = false"/>
-          <a v-if="home" class="navbar-item borderCenter" v-html="navbar.items.process.text" v-scroll-to="'#features'" @click="isActive = false"/>
-          <a v-if="!home" class="navbar-item borderCenter" v-html="navbar.items.process.text" :href="navbar.items.process.link" @click="isActive = false"/>
-          <a v-if="home" class="navbar-item borderCenter" v-html="navbar.items.contacts.text" v-scroll-to="'#contact'" @click="isActive = false"/>
-          <a v-if="!home" class="navbar-item borderCenter" v-html="navbar.items.contacts.text" :href="navbar.items.contacts.link" @click="isActive = false"/>
-          <!-- <a v-if="home" class="navbar-item borderCenter" v-html="navbar.items.faq.text" v-scroll-to="'#faq'" @click="isActive = false"/>
-          <a v-if="!home" class="navbar-item borderCenter" v-html="navbar.items.faq.text" :href="navbar.items.faq.link" @click="isActive = false"/> -->
-          <!-- <a v-if="home" class="navbar-item borderCenter" v-html="navbar.items.about.text" v-scroll-to="'#about'" @click="isActive = false"/>
-          <a v-if="!home" class="navbar-item borderCenter" v-html="navbar.items.about.text" :href="navbar.items.about.link" @click="isActive = false"/> -->
-          <a v-if="lang != 'en'" class="navbar-item borderCenter" href="/blog" :class="$route.path == '/blog' ? 'active' : ''" @click="isActive = false" v-html="'Блог'"/>
-          <div v-if="lang != 'en'" class="navbar-item">
-            <a href="https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber"
-              click="isActive = false"
-              class="button"
-              target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
-          </div>
-          <div v-if="lang != 'en'" class="navbar-item">
-            <a href="https://t-do.ru/sergeyfilimonov_com"
-              click="isActive = false"
-              class="button"
-              target="_blank"><i class="fab fa-telegram"></i>Telegram-канал</a>
-          </div>
-          <a v-if="lang != 'en'" class="navbar-item borderCenter" href="/en" @click="isActive = false">🇬🇧In English</a>
-          <a v-if="lang == 'en'" class="navbar-item borderCenter" href="/" @click="isActive = false">🇷🇺На русском</a>
-        </div>
       </div>
     </div>
   </nav>
@@ -53,33 +18,6 @@ export default {
   props: ['lang'],
   data() {
     return {
-      navbar: {
-        name: 'Сергей Филимонов',
-        profession: 'Fullstack-дизайнер',
-        items: {
-          works: {
-            text: 'Работы',
-            link: '/#works'
-          },
-          process: {
-            text: 'Процесс',
-            link: '/#features'
-          },
-          contacts: {
-            text: 'Контакты',
-            link: '/#contacts'
-          },
-          about: {
-            text: 'Обо мне',
-            link: '/#about'
-          },
-          faq: {
-            text: 'FAQ',
-            link: '/#faq'
-          }
-        }
-      },
-      isActive: false
     }
   },
   methods: {

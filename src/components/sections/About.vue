@@ -20,13 +20,6 @@ export default {
         cta: 'Обсудить проект'
       }
     }
-  },
-  mounted() {
-    if(this.lang == 'en') {
-      this.text.header = '👋 About me'
-      this.text.about = 'I have been making websites since about 2015. I also had experience in product management but still build websites as I love this. Each project for me is valuable as if it is my own.'
-      this.text.cta = 'Let\'s talk'
-    }
   }
 }
 </script>

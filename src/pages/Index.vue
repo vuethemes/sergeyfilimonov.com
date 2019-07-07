@@ -1,31 +1,15 @@
 <template>
   <Layout>
-    <Intro/>
-    <Showcase/>
-    <Features/>
-    <Contact/>
-    <FAQ/>
-    <About/>
     <BlogPosts headingText="Недавние статьи из блога" currentPage="home"/>
   </Layout>
 </template>
 
 <script>
-import Intro from '@/components/sections/Intro'
-import Showcase from '@/components/sections/Showcase'
-import Features from '@/components/sections/Features'
-import Contact from '@/components/sections/Contact'
-import FAQ from '@/components/sections/FAQ'
 import About from '@/components/sections/About'
 import BlogPosts from '@/components/sections/BlogPosts'
 
 export default {
   components: {
-    Intro,
-    Features,
-    Showcase,
-    Contact,
-    FAQ,
     About,
     BlogPosts
   },
