@@ -20,10 +20,6 @@ This repo represents the inside of my personal website [sergeyfilimonov.com](htt
 
 For more information about this repo, go to [Wiki](https://github.com/sergeyfilimonov/sergeyfilimonov.com/wiki).
 
-For more information about me, go to my website [sergeyfilimonov.com/en](https://sergeyfilimonov.com/en)
-
-You can also track tasks for this [Project](https://github.com/sergeyfilimonov/sergeyfilimonov.com/projects/1).
-
 If you find a bug or a text mistake, please post it in [Issues](https://github.com/sergeyfilimonov/sergeyfilimonov.com/issues).
 
 ## Resources in Russian
