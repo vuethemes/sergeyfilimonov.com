@@ -51,14 +51,6 @@ export default function (Vue, {router, head, isClient, appOptions}) {
     }
   })
 
-  if(process.isClient) {
-    const VueAwesomeSwiper = require('vue-awesome-swiper/dist/ssr')
-    Vue.use(VueAwesomeSwiper)
-
-    const { default: VueScrollProgressBar } = require('~/components/modules/vue-scroll-progressbar')
-    Vue.use(VueScrollProgressBar)
-  }
-
   head.link.push({
     rel: 'stylesheet',
     href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css'
@@ -66,11 +58,6 @@ export default function (Vue, {router, head, isClient, appOptions}) {
 
   head.script.push({
     src: '/scripts/teletype.js',
-    body: true
-  })
-
-  head.script.push({
-    src: 'https://yastatic.net/q/forms-frontend-ext/_/embed.js',
     body: true
   })
 }
