@@ -13,6 +13,7 @@ module.exports = {
   siteName: '',
   siteUrl: process.env.siteUrl,
   siteDescription: process.env.siteDescription,
+
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
@@ -23,7 +24,12 @@ module.exports = {
           type: 'text',
           value: '#'
         }
-      }
+      },
+      plugins: [
+        ['gridsome-plugin-remark-shiki', {
+          theme: 'min-light'
+        }]
+      ]
     }
   },
   plugins: [
@@ -57,7 +63,29 @@ module.exports = {
         cacheTime: 600000,
         exclude: ['/404']
       }
-    }
+    },
+    {
+      use: 'gridsome-plugin-rss',
+      options: {
+        contentTypeName: 'BlogPost',
+        feedOptions: {
+          title: 'Сергей Филимонов о сайтах, продутикности и всём таком',
+          feed_url: 'https://sergeyfilimonov.com/feed.xml',
+          site_url: 'https://sergeyfilimonov.com'
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          description: node.description,
+          url: 'https://sergeyfilimonov.com/' + node.slug,
+          author: node.author,
+          date: node.date
+        }),
+        output: {
+          dir: './static',
+          name: 'feed.xml'
+        }
+      }
+    },
   ],
   chainWebpack: config => {
     config.module

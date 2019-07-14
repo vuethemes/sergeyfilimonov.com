@@ -1,8 +1,82 @@
 <template>
   <Layout>
-    <div class="container section mt-10">
-      <div class="max-w-xl">
-        <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="'blog'"/>
+    <div class="container section mt-3 lg:mt-6">
+      <div class="grid-cols grid-cols--2-1-1">
+        <div class="">
+          <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="'blog'"/>
+        </div>
+        <div class="">
+          <div class="bg-gray-100 p-6">
+            <div class="font-bold text-xs text-gray-500 mb-2">
+              Технологии
+            </div>
+            <ul>
+              <li class="flex items-center mb-2">
+                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Gridsome
+              </li>
+              <li class="flex items-center mb-2">
+                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Vue
+              </li>
+              <li class="flex items-center mb-2">
+                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>GraphQL
+              </li>
+              <li class="flex items-center mb-2">
+                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Tailwind CSS
+              </li>
+              <li class="flex items-center mb-2">
+                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Figma
+              </li>
+              <li class="flex items-center mb-2">
+                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Now
+              </li>
+              <li class="flex items-center mb-2">
+                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>WordPress
+              </li>
+              <li class="flex items-center">
+                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Contentful
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-gray-100 p-6">
+          <div class="">
+            <div class="font-bold text-xs text-gray-500 mb-2">
+              Из Telegram
+            </div>
+            <div class="mb-4 pl-2 border-l border-social-telegram">
+              <div class="text-sm mb-2">
+                Source by Forpeople — большая библиотека дизайн-блоков для Sketch и Figma: 537 блоков, 571 элемент, 12 шаблонов страниц, всё в двух темах — светлой и тёмной.
+              </div>
+              <div class="text-xs">
+                13 июля 2019
+              </div>
+            </div>
+            <div class="mb-4 pl-2 border-l border-social-telegram">
+              <div class="text-sm mb-2">
+                Source by Forpeople — большая библиотека дизайн-блоков для Sketch и Figma: 537 блоков, 571 элемент, 12 шаблонов страниц, всё в двух темах — светлой и тёмной.
+              </div>
+              <div class="text-xs">
+                13 июля 2019
+              </div>
+            </div>
+            <div class="mb-4 pl-2 border-l border-social-telegram">
+              <div class="text-sm mb-2">
+                Source by Forpeople — большая библиотека дизайн-блоков для Sketch и Figma: 537 блоков, 571 элемент, 12 шаблонов страниц, всё в двух темах — светлой и тёмной.
+              </div>
+              <div class="text-xs">
+                13 июля 2019
+              </div>
+            </div>
+            <div class="mb-4 pl-2 border-l border-social-telegram">
+              <div class="text-sm mb-2">
+                Source by Forpeople — большая библиотека дизайн-блоков для Sketch и Figma: 537 блоков, 571 элемент, 12 шаблонов страниц, всё в двух темах — светлой и тёмной.
+              </div>
+              <div class="text-xs">
+                13 июля 2019
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </Layout>

@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <!-- <vue-scroll-progress-bar height="2px" backgroundColor="#3273dc"/> -->
-    <article class="container section max-w-3xl mx-auto mt-8">
-      <h1 class="text-4xl mb-4" v-html="$page.post.title"/>
-      <p class="text-xl mb-4" v-html="$page.post.excerpt"/>
-      <div class="markdown" v-html="$page.post.content"/>
+    <article class="container section max-w-3xl mx-auto mt-8 markdown">
+      <h1 class="text-5xl mb-4" v-html="$page.post.title"/>
+      <p class="text-2xl mb-4" v-html="$page.post.excerpt"/>
+      <div v-html="$page.post.content"/>
       <!-- <vue-disqus
         shortname="sergeyfilimonov-com"
         :identifier="$page.post.slug"

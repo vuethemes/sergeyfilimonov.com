@@ -1,14 +1,17 @@
 .markdown {
-  p {
-    @apply mb-3 text-lg;
+  h1 {
+    @apply leading-none !important;
   }
   h2 {
     @apply text-xl my-4;
   }
+  p {
+    @apply mb-3 text-lg;
+  }
   ul {
-    @apply mb-4;
+    @apply mb-2;
     li {
-      @apply list-disc ml-4;
+      @apply list-disc ml-4 mb-2;
     }
   }
   table {
@@ -23,6 +26,25 @@
         @apply py-2 border-b border-solid border-gray-100;
       }
     }
+  }
+
+  pre.shiki {
+    @apply bg-gray-codeblock !important;
+    @apply border border-gray-300 -mx-6 p-6 mb-4 text-sm font-mono overflow-x-auto scrolling-touch;
+  }
+
+  code.shiki {
+    @apply bg-gray-100 text-gray-700 !important;
+    @apply border border-gray-300 p-4 block mb-4 font-mono text-sm overflow-x-auto scrolling-touch;
+  }
+
+  .shiki-inline {
+    @apply bg-gray-100 text-gray-700 !important;
+    @apply border border-gray-300 text-lg px-2 py-1 rounded;
+  }
+
+  mark {
+    @apply bg-yellow-300 px-2;
   }
 }
 

@@ -9,6 +9,15 @@ module.exports = {
     fontFamily: {
       display: ['GTEestiProDisplay-Thin', 'sans-serif'],
       body: ['Arial', 'sans-serif'],
+      mono: [
+        'SFMono-Regular',
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        '"Liberation Mono"',
+        '"Courier New"',
+        'monospace',
+      ],
     },
     fontSize: {
       'xs': '.75rem',
@@ -54,17 +63,18 @@ module.exports = {
           telegram: 'var(--telegram-color)',
           vk: 'var(--vk-color)',
         },
-        // gray: {
-        //   '100': '#fbfbfb',
-        //   '200': '#eeeeee',
-        //   '300': '#e0e0e0',
-        //   '400': '#bdbdbd',
-        //   '500': '#9e9e9e',
-        //   '600': '#757575',
-        //   '700': '#616161',
-        //   '800': '#424242',
-        //   '900': '#212121',
-        // }
+        gray: {
+          '100': '#fbfbfb',
+          '200': '#eeeeee',
+          '300': '#e0e0e0',
+          '400': '#bdbdbd',
+          '500': '#9e9e9e',
+          '600': '#757575',
+          '700': '#616161',
+          '800': '#424242',
+          '900': '#212121',
+          'codeblock': '#fbfcfd',
+        }
       },
       spacing: {
         '96': '24rem',
