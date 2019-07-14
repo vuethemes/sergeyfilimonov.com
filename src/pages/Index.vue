@@ -2,7 +2,7 @@
   <Layout>
     <div class="container section mt-10">
       <div class="max-w-3xl">
-        <PostCard v-for="edge in postsFiltered" :key="edge.node.id" :post="edge.node" :currentPage="'blog'"/>
+        <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="'blog'"/>
       </div>
     </div>
   </Layout>

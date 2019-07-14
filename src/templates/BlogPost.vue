@@ -11,7 +11,7 @@
         :url="'https://sergeyfilimonov.com/' + $route.path">
       </vue-disqus>
     </article>
-    <BlogPosts :headingText="'Другие статьи'" :currentPage="$page.post.slug"/>
+    <BlogPosts :currentPage="$page.post.slug"/>
   </Layout>
 </template>
 
