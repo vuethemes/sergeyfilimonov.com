@@ -46,6 +46,7 @@ module.exports = {
           primary: 'var(--bg-background-primary)'
         },
         social: {
+          youtube: 'var(--youtube-color)',
           whatsapp: 'var(--whatsapp-color)',
           facebook: 'var(--facebook-color)',
           instagram: 'var(--instagram-color)',

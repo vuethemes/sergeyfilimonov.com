@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  created() {
+  mounted() {
     let theme = localStorage.getItem('theme') || 'theme-light'
     this.$store.commit('changeTheme', theme)
   },

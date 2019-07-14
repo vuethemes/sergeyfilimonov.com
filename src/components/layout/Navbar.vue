@@ -3,7 +3,7 @@
     <div class="container">
       <div class="flex items-center justify-between">
         <ul class="flex items-center">
-          <li class="mr-6 text-lg lg:text-xl lg:font-bold">
+          <li class="mr-6 text-lg lg:text-2xl lg:font-bold">
             <g-link to="/">Сергей Филимонов</g-link>
           </li>
         </ul>
@@ -13,9 +13,10 @@
           </li> -->
         </ul>
         <div class="flex items-center">
-          <a class="button button--xl rounded w-auto mr-3" href="https://instagram.com/sergeyfilimonov_com" target="_blank">
-            Instagram
+          <a class="button button--xl rounded mr-3 bg-social-youtube" href="https://instagram.com/sergeyfilimonov_com" target="_blank">
+            YouTube
           </a>
+          <a class="button button--xl rounded mr-3 bg-social-telegram" href="https://tele.click/sfilimonov" target="_blank">Telegram</a>
           <ToggleTheme/>
         </div>
       </div>

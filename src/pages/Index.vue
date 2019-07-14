@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <div class="container section mt-10">
-      <PostCard v-for="edge in postsFiltered" :key="edge.node.id" :post="edge.node" :currentPage="'blog'"/>
+      <div class="max-w-3xl">
+        <PostCard v-for="edge in postsFiltered" :key="edge.node.id" :post="edge.node" :currentPage="'blog'"/>
+      </div>
     </div>
   </Layout>
 </template>
