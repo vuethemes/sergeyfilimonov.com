@@ -3,7 +3,7 @@
     <div v-if="post.slug != currentPage" class="">
       <h3 class="text-2xl mb-2" v-html="post.title"/>
       <div class="mb-2" v-html="post.excerpt"/>
-      <a class="link" href="#">{{post.action}} →</a>
+      <div class="link" href="#">{{post.action}} →</div>
     </div>
   </g-link>
 </template>
