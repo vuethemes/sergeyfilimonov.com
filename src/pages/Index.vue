@@ -76,7 +76,7 @@
                 1 июля 2019
               </div>
             </div>
-            <a href="https://tele.click/sfilimonov" class="link">Все посты в Telegram</a>
+            <a href="https://tele.click/sfilimonov" class="link text-social-telegram border-social-telegram">Все посты в Telegram</a>
           </div>
         </div>
       </div>
