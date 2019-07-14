@@ -1,0 +1,11 @@
+.svoybrend {
+  @apply py-2 px-3 mt-2 rounded text-left inline-block bg-white shadow;
+  &:hover {
+    @apply shadow-none;
+  }
+}
+@screen lg {
+  .svoybrend {
+    @apply mt-0;
+  }
+}

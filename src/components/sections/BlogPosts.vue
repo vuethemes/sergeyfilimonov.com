@@ -1,7 +1,7 @@
 <template>
-  <section id="blog-posts" class="section backgrouned">
+  <div id="posts" class="section">
     <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="currentPage"/>
-  </section>
+  </div>
 </template>
 
 <static-query>
@@ -26,10 +26,7 @@ query BlogPosts {
 import PostCard from '@/components/PostCard.vue'
 
 export default {
-  props: {
-    headingText: String,
-    currentPage: String
-  },
+  props: ['headingText', 'currentPage'],
   components: {
     PostCard
   }

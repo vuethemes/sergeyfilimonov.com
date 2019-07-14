@@ -1,0 +1,27 @@
+/*! purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'base/variables';
+@import 'base/base';
+@import 'base/fonts';
+/*! purgecss end ignore */
+
+/* start components */
+@import 'tailwindcss/components';
+@import 'components/button';
+@import 'components/section';
+@import 'components/markdown';
+@import 'components/video';
+@import 'components/svoybrend';
+@import 'components/navbar';
+/* end components */
+
+/* start utilities */
+@import 'tailwindcss/utilities';
+@import 'utilities/grid';
+@import 'utilities/animations';
+@import 'utilities/glow';
+/* end utilities */
+
+/* start modules */
+@import 'swiper/dist/css/swiper.css';
+/* end modules */

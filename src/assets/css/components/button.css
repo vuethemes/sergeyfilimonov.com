@@ -1,0 +1,51 @@
+.button {
+  @apply inline-flex items-center justify-center text-white bg-primary w-full text-center;
+  &--lg {
+    @apply text-xl py-2 px-4;
+  }
+  &--xl {
+    @apply text-xl py-2 px-4;
+  }
+  &--2xl {
+    @apply text-xl py-2 px-4;
+  }
+  &--rounded {
+    @apply rounded-full;
+  }
+  &:hover {
+    transform: scale(0.96);
+  }
+}
+@screen lg {
+  .button {
+    @apply w-auto;
+    &--lg {
+      @apply text-lg py-4 px-8;
+    }
+    &--xl {
+      @apply text-xl py-2 px-6;
+    }
+    &--2xl {
+      @apply text-2xl py-4 px-10;
+    }
+  }
+}
+
+.link {
+  @apply inline-block text-primary border-b border-primary;;
+  &--underlined {
+    @apply text-black border-b-2 border-dotted border-black;
+    &:hover {
+      @apply border-white;
+    }
+  }
+  &:hover {
+    @apply border-b border-red-100;
+  }
+}
+
+form input[type="submit"] {
+  &:hover {
+    cursor: pointer;
+  }
+}

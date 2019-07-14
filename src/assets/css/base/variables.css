@@ -1,0 +1,21 @@
+:root {
+  --primary-color: rgba(10,118,240,1);
+  --primary-color-ligther: rgba(10,118,240,0.5);
+  --secondary-color: #EAB4B2;
+  --whatsapp-color: #25d366;
+  --whatsapp-color-ligther: #81ffb0;
+  --youtube-color: red;
+  --vk-color: #4a76a8;
+  --facebook-color: rgba(10,118,240,1);
+  --messenger-color: rgba(10,118,240,1);
+  --telegram-color: #36ade1;
+  --instagram-color: #fdf497);
+}
+
+.theme-light {
+
+}
+
+.theme-dark {
+  
+}

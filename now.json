@@ -5,6 +5,10 @@
   "github": {
     "enabled": true
   },
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "status": 404, "dest": "404" }
+  ],
   "builds": [
     {
       "src": "package.json",

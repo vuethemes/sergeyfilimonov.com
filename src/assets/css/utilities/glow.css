@@ -1,0 +1,12 @@
+.glow {
+  box-shadow: 0 10px 20px -4px var(--primary-color-ligther);
+  &:hover {
+    box-shadow: 0 0px 0px -4px var(--primary-color-ligther);
+  }
+  &--whatsapp {
+    box-shadow: 0 4px 20px -8px var(--whatsapp-color);
+    &:hover {
+      box-shadow: 0 0px 0px -4px var(--whatsapp-color-ligther);
+    }
+  }
+}

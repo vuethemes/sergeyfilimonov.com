@@ -1,0 +1,11 @@
+.animate-invert:hover {
+  @apply transition-all-xs text-white bg-red-500;
+}
+
+.animate-invert--outlined:hover {
+  @apply transition-all-xs text-red-500 bg-white;
+}
+
+.animate-invert--full:hover {
+  @apply transition-all-xs text-red-500 bg-white border-2 border-red-500;
+}

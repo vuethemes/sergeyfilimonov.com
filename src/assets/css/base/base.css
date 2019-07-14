@@ -1,0 +1,16 @@
+* {
+  transition-duration: .3s;
+}
+
+a {
+  cursor: pointer !important;
+}
+
+h1, h2, h3 {
+  @apply leading-tight;
+}
+
+*:disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}

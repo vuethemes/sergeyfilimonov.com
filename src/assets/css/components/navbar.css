@@ -1,0 +1,16 @@
+.navbar {
+  @apply block;
+  &--fixed {
+    @apply block z-10 w-full;
+    top: 0;
+  }
+}
+@screen lg {
+  .navbar {
+    @apply block;
+    &--fixed {
+      @apply fixed z-10 w-full;
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import 'animations/arrowFromLeft.css';
+@import 'animations/buttonOverlay.css';
+@import 'animations/doubleDashed.css';
+@import 'animations/gradientBorder.css';
+@import 'animations/gradientText.css';
+@import 'animations/invert.css';
+@import 'animations/pulseAnim.css';
+@import 'animations/scale.css';
+
+.animate-zoom {
+  &-xs {
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  &-sm {
+    &:hover {
+      transform: scale(1.06);
+    }
+  }
+}
+
+.transition-all {
+  &-xs {
+    transition: 0.2s !important;
+  }
+}

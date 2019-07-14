@@ -61,16 +61,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.tabs {
-  max-width: 780px;
-  margin: auto;
-  ul {
-    border-bottom: none !important;
-    margin-bottom: 0rem;
-    margin-top: 2rem;
-    text-align: center;
-  }
-}
-</style>

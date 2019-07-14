@@ -7,10 +7,12 @@ class TailwindExtractor {
 }
 
 module.exports = {
-  siteName: 'Сергей Филимонов',
-  siteUrl: "https://sergeyfilimonov.com",
-  siteDescription: "Разрабатываю статичные сайты с помощью Vue и Gridsome для проектов из SaaS и EdTech. Также создаю навыки для голосового помощника Алиса от Яндекса.",
-  titleTemplate: '%s ∙ Сергей Филимонов',
+  siteName: process.env.sitetName,
+  siteUrl: process.env.siteUrl,
+  titleTemplate: '%s - ' + process.env.siteName,
+  siteName: '',
+  siteUrl: process.env.siteUrl,
+  siteDescription: process.env.siteDescription,
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
@@ -28,17 +30,10 @@ module.exports = {
     {
       use: 'gridsome-plugin-modal'
     },
-    /*{
-      use: '~/src/sources/products',
-      options: {
-        apiKey: process.env.AIRTABLE_KEY,
-        base: process.env.AIRTABLE_BASE,
-      },
-    },*/
     {
       use: 'gridsome-plugin-gtm',
       options: {
-        id: 'GTM-WH2RFDV',
+        id: process.env.GTM,
         enabled: true,
         debug: true
       }

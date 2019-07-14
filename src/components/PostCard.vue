@@ -10,27 +10,6 @@
 
 <script>
 export default {
-  props: {
-    post: { type: Object, required: true },
-    currentPage: String
-  }
+  props: ['post', 'currentPage']
 }
 </script>
-
-<style lang="scss">
-.post-card {
-  padding: 1.6rem;
-  border: 1px solid #eee;
-  border-radius: 6px;
-  max-width: 720px;
-  margin: auto;
-  margin-top: 2rem;
-  transition: .2s;
-  background: #fff;
-  color: var(--color) !important;
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 20px -6px rgba(0,0,0,0.2);
-  }
-}
-</style>

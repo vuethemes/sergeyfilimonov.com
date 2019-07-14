@@ -1,0 +1,27 @@
+.section {
+  @apply p-4;
+  &--py {
+    @apply py-8;
+  }
+  &--pt {
+    @apply pt-4;
+  }
+  &--pb {
+    @apply pb-4;
+  }
+}
+
+@screen lg {
+  .section {
+    @apply p-0;
+    &--py {
+      @apply py-16;
+    }
+    &--pt {
+      @apply pt-16;
+    }
+    &--pb {
+      @apply pb-16;
+    }
+  }
+}
