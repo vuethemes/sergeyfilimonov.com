@@ -4,6 +4,10 @@
 
 <script>
 export default {
+  created() {
+    let theme = localStorage.getItem('theme') || 'theme-light'
+    this.$store.commit('changeTheme', theme)
+  },
   methods: {
     toggleTheme() {
       let theme = this.$store.getters.theme === 'theme-light' ? 'theme-dark' : 'theme-light'

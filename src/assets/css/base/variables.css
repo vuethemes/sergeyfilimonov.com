@@ -13,9 +13,9 @@
 }
 
 .theme-light {
-
+  --bg-background-primary: #fff;
 }
 
 .theme-dark {
-  
+  --bg-background-primary: #333;
 }

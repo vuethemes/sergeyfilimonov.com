@@ -20,7 +20,7 @@ export default function (Vue, {router, head, isClient, appOptions}) {
   Vue.use(Vuex)
   appOptions.store = new Vuex.Store({
     state: {
-      theme: localStorage.getItem('theme') || 'theme-light'
+      theme: null
     },
     mutations: {
       changeTheme(state, payload) {

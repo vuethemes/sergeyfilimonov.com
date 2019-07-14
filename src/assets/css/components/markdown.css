@@ -29,7 +29,7 @@
 @screen lg {
   .markdown {
     p {
-      @apply mb-4 text-2xl;
+      @apply mb-4 text-xl;
     }
     h2 {
       @apply text-3xl my-6;
@@ -37,7 +37,7 @@
     ul {
       @apply mb-4;
       li {
-        @apply list-disc ml-4;
+        @apply list-disc ml-4 text-xl;
       }
     }
     table {

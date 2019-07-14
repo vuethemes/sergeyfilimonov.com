@@ -1,10 +1,10 @@
 <template>
-  <nav id="navbar" class="navbar navbar--fixed section shadow py-4 bg-white">
+  <nav id="navbar" class="navbar section py-4 bg-white">
     <div class="container">
       <div class="flex items-center justify-between">
         <ul class="flex items-center">
-          <li class="mr-6 text-3xl lg:text-4xl lg:font-bold">
-            <g-link to="/">Свой бренд</g-link>
+          <li class="mr-6 text-lg lg:text-xl lg:font-bold">
+            <g-link to="/">Сергей Филимонов</g-link>
           </li>
         </ul>
         <ul class="flex items-center">
@@ -13,9 +13,10 @@
           </li> -->
         </ul>
         <div class="flex items-center">
-          <g-link class="button button--xl rounded w-auto mr-3" to="/brif">
-            Go
-          </g-link>
+          <a class="button button--xl rounded w-auto mr-3" href="https://instagram.com/sergeyfilimonov_com" target="_blank">
+            Instagram
+          </a>
+          <ToggleTheme/>
         </div>
       </div>
     </div>

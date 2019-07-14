@@ -1,7 +1,7 @@
 <template>
   <transition>
-    <div class="layout">
-      <Nav/>
+    <div class="layout bg-background-primary" :class="$store.getters.theme">
+      <Navbar/>
       <slot/>
       <Footer/>
     </div>
