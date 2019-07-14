@@ -5,11 +5,11 @@
       <h1 class="text-4xl mb-4" v-html="$page.post.title"/>
       <p class="text-xl mb-4" v-html="$page.post.excerpt"/>
       <div class="markdown" v-html="$page.post.content"/>
-      <vue-disqus
+      <!-- <vue-disqus
         shortname="sergeyfilimonov-com"
         :identifier="$page.post.slug"
         :url="'https://sergeyfilimonov.com/' + $route.path">
-      </vue-disqus>
+      </vue-disqus> -->
     </article>
     <BlogPosts :currentPage="$page.post.slug"/>
   </Layout>
