@@ -1,6 +1,6 @@
 <template>
   <div class="bg-theme-backgroundGray p-6">
-    <div class="font-bold text-xs text-gray-500 mb-2">
+    <div class="font-bold text-xs text-theme-textSecondary mb-2">
       Технологии веб-разработки
     </div>
     <ul>

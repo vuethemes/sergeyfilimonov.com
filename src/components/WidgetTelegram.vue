@@ -1,6 +1,6 @@
 <template>
   <div class="bg-theme-backgroundGray p-6">
-    <div class="font-bold text-xs text-gray-500 mb-2 flex items-center">
+    <div class="font-bold text-xs text-theme-textSecondary mb-2 flex items-center">
       <div class="pulseAnim mr-1"><div/></div>
       Telegram
     </div>

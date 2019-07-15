@@ -35,16 +35,19 @@
   }
 
   pre.shiki {
+    @apply theme-dark;
     @apply bg-theme-background !important;
     @apply border border-theme-borderGray p-6 mb-4 text-sm font-mono overflow-x-auto scrolling-touch;
   }
 
   code.shiki {
+    @apply theme-dark;
     @apply bg-theme-backgroundGray text-theme-text !important;
     @apply border border-theme-borderGray p-4 block mb-4 font-mono text-xs overflow-x-auto scrolling-touch;
   }
 
   .shiki-inline {
+    @apply theme-dark;
     @apply bg-theme-backgroundGray text-theme-text !important;
     @apply border border-theme-borderGray text-base px-2 py-1 rounded;
   }
