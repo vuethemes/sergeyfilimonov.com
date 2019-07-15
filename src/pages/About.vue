@@ -6,10 +6,10 @@
         <div class="max-w-3xl">
           <div class="text-lg lg:text-3xl mb-4">Привет, я Сергей Филимонов.</div>
           <ul>
-            <li>Разиваю студию <a href="https://svoybrend.ru" target="_blank" class="link">«Свой бренд»</a></li>
-            <li>Создаю классные статические <a href="https://svoybrend.ru/svoy/site" target="_blank" class="link">сайты</a> на Gridsome, Vue, GraphQL и headless CMS</li>
+            <li>Разиваю студию <a href="https://svoybrend.ru" rel="nofollow noreferrer noopener" target="_blank" class="link">«Свой бренд»</a></li>
+            <li>Создаю классные статические <a href="https://svoybrend.ru/svoy/site" target="_blank" class="link" rel="nofollow noreferrer noopener">сайты</a> на Gridsome, Vue, GraphQL и headless CMS</li>
             <li>Работал проджект- и продакт-менеджером в Нетологии с самого основания и немного после образования холдинга «Нетология-групп»</li>
-            <li>Соосновал онлайн-школу рисования <a href="https://arttsapko.ru" target="_blank" class="link">arttsapko.ru</a></li>
+            <li>Соосновал онлайн-школу рисования <a href="https://arttsapko.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">arttsapko.ru</a></li>
             <li>Основал два SaaS-сервиса: Qometa.co и Soyuz.chat (оба закрыл, пробую дальше)</li>
             <li>Выступал на ProductSense</li>
           </ul>

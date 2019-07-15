@@ -13,11 +13,11 @@
         <div class="flex items-center mt-2 lg:mt-0">
           <ul class="flex items-center mr-2 hidden lg:block">
             <li class="mr-6" v-for="page in pages">
-              <g-link class="text-base leading-none hover:text-primary" :to="page.to" :class="$route.path == page.to ? 'text-primary' : ''">{{ page.text }}</g-link>
+              <g-link class="text-base leading-none hover:text-primary text-social-youtube" :to="page.to" :class="$route.path == page.to ? 'text-primary' : ''">{{ page.text }}</g-link>
             </li>
           </ul>
           <ul class="flex text-xl lg:text-2xl">
-            <li v-for="item in social" class="mr-2"><a :href="item.link" target="_blank"><i :class="`fab fa-${item.icon} text-${item.color}`"></i></a></li>
+            <li v-for="item in social" class="mr-2"><a :href="item.link" rel="nofollow noreferrer noopener" target="_blank"><i :class="`fab fa-${item.icon} text-${item.color}`"></i></a></li>
           </ul>
           <ToggleTheme class="ml-4"/>
         </div>

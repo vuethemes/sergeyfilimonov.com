@@ -7,7 +7,7 @@ module.exports = {
       xl: '1180px',
     },
     fontFamily: {
-      display: ['GTEestiProDisplay-Thin', 'sans-serif'],
+      display: ['Arial', 'sans-serif'],
       body: ['Arial', 'sans-serif'],
       mono: [
         'SFMono-Regular',
