@@ -16,7 +16,11 @@
               <g-link class="text-base lg:text-lg leading-none hover:text-primary" :to="page.to" :class="$route.path == page.to ? 'text-primary' : ''">{{ page.text }}</g-link>
             </li>
           </ul>
-          <a v-for="item in social" :class="`text-${item.color} text-xl lg:text-2xl mr-1 lg:mr-1`" :href="item.link" target="_blank"><font-awesome :icon="['fab', item.icon]" fixed-width/></a>
+          <a class="text-social-youtube text-xl lg:text-2xl mr-1 lg:mr-1" href="https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber" target="_blank"><font-awesome :icon="['fab', 'youtube']" fixed-width/></a>
+          <a class="text-social-telegram text-xl lg:text-2xl mr-1 lg:mr-1" href="https://tele.click/sfilimonov" target="_blank"><font-awesome :icon="['fab', 'telegram']" fixed-width/></a>
+          <a class="text-pink-500 text-xl lg:text-2xl mr-1 lg:mr-1" href="https://instagram.com/sergeyfilimonov_com" target="_blank"><font-awesome :icon="['fab', 'instagram']" fixed-width/></a>
+          <a class="text-social-facebook text-xl lg:text-2xl mr-1 lg:mr-1" href="https://facebook.com/tunecatcher" target="_blank"><font-awesome :icon="['fab', 'facebook']" fixed-width/></a>
+          <a class="text-social-vk text-xl lg:text-2xl mr-1 lg:mr-1" href="https://vk.com/sfilimonov" target="_blank"><font-awesome :icon="['fab', 'vk']" fixed-width/></a>
           <ToggleTheme class="ml-4"/>
         </div>
       </div>
