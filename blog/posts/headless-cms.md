@@ -1,7 +1,7 @@
 ---
 title: Список всех headless CMS для статичных сайтов
 slug: headless-cms
-date: 2019-03-13 00:00:00 +0000
+date: 2019-03-13 00:00:00
 category: article
 action: Узнать все headless CMS
 excerpt: В этом материале я поставил перед собой задачу собрать все существующие headless CMS * для статичных сайтов.

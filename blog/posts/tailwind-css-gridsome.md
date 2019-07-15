@@ -1,7 +1,7 @@
 ---
 title: How to add Tailwind CSS to Gridsome
 slug: tailwind-css-gridsome
-date: 2019-06-01 00:00:00 +0300
+date: 2019-06-01 00:00:00
 category: article
 action: Get Tailwind CSS
 excerpt: Here you will find instruction on how to add Tailwind CSS to Gridsome.
