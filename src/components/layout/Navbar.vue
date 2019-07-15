@@ -37,7 +37,7 @@ export default {
     return {
       pages: [
         {
-          text: 'Об авторе',
+          text: 'Обо мне',
           to: '/about'
         }
       ],
