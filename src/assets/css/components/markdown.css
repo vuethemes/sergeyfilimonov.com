@@ -14,7 +14,7 @@
   ul {
     @apply mb-3;
     li {
-      @apply list-disc ml-4 mb-1;
+      @apply list-disc ml-5 mb-1;
     }
   }
   table {
@@ -65,7 +65,7 @@
     ul {
       @apply mb-4;
       li {
-        @apply list-disc ml-4 text-lg;
+        @apply list-disc text-lg;
       }
     }
     .shiki-inline {

@@ -11,12 +11,16 @@
             <li>Работал проджект- и продакт-менеджером в Нетологии с самого основания и немного после образования холдинга «Нетология-групп»</li>
             <li>Соосновал онлайн-школу рисования <a href="https://arttsapko.ru" target="_blank" class="link">arttsapko.ru</a></li>
             <li>Основал два SaaS-сервиса: Qometa.co и Soyuz.chat (оба закрыл, пробую дальше)</li>
+            <li>Выступал на ProductSense</li>
           </ul>
         </div>
         <h2>Видео со мной</h2>
         <div class="grid-cols grid-cols--2">
           <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MpaTFNpFzBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fs9jyO7ehQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -30,7 +34,7 @@ export default {
     return {
       meta: {
         title: 'Привет, я Сергей Филимонов',
-        description: 'Автор этого сайта'
+        description: 'Разиваю студию «Свой бренд». Создаю классные статические сайты на Gridsome, Vue, GraphQL и headless CMS. Работал проджект- и продакт-менеджером в Нетологии с самого основания и немного после образования холдинга «Нетология-групп».'
       }
     }
   },
