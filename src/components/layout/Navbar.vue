@@ -3,7 +3,7 @@
     <div class="container">
       <div class="flex items-center justify-between lg:flex-row">
         <div class="flex items-center">
-          <g-link to="/" class="group hover:text-primary mr-6">
+          <g-link to="/" class="group mr-6">
             <div class="text-lg lg:text-2xl font-bold">Сергей Филимонов</div>
             <div class="text-xs">
               О&nbsp;сайтах, продуктивности и&nbsp;всём&nbsp;таком
