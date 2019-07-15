@@ -1,7 +1,7 @@
 <template>
   <nav id="navbar" class="navbar section py-4 bg-white">
     <div class="container">
-      <div class="flex items-center justify-between">
+      <div class="flex items-left lg:items-center justify-between flex-col lg:flex-row">
         <div class="flex items-center">
           <g-link to="/" class="mr-6 hover:text-primary">
             <div class="text-lg lg:text-2xl font-bold">Сергей Филимонов</div>
@@ -10,13 +10,13 @@
             </div>
           </g-link>
         </div>
-        <div class="flex items-center">
-          <ul class="flex items-center mr-2">
-            <li class="mr-6 hidden lg:block" v-for="page in pages">
+        <div class="flex items-center mt-2 lg:mt-0">
+          <ul class="flex items-center mr-2 hidden lg:block">
+            <li class="mr-6" v-for="page in pages">
               <g-link class="text-base lg:text-lg leading-none hover:text-primary" :to="page.to" :class="$route.path == page.to ? 'text-primary' : ''">{{ page.text }}</g-link>
             </li>
           </ul>
-          <a v-for="item in social" :class="`text-${item.color}`" class="text-xl lg:text-2xl mr-1 lg:mr-2" :href="item.link" target="_blank"><font-awesome :icon="['fab', 'youtube']" fixed-width/></a>
+          <a v-for="item in social" :class="`text-${item.color} text-xl lg:text-2xl mr-1 lg:mr-1`" :href="item.link" target="_blank"><font-awesome :icon="['fab', item.icon]" fixed-width/></a>
           <ToggleTheme class="ml-4"/>
         </div>
       </div>
