@@ -32,7 +32,7 @@ import Posts from '@/components/Posts'
 
 export default {
   components: {
-    BlogPosts
+    Posts
   },
   computed: {
     formattedPublishDate() {

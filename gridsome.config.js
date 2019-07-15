@@ -61,7 +61,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-rss',
       options: {
-        contentTypeName: 'BlogPost',
+        contentTypeName: 'Post',
         feedOptions: {
           title: 'Сергей Филимонов о сайтах, продутикности и всём таком',
           feed_url: 'https://sergeyfilimonov.com/feed.xml',
