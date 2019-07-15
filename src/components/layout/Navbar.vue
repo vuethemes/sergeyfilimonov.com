@@ -17,7 +17,7 @@
             </li>
           </ul>
           <ul class="text-xl lg:text-2xl">
-            <li class="mr-1"><a v-for="item in social" :class="`text-${item.color}`" :href="item.link" target="_blank"><font-awesome :icon="['fab', item.icon]" fixed-width/></a></li>
+            
           </ul>
           <ToggleTheme class="ml-4"/>
         </div>
