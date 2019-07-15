@@ -12,28 +12,28 @@
             </div>
             <ul>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Gridsome
+                <img src="/images/stack/gridsome.png" class="w-5 h-5 mr-2">Gridsome
               </li>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Vue
+                <img src="/images/stack/vue.png" class="w-5 h-5 mr-2">Vue
               </li>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>GraphQL
+                <img src="/images/stack/graphql.png" class="w-5 h-5 mr-2">GraphQL
               </li>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Tailwind CSS
+                <img src="/images/stack/tailwind-css.png" class="w-5 h-5 mr-2">Tailwind CSS
               </li>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Figma
+                <img src="/images/stack/figma.png" class="w-5 h-5 mr-2">Figma
               </li>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Now
+                <img src="/images/stack/now.png" class="w-5 h-5 mr-2">Now
               </li>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>WordPress
+                <img src="/images/stack/wordpress.png" class="w-5 h-5 mr-2">WordPress
               </li>
               <li class="flex items-center">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Contentful
+                <img src="/images/stack/contentful.png" class="w-5 h-5 mr-2">Contentful
               </li>
             </ul>
           </div>
@@ -43,16 +43,16 @@
             </div>
             <ul>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>YouTube
+                <div class="w-5 h-5 bg-gray-300 rounded-full mr-2"/>YouTube
               </li>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Instagram
+                <div class="w-5 h-5 bg-gray-300 rounded-full mr-2"/>Instagram
               </li>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Email-маркетинг
+                <div class="w-5 h-5 bg-gray-300 rounded-full mr-2"/>Email-маркетинг
               </li>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Telegram
+                <div class="w-5 h-5 bg-gray-300 rounded-full mr-2"/>Telegram
               </li>
             </ul>
           </div>
@@ -62,10 +62,10 @@
             </div>
             <ul>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Продюсирование
+                <div class="w-5 h-5 bg-gray-300 rounded-full mr-2"/>Продюсирование
               </li>
               <li class="flex items-center mb-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full mr-2"/>Продакт-менеджмент
+                <div class="w-5 h-5 bg-gray-300 rounded-full mr-2"/>Продакт-менеджмент
               </li>
             </ul>
           </div>
@@ -158,25 +158,6 @@ export default {
   props: ['category'],
   components: {
     PostCard
-  },
-  data() {
-    return {
-      currentCategory: 'all'
-    }
-  },
-  computed: {
-    postsFiltered() {
-      if(this.currentCategory != 'all') {
-        return this.$page.posts.edges.filter(edge => edge.node.category == this.currentCategory)
-      } else {
-        return this.$page.posts.edges
-      }
-    }
-  },
-  mounted() {
-    if(this.category) {
-      this.currentCategory = this.category
-    }
   },
   metaInfo: {
     title: 'Сергей Филимонов о сайтах, продуктивности и всём таком',

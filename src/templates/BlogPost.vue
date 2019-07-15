@@ -2,6 +2,9 @@
   <Layout>
     <!-- <vue-scroll-progress-bar height="2px" backgroundColor="#3273dc"/> -->
     <article class="container section max-w-3xl mx-auto mt-0 lg:mt-8 markdown">
+      <div class="mb-4 text-xs lg:text-base">
+        {{ formattedPublishDate }}
+      </div>
       <h1 class="" v-html="$page.post.title"/>
       <div class="text-lg lg:text-2xl mb-4" v-html="$page.post.excerpt"/>
       <div v-html="$page.post.content"/>
@@ -22,16 +25,24 @@ query Post ($path: String!) {
     content
     excerpt
     slug
+    date
   }
 }
 </page-query>
 
 <script>
+import moment from 'moment'
+
 import BlogPosts from '@/components/sections/BlogPosts'
 
 export default {
   components: {
     BlogPosts
+  },
+  computed: {
+    formattedPublishDate() {
+      return moment(this.$page.post.date).format('DD.MM.YYYY');
+    }
   },
   metaInfo() {
     return {

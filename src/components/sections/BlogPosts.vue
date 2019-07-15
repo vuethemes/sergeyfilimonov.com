@@ -16,6 +16,7 @@ query BlogPosts {
         content
         action
         slug
+        date
       }
     }
   }

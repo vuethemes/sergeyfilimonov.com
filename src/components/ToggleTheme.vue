@@ -1,5 +1,5 @@
 <template>
-  <a class="text-2xl" @click.prevent="toggleTheme" v-html="this.$store.getters.theme === 'theme-light' ? '🌇' : '🏙'"/>
+  <a class="text-2xl" @click.prevent="toggleTheme" v-html="this.$store.getters.theme === 'theme-light' ? '☀️' : '🌙'"/>
 </template>
 
 <script>

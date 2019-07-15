@@ -4,21 +4,20 @@
       <div class="flex items-center justify-between">
         <div class="flex items-center">
           <g-link to="/" class="mr-6 hover:text-primary">
-            <div class="text-lg lg:text-2xl">Сергей Филимонов</div>
+            <div class="text-lg lg:text-2xl font-bold">Сергей Филимонов</div>
             <div class="text-xs">
               О&nbsp;сайтах, продутктивности и&nbsp;всём&nbsp;таком
             </div>
           </g-link>
         </div>
-        <ul class="flex items-center">
-          <!-- <li class="mr-6 hidden lg:block" v-for="link in links">
-            <g-link class="text-xl gradientText" :to="link.to" :class="$route.path == link.to ? 'gradientText--active' : ''">{{ link.name }}</g-link>
-          </li> -->
-        </ul>
         <div class="flex items-center">
-          <a class="button button--xl rounded mr-3 bg-social-youtube" href="https://instagram.com/sergeyfilimonov_com" target="_blank"><font-awesome :icon="['fab', 'youtube']" fixed-width class="lg:mr-2"/><span class="hidden lg:inline">YouTube</span></a>
-          <a class="button button--xl rounded bg-social-telegram" href="https://tele.click/sfilimonov" target="_blank"><font-awesome :icon="['fab', 'telegram']" fixed-width class="lg:mr-2"/><span class="hidden lg:inline">Telegram-канал</span></a>
-          <!-- <ToggleTheme/> -->
+          <ul class="flex items-center mr-2">
+            <li class="mr-6 hidden lg:block" v-for="page in pages">
+              <g-link class="text-base lg:text-lg leading-none hover:text-primary" :to="page.to" :class="$route.path == page.to ? 'text-primary' : ''">{{ page.text }}</g-link>
+            </li>
+          </ul>
+          <a v-for="item in social" :class="`text-${item.color}`" class="text-xl lg:text-2xl mr-1 lg:mr-2" :href="item.link" target="_blank"><font-awesome :icon="['fab', item.icon]" fixed-width/></a>
+          <ToggleTheme class="ml-4"/>
         </div>
       </div>
     </div>
@@ -31,6 +30,48 @@ import ToggleTheme from '@/components/ToggleTheme'
 export default {
   components: {
     ToggleTheme
+  },
+  data() {
+    return {
+      pages: [
+        {
+          text: 'Об авторе',
+          to: '/about'
+        }
+      ],
+      social: [
+        {
+          name: 'YouTube',
+          link: 'https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber',
+          icon: 'youtube',
+          color: 'social-youtube'
+        },
+        {
+          name: 'Telegram',
+          link: 'https://tele.click/sfilimonov',
+          icon: 'telegram',
+          color: 'social-telegram'
+        },
+        {
+          name: 'Instagram',
+          link: 'https://instagram.com/sergeyfilimonov_com',
+          icon: 'instagram',
+          color: 'pink-500'
+        },
+        {
+          name: 'Facebook',
+          link: 'https://facebook.com/tunecatcher',
+          icon: 'facebook',
+          color: 'social-facebook'
+        },
+        {
+          name: 'VK',
+          link: 'https://vk.com/sfilimonov',
+          icon: 'vk',
+          color: 'social-vk'
+        }
+      ]
+    }
   }
 }
 </script>
