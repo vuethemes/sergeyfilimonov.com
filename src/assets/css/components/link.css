@@ -1,5 +1,6 @@
 .link {
   @apply inline-block text-primary border-b border-primary;
+  transition: border .2s ease;
   &:hover {
     @apply border-transparent;
   }

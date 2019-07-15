@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgba(10,118,240,1);
+
   --primary-color-ligther: rgba(10,118,240,0.5);
   --secondary-color: #EAB4B2;
   --whatsapp-color: #25d366;
@@ -13,6 +13,7 @@
 }
 
 .theme-light {
+  --primary-color: rgba(10,118,240,1);
   --bg-primary: #fff;
   --bg-gray: #fbfbfb;
   --border-gray: #eaeaea;
@@ -20,6 +21,7 @@
 }
 
 .theme-dark {
+  --primary-color: #5095e2;
   --bg-primary: #1a2138;
   --bg-gray: #343a58;
   --border-gray: #4b4f63;

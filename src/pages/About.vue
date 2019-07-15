@@ -2,7 +2,7 @@
   <Layout>
     <div class="container section pt-4 pb-8">
       <div class="markdown">
-        <img src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="w-40 h-40 rounded-full mb-4 border border-gray-300">
+        <img src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="w-40 h-40 rounded-lg mb-4 border border-theme-borderGray">
         <div class="max-w-4xl">
           <div class="text-lg lg:text-3xl mb-4">Привет, я Сергей Филимонов.</div>
           <ul>
@@ -14,7 +14,6 @@
             <li>Я создал более 20 сайтов для таких компаний, как <a href="https://edmarket.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">EdMarket</a>, <a href="https://hr.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Нетология HR</a>, <a href="https://ms.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Максим Спиридонов</a>.</li>
             <li>Соосновал онлайн-школу рисования <a href="https://arttsapko.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">arttsapko.ru</a>, отвечаю за системность развития и онлайн-платформу для обучения.</li>
             <li>Продюсировал канал на YouTube <a href="https://svoybrend.ru/svoy/youtube" target="_blank" class="link" rel="nofollow noreferrer noopener">Максима Спиридонова</a></li>
-            <li>Основал два SaaS-сервиса: сервис дашбордов Qometa.co и затем чат-бот для сайта Soyuz.chat. Суммарно проекты работали два года, получили сотни пользователей и десятки фанатов, но всё равно не взлетели. Оба проекта закрыл.</li>
           </ul>
         </div>
         <h2>Мои выступления</h2>
@@ -51,12 +50,6 @@
             <div class="mt-4 text-sm">
               Наталия Касаткина, HR Поддержка
             </div>
-          </div>
-          <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lVDFB5vPhUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/9hDydbcZjtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
         <div class="">
