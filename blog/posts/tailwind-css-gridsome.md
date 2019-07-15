@@ -4,7 +4,7 @@ slug: tailwind-css-gridsome
 date: 2019-06-01T00:01:00.196+0300
 category: article
 action: Get Tailwind CSS
-excerpt: Here you will find instruction on how to add Tailwind CSS to Gridsome.
+excerpt: Here you will find an instruction on how to add Tailwind CSS to Gridsome.
 ---
 
 Install a few plugins:
@@ -13,7 +13,7 @@ Install a few plugins:
 yarn add tailwindcss tailwindcss-transitions postcss-import postcss-nested @fullhuman/postcss-purgecss
 ```
 
-Add a code for extracting custom components from Tailwind in the very beginning of `gridsome.config.js`:
+Add some code for extracting custom components from Tailwind in the very beginning of `gridsome.config.js`:
 
 ```js
 class TailwindExtractor {
@@ -77,7 +77,7 @@ Create `main.css` in `src/assets/css`:
 /* end utilities */
 ```
 
-Add the following code to `main.js`:
+Add the following line to `main.js`:
 ```js
 import '~/assets/css/main.css'
 ```
