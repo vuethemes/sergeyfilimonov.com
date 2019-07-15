@@ -13,7 +13,7 @@
         <div class="flex items-center mt-2 lg:mt-0">
           <ul class="flex items-center mr-2 hidden lg:block">
             <li class="mr-6" v-for="page in pages">
-              <g-link class="text-base leading-none hover:text-primary text-social-youtube" :to="page.to" :class="$route.path == page.to ? 'text-primary' : ''">{{ page.text }}</g-link>
+              <g-link class="text-base leading-none hover:text-primary" :to="page.to" :class="$route.path == page.to ? 'text-primary' : ''">{{ page.text }}</g-link>
             </li>
           </ul>
           <ul class="flex text-xl lg:text-2xl">

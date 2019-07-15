@@ -13,6 +13,7 @@
           <span class="link text-black">{{ 'sergeyfilimonov.com' + this.$route.path }}</span>
         </div>
         <g-link class="button button--2xl rounded-full glow mt-8" to="/">Перейти на главную</g-link>
+        <div class="hidden text-social-youtube text-social-telegram text-social-facebook text-social-vk text-pink-500"/>
       </div>
     </div>
   </Layout>
