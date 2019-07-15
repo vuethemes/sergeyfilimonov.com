@@ -7,7 +7,7 @@ a {
 }
 
 h1, h2, h3 {
-  @apply leading-tight;
+  @apply leading-snug;
 }
 
 *:disabled {
