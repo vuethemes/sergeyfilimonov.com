@@ -30,17 +30,17 @@
 
   pre.shiki {
     @apply bg-gray-codeblock !important;
-    @apply border border-gray-300 -mx-6 p-6 mb-4 text-sm font-mono overflow-x-auto scrolling-touch;
+    @apply border border-gray-300 p-6 mb-4 text-sm font-mono overflow-x-auto scrolling-touch;
   }
 
   code.shiki {
     @apply bg-gray-100 text-gray-700 !important;
-    @apply border border-gray-300 p-4 block mb-4 font-mono text-sm overflow-x-auto scrolling-touch;
+    @apply border border-gray-300 p-4 block mb-4 font-mono text-xs overflow-x-auto scrolling-touch;
   }
 
   .shiki-inline {
     @apply bg-gray-100 text-gray-700 !important;
-    @apply border border-gray-300 text-lg px-2 py-1 rounded;
+    @apply border border-gray-300 text-base px-2 py-1 rounded;
   }
 
   mark {
@@ -64,6 +64,10 @@
       li {
         @apply list-disc ml-4 text-lg;
       }
+    }
+    .shiki-inline {
+      @apply bg-gray-100 text-gray-700 !important;
+      @apply border border-gray-300 text-base px-2 py-1 rounded;
     }
     table {
       @apply my-8 text-left w-full;

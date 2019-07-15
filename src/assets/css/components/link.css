@@ -1,0 +1,12 @@
+.link {
+  @apply inline-block text-primary border-b border-primary;
+  &:hover {
+    @apply border-transparent;
+  }
+  &--white {
+    @apply text-white border-white;
+    &:hover {
+      @apply border-transparent;
+    }
+  }
+}

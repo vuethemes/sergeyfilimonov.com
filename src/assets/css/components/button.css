@@ -31,19 +31,6 @@
   }
 }
 
-.link {
-  @apply inline-block text-primary border-b border-primary;;
-  &--underlined {
-    @apply text-black border-b-2 border-dotted border-black;
-    &:hover {
-      @apply border-white;
-    }
-  }
-  &:hover {
-    @apply border-b border-red-100;
-  }
-}
-
 form input[type="submit"] {
   &:hover {
     cursor: pointer;
