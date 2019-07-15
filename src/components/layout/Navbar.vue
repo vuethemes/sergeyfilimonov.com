@@ -6,7 +6,7 @@
           <g-link to="/" class="mr-6 hover:text-primary">
             <div class="text-lg lg:text-2xl">Сергей Филимонов</div>
             <div class="text-xs">
-              О сайтах, продутиктивности и всём таком
+              О&nbsp;сайтах, продутктивности и&nbsp;всём&nbsp;таком
             </div>
           </g-link>
         </div>
