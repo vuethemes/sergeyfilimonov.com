@@ -2,14 +2,14 @@
   <Layout>
     <!-- <vue-scroll-progress-bar height="2px" backgroundColor="#3273dc"/> -->
     <article class="container section max-w-3xl mx-auto mt-0 lg:mt-8 markdown">
-      <div class="mb-4 text-xs lg:text-base" v-html="formattedPublishDate"/>
+      <div class="lg:mb-4 mb-1 text-xs lg:text-base" v-html="formattedPublishDate"/>
       <h1 class="" v-html="$page.post.title"/>
       <div class="text-lg lg:text-2xl mb-4" v-html="$page.post.excerpt"/>
       <div v-html="$page.post.content"/>
       <!-- <vue-disqus class="mt-8" shortname="sergeyfilimonov-com" :identifier="$page.post.slug" :url="'https://sergeyfilimonov.com/' + $route.path">
       </vue-disqus> -->
     </article>
-    <Posts :currentPage="$page.post.slug" class="border-t-2 border-gray-200 pt-8"/>
+    <Posts :currentPage="$page.post.slug" class="border-t-2 border-gray-200 pt-12 pb-8 bg-gray-100 lg:mt-12"/>
   </Layout>
 </template>
 

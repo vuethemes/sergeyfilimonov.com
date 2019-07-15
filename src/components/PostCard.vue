@@ -1,5 +1,5 @@
 <template>
-  <g-link :to="post.path" v-if="post.slug != currentPage" class="block p-6 border-gray-200 border mb-4 hover:shadow-lg">
+  <g-link :to="post.path" v-if="post.slug != currentPage" class="block p-6 border-gray-200 border mb-4 hover:shadow-lg bg-white">
     <div class="mb-2 text-xs">{{ formattedPublishDate }}</div>
     <h3 class="text-2xl mb-2 leading-tight font-bold" v-html="post.title"/>
     <div v-html="post.excerpt"/>

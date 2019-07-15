@@ -1,6 +1,8 @@
 <template>
-  <div id="posts" class="container section max-w-xl mx-auto mt-8">
-    <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="currentPage"/>
+  <div id="posts" class="section mt-8">
+    <div class="container">
+      <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="currentPage" class="max-w-xl mx-auto"/>
+    </div>
   </div>
 </template>
 
