@@ -19,12 +19,6 @@ module.exports = {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
-      autolinkHeadings: {
-        content: {
-          type: 'text',
-          value: '#'
-        }
-      },
       plugins: [
         ['gridsome-plugin-remark-shiki', {
           theme: 'min-light'
