@@ -9,7 +9,7 @@ class TailwindExtractor {
 module.exports = {
   siteName: process.env.sitetName,
   siteUrl: process.env.siteUrl,
-  titleTemplate: '%s - ' + process.env.siteName,
+  titleTemplate: '%s',
   siteName: '',
   siteUrl: process.env.siteUrl,
   siteDescription: process.env.siteDescription,

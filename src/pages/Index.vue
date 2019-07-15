@@ -179,7 +179,7 @@ export default {
     }
   },
   metaInfo: {
-    title: 'Блог',
+    title: 'Сергей Филимонов о сайтах, продуктивности и всём таком',
     meta: [
       { vmid: 'description', name: 'description', content: 'Среди моих работ: edmarket.ru, hr.netology.ru, spiridonov.ru, arttsapko.ru и др.' }
     ]
