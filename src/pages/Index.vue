@@ -18,8 +18,8 @@
 </template>
 
 <page-query>
-query BlogPosts {
-  posts: allBlogPost {
+query Posts {
+  posts: allPost {
     edges {
       node {
         id

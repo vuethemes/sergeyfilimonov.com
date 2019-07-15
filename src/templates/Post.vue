@@ -6,8 +6,8 @@
       <h1 class="" v-html="$page.post.title"/>
       <div class="text-lg lg:text-2xl mb-4" v-html="$page.post.excerpt"/>
       <div v-html="$page.post.content"/>
-      <vue-disqus class="mt-8" shortname="sergeyfilimonov-com" :identifier="$page.post.slug" :url="'https://sergeyfilimonov.com/' + $route.path">
-      </vue-disqus>
+      <!-- <vue-disqus class="mt-8" shortname="sergeyfilimonov-com" :identifier="$page.post.slug" :url="'https://sergeyfilimonov.com/' + $route.path">
+      </vue-disqus> -->
     </article>
     <BlogPosts :currentPage="$page.post.slug" class="border-t-2 border-gray-200 pt-8"/>
   </Layout>
@@ -15,7 +15,7 @@
 
 <page-query>
 query Post ($path: String!) {
-  post: blogPost (path: $path) {
+  post: post (path: $path) {
     title
     content
     excerpt
@@ -28,7 +28,7 @@ query Post ($path: String!) {
 <script>
 import moment from 'moment'
 
-import BlogPosts from '@/components/sections/BlogPosts'
+import Posts from '@/components/Posts'
 
 export default {
   components: {
