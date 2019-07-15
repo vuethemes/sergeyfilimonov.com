@@ -17,10 +17,16 @@ export default {
     Navbar,
     Footer,
   },
-  data() {
-    return {
-      currentLang: 'ru',
-      canonical: 'https://sergeyfilimonov.com' + this.$route.path
+  computed: {
+    canonical() {
+      const SITE_URL = 'https://sergeyfilimonov.com'
+      let canonical
+      if (this.$route.path === '/') {
+        canonical = SITE_URL
+      } else {
+        canonical = SITE_URL + '/' + this.$route.path
+      }
+      return canonical
     }
   },
   metaInfo() {

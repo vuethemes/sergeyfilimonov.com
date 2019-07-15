@@ -16,8 +16,8 @@
               <g-link class="text-base lg:text-lg leading-none hover:text-primary" :to="page.to" :class="$route.path == page.to ? 'text-primary' : ''">{{ page.text }}</g-link>
             </li>
           </ul>
-          <ul class="text-xl lg:text-2xl">
-            
+          <ul class="flex text-xl lg:text-2xl">
+            <li v-for="item in social" class="mr-1"><a :class="`text-${item.color}`" :href="item.link" target="_blank"><font-awesome :icon="['fab', item.icon]" fixed-width/></a></li>
           </ul>
           <ToggleTheme class="ml-4"/>
         </div>
