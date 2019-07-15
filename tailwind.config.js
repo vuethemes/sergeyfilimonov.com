@@ -46,6 +46,7 @@ module.exports = {
           text: 'var(--text-color-primary)',
           background: 'var(--bg-primary)',
           backgroundGray: 'var(--bg-gray)',
+          borderGray: 'var(--border-gray)',
         },
         primary: {
           default: 'var(--primary-color)',

@@ -21,7 +21,7 @@ module.exports = {
       anchorClassName: 'icon icon-link',
       plugins: [
         ['gridsome-plugin-remark-shiki', {
-          theme: 'min-light'
+          theme: 'min-dark'
         }]
       ]
     }

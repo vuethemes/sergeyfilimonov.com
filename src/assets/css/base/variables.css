@@ -15,11 +15,13 @@
 .theme-light {
   --bg-primary: #fff;
   --bg-gray: #fbfbfb;
+  --border-gray: #eaeaea;
   --text-color-primary: #000;
 }
 
 .theme-dark {
   --bg-primary: #1a2138;
   --bg-gray: #343a58;
+  --border-gray: #4b4f63;
   --text-color-primary: #fff;
 }
