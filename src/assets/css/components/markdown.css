@@ -9,7 +9,10 @@
     @apply text-xl my-4 leading-tight font-bold;
   }
   p {
-    @apply mb-3;
+    @apply mb-5;
+  }
+  a {
+    @apply link;
   }
   ul {
     @apply mb-3;
@@ -60,7 +63,7 @@
       @apply text-3xl my-6;
     }
     p {
-      @apply mb-4 text-lg;
+      @apply text-lg;
     }
     ul {
       @apply mb-4;
