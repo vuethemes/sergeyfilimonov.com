@@ -11,7 +11,7 @@
   &--6 { grid-template-columns: repeat(1, 1fr); }
   &--7 { grid-template-columns: repeat(1, 1fr); }
   &--8 { grid-template-columns: repeat(1, 1fr); }
-  &--2-1-1 { grid-template-columns: 2fr 1fr 1fr; }
+  &--2-1-1 { grid-template-columns: repeat(1, 1fr); }
 }
 
 @screen lg {
@@ -20,12 +20,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: calc(var(--space));
     &--gap-2 { grid-gap: calc( var(--space) * 2); }
-    &--2 {
-      grid-template-columns: repeat(2, 1fr);
-      &--fr-4-1 {
-        grid-template-columns: 1fr;
-      }
-    }
+    &--2 { grid-template-columns: repeat(2, 1fr); }
     &--3 { grid-template-columns: repeat(3, 1fr); }
     &--4 { grid-template-columns: repeat(4, 1fr); }
     &--5 { grid-template-columns: repeat(5, 1fr); }

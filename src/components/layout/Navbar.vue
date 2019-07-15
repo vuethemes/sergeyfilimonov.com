@@ -17,7 +17,7 @@
         </ul>
         <div class="flex items-center">
           <a class="button button--xl rounded mr-3 bg-social-youtube" href="https://instagram.com/sergeyfilimonov_com" target="_blank"><font-awesome :icon="['fab', 'youtube']" fixed-width class="mr-2"/> YouTube</a>
-          <a class="button button--xl rounded bg-social-telegram" href="https://tele.click/sfilimonov" target="_blank"><font-awesome :icon="['fab', 'telegram']" fixed-width class="mr-2"/> Telegram-канал</a>
+          <a class="button button--xl rounded bg-social-telegram hidden lg:block" href="https://tele.click/sfilimonov" target="_blank"><font-awesome :icon="['fab', 'telegram']" fixed-width class="mr-2"/> Telegram-канал</a>
           <!-- <ToggleTheme/> -->
         </div>
       </div>
