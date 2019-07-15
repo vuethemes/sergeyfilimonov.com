@@ -15,11 +15,12 @@
             <li class="lg:mr-6" v-for="page in pages">
               <g-link class="text-base leading-none hover:text-primary" :to="page.to" :class="$route.path == page.to ? 'text-primary' : ''">{{ page.text }}</g-link>
             </li>
+            <li class="lg:hidden block text-xl ml-2"><ToggleTheme/></li>
           </ul>
           <ul class="flex text-xl lg:text-xl mt-4 lg:mt-0">
             <li v-for="item in social" class="mr-2"><a :href="item.link" rel="nofollow noreferrer noopener" target="_blank"><i :class="`fab fa-${item.icon} text-theme-text hover:text-${item.color}`"></i></a></li>
           </ul>
-          <ToggleTheme class="ml-4 hidden lg:block"/>
+          <ToggleTheme class="ml-4 hidden lg:block text-2xl hover:bg-theme-backgroundGray p-2 rounded-full"/>
         </div>
       </div>
     </div>
