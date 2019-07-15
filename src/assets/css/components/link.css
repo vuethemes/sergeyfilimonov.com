@@ -9,4 +9,10 @@
       @apply border-transparent;
     }
   }
+  &--black {
+    @apply text-black border-black;
+    &:hover {
+      @apply border-transparent;
+    }
+  }
 }

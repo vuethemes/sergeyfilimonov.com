@@ -1,6 +1,6 @@
 <template>
   <transition>
-    <div class="layout bg-background-primary" :class="$store.getters.theme">
+    <div class="layout bg-theme-background text-theme-text" :class="$store.getters.theme">
       <Navbar/>
       <slot/>
       <Footer/>

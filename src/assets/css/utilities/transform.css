@@ -1,0 +1,9 @@
+.transform {
+  transition: box-shadow .2s ease;
+  &--move-top {
+    transition: transform .2s ease;
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+}

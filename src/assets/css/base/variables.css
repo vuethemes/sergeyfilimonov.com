@@ -13,9 +13,13 @@
 }
 
 .theme-light {
-  --bg-background-primary: #fff;
+  --bg-primary: #fff;
+  --bg-gray: #fbfbfb;
+  --text-color-primary: #000;
 }
 
 .theme-dark {
-  --bg-background-primary: #333;
+  --bg-primary: #1a2138;
+  --bg-gray: #343a58;
+  --text-color-primary: #fff;
 }

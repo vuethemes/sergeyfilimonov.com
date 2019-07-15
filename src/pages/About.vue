@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <div class="container section py-4">
+    <div class="container section pt-4 pb-8">
       <div class="markdown">
-        <img src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="w-32 h-32 rounded-full mb-4 border border-gray-300">
+        <img src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="w-40 h-40 rounded-full mb-4 border border-gray-300">
         <div class="max-w-3xl">
           <div class="text-lg lg:text-3xl mb-4">Привет, я Сергей Филимонов.</div>
           <ul>

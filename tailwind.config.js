@@ -42,7 +42,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        text: 'var(--text-color)',
+        theme: {
+          text: 'var(--text-color-primary)',
+          background: 'var(--bg-primary)',
+          backgroundGray: 'var(--bg-gray)',
+        },
         primary: {
           default: 'var(--primary-color)',
           lighter: 'var(--primary-color-ligther)',
@@ -50,9 +54,6 @@ module.exports = {
         secondary: {
           lighter: '#b3bcf5',
           default: '#5c6ac4',
-        },
-        background: {
-          primary: 'var(--bg-background-primary)'
         },
         social: {
           youtube: 'var(--youtube-color)',
