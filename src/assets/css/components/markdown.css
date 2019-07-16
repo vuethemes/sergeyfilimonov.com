@@ -10,6 +10,9 @@
   }
   p {
     @apply mb-5;
+    &:last-child {
+      @apply mb-0;
+    }
   }
   a {
     @apply link;

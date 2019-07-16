@@ -9,7 +9,7 @@
       <!-- <vue-disqus class="mt-8" shortname="sergeyfilimonov-com" :identifier="$page.post.slug" :url="'https://sergeyfilimonov.com/' + $route.path">
       </vue-disqus> -->
     </article>
-    <Posts :currentPage="$page.post.slug" class="border-t-2 border-theme-backgroundGray pt-12 lg:mt-12"/>
+    <Posts :currentPage="$page.post.slug" class="border-t-2 border-theme-backgroundGray pt-12 mt-6 lg:mt-12"/>
   </Layout>
 </template>
 
