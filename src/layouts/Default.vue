@@ -1,13 +1,11 @@
 <template>
-  <transition>
-    <div class="layout bg-theme-background text-theme-text" :class="$store.getters.theme">
-      <Navbar/>
-      <div class="pb-8">
-        <slot/>
-      </div>
-      <Footer/>
+  <div class="layout bg-theme-background text-theme-text" :class="$store.getters.theme">
+    <Navbar/>
+    <div class="pb-8">
+      <slot/>
     </div>
-  </transition>
+    <Footer/>
+  </div>
 </template>
 
 <script>

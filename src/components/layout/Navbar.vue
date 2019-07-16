@@ -15,10 +15,10 @@
             <li class="lg:mr-6" v-for="page in pages">
               <g-link :to="page.to" :class="['text-base leading-none hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]">{{ page.text }}</g-link>
             </li>
-            <li class="lg:hidden block text-xl ml-2"><ToggleTheme/></li>
+            <li class="lg:hidden block text-xl ml-2" style="margin-right: -2px;"><ToggleTheme/></li>
           </ul>
           <Social class="text-xl lg:text-xl mt-4 lg:mt-0"/>
-          <ToggleTheme class="ml-4 hidden lg:block text-2xl hover:bg-theme-backgroundGray p-2 rounded-full"/>
+          <ToggleTheme class="ml-4 hidden lg:block text-2xl hover:bg-theme-backgroundGray lg:p-2 rounded-full lg:-mr-2"/>
         </div>
       </div>
     </div>
