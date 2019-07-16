@@ -13,13 +13,11 @@
         <div class="flex items-end lg:items-center lg:mt-0 flex-col lg:flex-row leading-none -mb-1 lg:mb-0">
           <ul class="flex items-center mr-2">
             <li class="lg:mr-6" v-for="page in pages">
-              <g-link class="text-base leading-none hover:text-primary" :to="page.to" :class="$route.path == page.to ? 'text-primary' : ''">{{ page.text }}</g-link>
+              <g-link :to="page.to" :class="['text-base leading-none hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]">{{ page.text }}</g-link>
             </li>
             <li class="lg:hidden block text-xl ml-2"><ToggleTheme/></li>
           </ul>
-          <ul class="flex text-xl lg:text-xl mt-4 lg:mt-0">
-            <li v-for="item in social" class="mr-2"><a :href="item.link" rel="nofollow noreferrer noopener" target="_blank"><i :class="`fab fa-${item.icon} text-theme-text hover:text-${item.color}`"></i></a></li>
-          </ul>
+          <Social class="text-xl lg:text-xl mt-4 lg:mt-0"/>
           <ToggleTheme class="ml-4 hidden lg:block text-2xl hover:bg-theme-backgroundGray p-2 rounded-full"/>
         </div>
       </div>
@@ -29,10 +27,12 @@
 
 <script>
 import ToggleTheme from '@/components/ToggleTheme'
+import Social from '@/components/Social'
 
 export default {
   components: {
-    ToggleTheme
+    ToggleTheme,
+    Social
   },
   data() {
     return {
@@ -40,38 +40,11 @@ export default {
         {
           text: 'Обо мне',
           to: '/about'
-        }
-      ],
-      social: [
-        {
-          name: 'YouTube',
-          link: 'https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber',
-          icon: 'youtube',
-          color: 'social-youtube'
         },
         {
-          name: 'Telegram',
-          link: 'https://tele.click/sfilimonov',
-          icon: 'telegram',
-          color: 'social-telegram'
-        },
-        {
-          name: 'Instagram',
-          link: 'https://instagram.com/sergeyfilimonov_com',
-          icon: 'instagram',
-          color: 'pink-500'
-        },
-        {
-          name: 'Facebook',
-          link: 'https://facebook.com/tunecatcher',
-          icon: 'facebook',
-          color: 'social-facebook'
-        },
-        {
-          name: 'VK',
-          link: 'https://vk.com/sfilimonov',
-          icon: 'vk',
-          color: 'social-vk'
+          text: 'Все посты',
+          to: '/posts',
+          mobileHidden: true
         }
       ]
     }

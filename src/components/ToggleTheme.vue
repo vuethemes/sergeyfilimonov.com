@@ -1,7 +1,7 @@
 <template>
   <a class="" @click.prevent="toggleTheme">
-    <i v-if="this.$store.getters.theme == 'theme-light'" class="far fa-sun"></i>
-    <i v-else class="far fa-moon"></i>
+    <i v-if="this.$store.getters.theme == 'theme-light'" class="far fa-moon"></i>
+    <i v-else class="far fa-sun"></i>
   </a>
 </template>
 

@@ -1,0 +1,40 @@
+<template>
+  <ul class="flex">
+    <li v-for="item in social" class="mr-2"><a :href="item.link" rel="nofollow noreferrer noopener" target="_blank"><i :class="`fab fa-${item.icon} text-theme-text hover:text-${item.color}`"></i></a></li>
+  </ul>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      social: [
+        {
+          name: 'YouTube',
+          link: 'https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber',
+          icon: 'youtube',
+          color: 'social-youtube'
+        },
+        {
+          name: 'Telegram',
+          link: 'https://tele.click/sfilimonov',
+          icon: 'telegram',
+          color: 'social-telegram'
+        },
+        {
+          name: 'Instagram',
+          link: 'https://instagram.com/sergeyfilimonov_com',
+          icon: 'instagram',
+          color: 'pink-500'
+        },
+        {
+          name: 'Facebook',
+          link: 'https://facebook.com/tunecatcher',
+          icon: 'facebook',
+          color: 'social-facebook'
+        },
+      ]
+    }
+  }
+}
+</script>

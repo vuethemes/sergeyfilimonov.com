@@ -15,7 +15,7 @@
     @apply link;
   }
   ul {
-    @apply mb-3;
+    @apply mb-5;
     li {
       @apply list-disc ml-5 mb-1;
     }
@@ -43,7 +43,7 @@
   code.shiki {
     @apply theme-dark;
     @apply bg-theme-backgroundGray text-theme-text !important;
-    @apply border border-theme-borderGray p-4 block mb-4 font-mono text-xs overflow-x-auto scrolling-touch;
+    @apply border border-theme-borderGray p-4 block mb-4 font-mono text-base overflow-x-auto scrolling-touch;
   }
 
   .shiki-inline {
@@ -69,14 +69,13 @@
       @apply text-lg;
     }
     ul {
-      @apply mb-4;
       li {
         @apply list-disc text-lg;
       }
     }
     .shiki-inline {
       @apply bg-theme-backgroundGray text-theme-text !important;
-      @apply border border-theme-borderGray text-base px-2 py-1 rounded;
+      @apply border border-theme-borderGray text-sm px-2 py-1 rounded;
     }
     table {
       @apply my-8 text-left w-full;

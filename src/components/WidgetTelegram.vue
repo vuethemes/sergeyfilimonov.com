@@ -12,7 +12,7 @@
         {{ post.date }}
       </div>
     </div>
-    <a href="https://tele.click/sfilimonov" rel="nofollow noreferrer noopener" class="link text-social-telegram border-social-telegram">Все посты в Telegram</a>
+    <a href="https://tele.click/sfilimonov" rel="nofollow noreferrer noopener" class="link text-social-telegram border-social-telegram" target="_blank">Все посты в Telegram</a>
   </div>
 </template>
 

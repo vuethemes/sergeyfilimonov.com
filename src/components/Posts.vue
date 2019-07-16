@@ -1,7 +1,10 @@
 <template>
-  <div id="posts" class="section mt-8">
+  <div id="posts" class="section">
     <div class="container">
-      <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="currentPage" class="max-w-xl mx-auto"/>
+      <div class="max-w-xl mx-auto">
+        <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="currentPage"/>
+        <g-link to="/posts" class="link mt-2">Все посты</g-link>
+      </div>
     </div>
   </div>
 </template>

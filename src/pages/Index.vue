@@ -4,13 +4,17 @@
       <div class="grid-cols grid-cols--2-1-1">
         <div class="">
           <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" currentPage="index"/>
+          <g-link to="/posts" class="link mt-2">Все посты</g-link>
         </div>
         <div class="">
           <WidgetStack/>
+          <WidgetMarketing/>
+          <WidgetManagement/>
           <WidgetSvoybrend/>
         </div>
         <div class="">
           <WidgetTelegram/>
+          <WidgetLessons/>
         </div>
       </div>
     </div>
@@ -41,13 +45,19 @@ import PostCard from '@/components/PostCard'
 import WidgetStack from '@/components/WidgetStack'
 import WidgetSvoybrend from '@/components/WidgetSvoybrend'
 import WidgetTelegram from '@/components/WidgetTelegram'
+import WidgetMarketing from '@/components/WidgetMarketing'
+import WidgetManagement from '@/components/WidgetManagement'
+import WidgetLessons from '@/components/WidgetLessons'
 
 export default {
   components: {
     PostCard,
     WidgetStack,
     WidgetSvoybrend,
-    WidgetTelegram
+    WidgetTelegram,
+    WidgetMarketing,
+    WidgetManagement,
+    WidgetLessons
   },
   data() {
     return {
