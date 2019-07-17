@@ -77,7 +77,7 @@
                 <span class="opacity-50">»,</span>
               </div>
               <div class="mt-4 text-sm">
-                <span class="opacity-50">—</span> <a href="https://www.instagram.com/linoroy/" rel="nofollow noreferrer noopener" target="_blank" class="link">Алина Роенко</a>, иллюстратор
+                <span class="opacity-50 mr-1">—</span><a href="https://www.instagram.com/linoroy/" rel="nofollow noreferrer noopener" target="_blank" class="link">Алина Роенко</a>, иллюстратор
               </div>
             </div>
             <!-- <div class="p-6 bg-theme-backgroundGray">
