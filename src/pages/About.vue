@@ -11,7 +11,7 @@
           </ul>
           <h2>Мои проекты</h2>
           <ul>
-            <li>Я создал более 20 сайтов для таких компаний, как <a href="https://edmarket.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">EdMarket</a>, <a href="https://hr.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Нетология HR</a>, <a href="https://ms.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Максим Спиридонов</a>.</li>
+            <li>Я создал более 20 сайтов, в том числе для <a href="https://edmarket.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">EdMarket</a>, <a href="https://hr.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Нетология HR</a>, <a href="https://ms.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Максим Спиридонов</a>.</li>
             <li>Соосновал онлайн-школу рисования <a href="https://arttsapko.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">arttsapko.ru</a>, отвечаю за системность развития и онлайн-платформу для обучения.</li>
             <li>Продюсировал канал на YouTube <a href="https://svoybrend.ru/svoy/youtube" target="_blank" class="link" rel="nofollow noreferrer noopener">Максима Спиридонова</a></li>
           </ul>
@@ -33,7 +33,7 @@
               Спасибо тебе за участие! Хочу сказать, что получился очень крутой продукт, много хороших отзывов и суперконверсия: 25% конверсия, о которой ты сказал (перед запуском проекта — прим.), подтвердилась 👍 Правда, у нас суперцелевой трафик, который тоже влияет. А так — проект, которым можно гордиться. Выношу тебе официальную благодарность от лица компании! 🏆<span class="opacity-50">»,</span>
             </div>
             <div class="mt-4 text-sm">
-              <span class="opacity-50">—</span> Юлия Спиридонова-Микеда, Нетология-групп
+              <span class="opacity-50">—</span> Юлия Спиридонова-Микеда, <a href="https://netology-group.ru" rel="nofollow noreferrer noopener" target="_blank" class="link">Нетология-групп</a>
             </div>
           </div>
           <div class="p-6 bg-theme-backgroundGray">
@@ -43,7 +43,7 @@
               <span class="opacity-50">»,</span>
             </div>
             <div class="mt-4 text-sm">
-              <span class="opacity-50">—</span> Антон Рудой, Сертраст
+              <span class="opacity-50">—</span> Антон Рудой, <a href="https://sertrust.ru" rel="nofollow noreferrer noopener" target="_blank" class="link">Сертраст</a>
             </div>
           </div>
           <div class="p-6 bg-theme-backgroundGray">
@@ -53,12 +53,12 @@
               <span class="opacity-50">»,</span>
             </div>
             <div class="mt-4 text-sm">
-              <span class="opacity-50">—</span> Наталия Касаткина, HR Поддержка
+              <span class="opacity-50">—</span> Наталия Касаткина, <a href="https://hrpodderzhka.ru/" rel="nofollow noreferrer noopener" target="_blank" class="link">HR Поддержка</a>
             </div>
           </div>
         </div>
         <div class="">
-          <h2>Отзывы сотрудников</h2>
+          <h2>Отзывы сотрудников, коллег, подрядчиков</h2>
           <div class="grid-cols grid-cols--2">
             <div class="p-6 bg-theme-backgroundGray">
               <div class="relative">
