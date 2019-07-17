@@ -67,7 +67,7 @@
                 <span class="opacity-50">»,</span>
               </div>
               <div class="mt-4 text-sm">
-                <span class="opacity-50">—</span> Алексей Сергиенко, TeamLead KPD Media
+                <span class="opacity-50">—</span> Алексей Сергиенко, TeamLead <a href="http://kpdmedia.com/" rel="nofollow noreferrer noopener" target="_blank" class="link">KPD Media</a>
               </div>
             </div>
             <div class="p-6 bg-theme-backgroundGray">
