@@ -25,3 +25,4 @@ excerpt: В этом материале я поставил перед собо�
 - [Strapi](https://strapi.io/)
 - [Scrivito](https://www.scrivito.com/)
 - [Appernetic](https://appernetic.io/)
+- [Cockpit CMS](https://getcockpit.com/)
