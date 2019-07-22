@@ -5,10 +5,10 @@
     </div>
     <ul>
       <li class="flex items-center mb-2">
-        <div class="w-5 h-5 bg-theme-background rounded-full mr-2"/>Продюсирование
+        <div class="w-5 h-5 rounded-full mr-2 flex items-center justify-center leading-none"><i class="fa fa-tasks"></i></div>Продакт-менеджмент
       </li>
       <li class="flex items-center mb-2">
-        <div class="w-5 h-5 bg-theme-background rounded-full mr-2"/>Продакт-менеджмент
+        <div class="w-5 h-5 rounded-full mr-2 flex items-center justify-center leading-none"><i class="fab fa-product-hunt"></i></div>Продюсирование
       </li>
     </ul>
   </div>
