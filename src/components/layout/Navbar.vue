@@ -15,7 +15,7 @@
             <li class="lg:mr-6" v-for="page in pages">
               <g-link :to="page.to" :class="['text-base leading-none hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]">{{ page.text }}</g-link>
             </li>
-            <li class="lg:mr-6"><a href="https://svoybrend.ru" target="_blank" class="hover:text-primary"><span class="mr-2">Услуги</span><i class="fa fa-external-link-alt text-xs relative" style="top: -2px;"></i></a></li>
+            <li class="lg:mr-6 hidden lg:block"><a href="https://svoybrend.ru" target="_blank" class="hover:text-primary"><span class="mr-2">Услуги</span><i class="fa fa-external-link-alt text-xs relative" style="top: -2px;"></i></a></li>
             <li class="lg:hidden block text-xl ml-2" style="margin-right: -1px;"><ToggleTheme/></li>
           </ul>
           <Social class="text-xl lg:text-xl mt-4 lg:mt-0"/>
