@@ -6,8 +6,7 @@
         <div class="max-w-4xl">
           <div class="text-lg lg:text-3xl mb-4">Привет, я Сергей Филимонов.</div>
           <ul>
-            <li>Помогаю современно и системно упаковывать вас и ваши продукты в студии <a href="https://svoybrend.ru" rel="nofollow noreferrer noopener" target="_blank" class="link">«Свой бренд»</a>.</li>
-            <li>Создаю удобные и стильные <a href="https://svoybrend.ru/svoy/site" target="_blank" class="link" rel="nofollow noreferrer noopener">сайты</a>, используя современные технологии вроде статических фреймворков, чат-ботов, авторассылок, использую авторские иллюстрации, профессиональные фото для создания уникальности сайтов.</li>
+            <li>Создаю удобные и стильные <g-link to="/services/site" class="link" rel="nofollow noreferrer noopener">сайты</g-link>, используя современные технологии вроде статических фреймворков, чат-ботов, авторассылок, использую авторские иллюстрации, профессиональные фото для создания уникальности сайтов.</li>
           </ul>
           <h2>Мои проекты</h2>
           <ul>
