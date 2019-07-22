@@ -1,5 +1,5 @@
 <template>
-  <div class="py-1 lg:py-4 text-xs bg-theme-backgroundGray border-t border-b border-theme-borderGray">
+  <div class="pb-2 lg:py-4 text-xs bg-theme-backgroundGray border-t border-b border-theme-borderGray">
     <div class="container section flex items-center lg:justify-between flex-wrap leading-none">
       <ul class="flex flex-wrap items-center lg:relative" style="top: 1px;">
         <li class="mr-6 mt-3 lg:mt-0"><a href="#"><i class="fa fa-bell mr-2"></i>Push-уведомления</a></li>

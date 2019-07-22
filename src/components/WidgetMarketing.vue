@@ -11,10 +11,10 @@
         <div class="w-5 h-5 rounded-full mr-2 flex items-center justify-center leading-none"><i class="fab fa-instagram text-pink-500"></i></div>Instagram
       </li>
       <li class="flex items-center mb-2">
-        <div class="w-5 h-5 rounded-full mr-2 flex items-center justify-center leading-none"><i class="fa fa-envelope"></i></div>Email-маркетинг
+        <div class="w-5 h-5 rounded-full mr-2 flex items-center justify-center leading-none"><i class="fab fa-telegram text-social-telegram"></i></div>Telegram
       </li>
       <li class="flex items-center mb-2">
-        <div class="w-5 h-5 rounded-full mr-2 flex items-center justify-center leading-none"><i class="fab fa-telegram text-social-telegram"></i></div>Telegram
+        <div class="w-5 h-5 rounded-full mr-2 flex items-center justify-center leading-none"><i class="fa fa-envelope"></i></div>Email-маркетинг
       </li>
     </ul>
   </div>
