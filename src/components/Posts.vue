@@ -22,6 +22,7 @@ query Posts {
         action
         slug
         date
+        tags
       }
     }
   }

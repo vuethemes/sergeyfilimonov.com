@@ -34,6 +34,7 @@ query Posts {
         content
         category
         date
+        tags
       }
     }
   }
