@@ -1,11 +1,11 @@
-<template lang="html">
-  <div id="faq" class="container section mt-16">
+<template>
+  <div id="faq" class="container section">
     <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
       FAQ
     </h2>
     <div class="grid-cols">
       <div class="p-6 bg-theme-backgroundGray rounded" v-for="item in faq">
-        <div class="text-xl mb-4">
+        <div class="text-xl mb-4 font-bold">
           {{ item.q }}
         </div>
         <div class="">

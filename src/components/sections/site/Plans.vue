@@ -1,18 +1,18 @@
 <template lang="html">
-  <div id="plans" class="container section mt-16">
+  <div id="plans" class="container section">
     <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
       Тарифы
     </h2>
     <div class="grid-cols">
       <div class="p-6 bg-theme-backgroundGray" v-for="plan in plans">
         <img :src="`/icons/${plan.icon}.svg`" alt="" class="w-24">
-        <div class="mt-4 text-2xl lg:text-3xl">
+        <div class="mt-4 text-2xl lg:text-3xl font-bold">
           {{ plan.name }}
         </div>
-        <ul class="text-lg mt-6">
+        <ul class="mt-4">
           <li v-for="feature in plan.features" :class="!feature.active ? 'text-gray-300' : ''">– {{ feature.name }}</li>
         </ul>
-        <div class="mt-6 text-2xl lg:text-3xl">
+        <div class="mt-4 text-2xl lg:text-3xl">
           {{ plan.price }}
         </div>
         <a href="#" v-scroll-to="'#contacts'" class="button button--2xl rounded mt-6 w-full">Обсудить</a>

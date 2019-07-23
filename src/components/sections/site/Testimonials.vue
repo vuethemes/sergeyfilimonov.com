@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="testimonials" class="container section mt-16">
+  <div id="testimonials" class="container section">
     <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
       Отзывы
     </h2>

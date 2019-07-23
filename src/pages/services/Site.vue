@@ -19,10 +19,10 @@
     </div>
     <Contacts class="lg:my-8"/>
     <Showcase/>
-    <Plans/>
-    <Testimonials/>
-    <Stack/>
-    <FAQ/>
+    <Plans class="lg:mt-12"/>
+    <Testimonials class="lg:mt-12"/>
+    <Stack class="lg:mt-12"/>
+    <FAQ class="lg:mt-12"/>
     <Contacts id="contacts" class="mt-8"/>
   </Layout>
 </template>
