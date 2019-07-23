@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <Contacts class="my-6 lg:mt-2"/>
+    <Contacts class="my-6 lg:mt-2 lg:mb-12"/>
     <Showcase/>
     <Plans class="lg:mt-12"/>
     <div id="reviews" class="lg:mt-12 section container">
