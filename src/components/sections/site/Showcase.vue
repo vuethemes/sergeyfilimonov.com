@@ -4,7 +4,7 @@
       Работы
     </h2>
     <div class="grid-cols grid-cols--3">
-      <a class="bg-theme-backgroundGray rounded overflow-hidden hover:shadow-lg transform--move-top transition-all" v-for="item in showcase" :href="item.website.url">
+      <a class="bg-theme-backgroundGray overflow-hidden hover:shadow-lg transform--move-top transition-all" v-for="item in showcase" :href="item.website.url">
         <div class="bg-gray-200 h-48 bg-cover" :style="`background-image: url(/images/showcase/websites/${item.image}.jpg);`"/>
         <div class="p-4 lg:p-6">
           <div class="text-xl lg:text-xl font-bold mb-1">

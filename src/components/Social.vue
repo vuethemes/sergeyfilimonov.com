@@ -33,6 +33,12 @@ export default {
           icon: 'facebook',
           color: 'social-facebook'
         },
+        {
+          name: 'WhatsApp',
+          link: 'https://api.whatsapp.com/send?phone=79261118328',
+          icon: 'whatsapp',
+          color: 'social-whatsapp'
+        },
       ]
     }
   }

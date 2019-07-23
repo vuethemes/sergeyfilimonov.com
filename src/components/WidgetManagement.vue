@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-theme-backgroundGray p-6 mt-5">
+  <div class="bg-theme-backgroundGray p-4 lg:p-6 mt-5">
     <div class="font-bold text-xs text-theme-textSecondary mb-2">
       Технологии управления
     </div>

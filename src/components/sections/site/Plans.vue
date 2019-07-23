@@ -15,8 +15,8 @@
         <div class="mt-4 text-2xl lg:text-3xl">
           {{ plan.price }}
         </div>
-        <a href="#" v-scroll-to="'#contacts'" class="button button--2xl rounded mt-6 w-full">Обсудить</a>
-        <div class="mt-4 text-md">
+        <a href="#" v-scroll-to="'#contacts'" class="button button--2xl rounded mt-4 w-full">Обсудить</a>
+        <div class="mt-4 text-xs lg:text-sm">
           {{ plan.description }}
         </div>
       </div>
