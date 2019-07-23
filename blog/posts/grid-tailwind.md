@@ -4,11 +4,11 @@ slug: grid-tailwind
 date: 2019-06-23T00:01:00.196+0300
 category: article
 action: More
-excerpt: A simple grid system that Tailwind definitely lacks for now.
+excerpt: A simple grid system which Tailwind definitely lacks for now.
 tags: ['Tailwind CSS', 'CSS']
 ---
 
-In every project built with Tailwind, I always use my own grid system while we are all waiting for a native one to come from Tailwind core team. It's pretty simple so just copy it and modify as you want. It's also being used in my [Tailwind components library](/tools/tailwind).
+In all of my projects built with Tailwind, I always use my own grid system while we are all waiting for a native one to come from Tailwind's core team. It's pretty simple so just copy and modify it as you want. It's also being used in my [Tailwind components library](/tools/tailwind).
 
 ```css
 .grid-cols {

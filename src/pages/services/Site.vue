@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="container section">
-      <div class="mt-5 mb-4 grid-cols grid-cols--3-1">
+      <div class="mt-5 lg:mt-8 mb-4 grid-cols grid-cols--3-1">
         <div class="">
           <h1 class="text-3xl lg:text-6xl mb-4 leading-none"><span class="font-bold">Разработка сайта:</span><br>хорошо, в срок, без ТЗ</h1>
           <div class="text-lg lg:text-2xl max-w-4xl mb-4 lg:my-8">
@@ -9,12 +9,12 @@
           </div>
           <div class="lg:mb-10">
             <ul class="flex text-lg lg:text-2xl flex-wrap">
-              <li class="mr-4 mb-2 lg:mb-0 font-bold">Подробнее:</li>
-              <li><a href="#" v-scroll-to="'#showcase'" class="link mr-4 mb-2 lg:mb-0">Работы</a></li>
-              <li><a href="#" v-scroll-to="'#plans'" class="link mr-4 mb-2 lg:mb-0">Цены и сроки</a></li>
-              <li><a href="#" v-scroll-to="'#reviews'" class="link mr-4 mb-2 lg:mb-0">Отзывы</a></li>
-              <li><a href="#" v-scroll-to="'#stack'" class="link mr-4 mb-2 lg:mb-0">Технологии</a></li>
-              <li><a href="#" v-scroll-to="'#faq'" class="link mr-4 mb-2 lg:mb-0">FAQ</a></li>
+              <li class="mr-3 mb-1 lg:mb-0 font-bold">Подробнее:</li>
+              <li><a href="#" v-scroll-to="'#showcase'" class="link mr-3 mb-1 lg:mb-0">Работы</a></li>
+              <li><a href="#" v-scroll-to="'#plans'" class="link mr-3 mb-1 lg:mb-0">Цены и сроки</a></li>
+              <li><a href="#" v-scroll-to="'#reviews'" class="link mr-3 mb-1 lg:mb-0">Отзывы</a></li>
+              <li><a href="#" v-scroll-to="'#stack'" class="link mr-3 mb-1 lg:mb-0">Технологии</a></li>
+              <li><a href="#" v-scroll-to="'#faq'" class="link mr-3 mb-1 lg:mb-0">FAQ</a></li>
             </ul>
           </div>
         </div>
@@ -24,14 +24,14 @@
       </div>
     </div>
     <Contacts class="my-6 lg:mt-2 lg:mb-12"/>
-    <Showcase/>
-    <Plans class="lg:mt-12"/>
-    <div id="reviews" class="lg:mt-12 section container">
+    <Showcase class="mt-8"/>
+    <Plans class="lg:mt-12 mt-8"/>
+    <div id="reviews" class="lg:mt-12 mt-8 section container">
       <h2 class="text-3xl lg:text-5xl mb-4 font-bold">Отзывы клиентов</h2>
       <Reviews/>
     </div>
-    <Stack class="lg:mt-12"/>
-    <FAQ class="lg:mt-12"/>
+    <Stack class="lg:mt-12 mt-8"/>
+    <FAQ class="lg:mt-12 mt-8"/>
     <Contacts id="contacts" class="mt-8"/>
   </Layout>
 </template>
