@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div id="testimonials" class="container section">
     <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
       Отзывы

@@ -1,12 +1,12 @@
 .markdown {
-  h2 a {
-    @apply hidden;
-  }
   h1 {
     @apply text-2xl mb-4 leading-tight font-bold;
   }
   h2 {
     @apply text-xl my-4 leading-tight font-bold;
+    a {
+      @apply hidden;
+    }
   }
   p {
     @apply mb-5;
