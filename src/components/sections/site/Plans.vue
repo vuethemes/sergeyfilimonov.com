@@ -4,7 +4,7 @@
       Цены и сроки
     </h2>
     <div class="grid-cols">
-      <div class="p-6 bg-theme-backgroundGray" v-for="plan in plans">
+      <div class="p-4 lg:p-6 bg-theme-backgroundGray" v-for="plan in plans">
         <img :src="`/icons/${plan.icon}.svg`" alt="" class="w-24">
         <div class="mt-4 text-2xl lg:text-3xl font-bold">
           {{ plan.name }}
