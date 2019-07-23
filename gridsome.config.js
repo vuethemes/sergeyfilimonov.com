@@ -33,7 +33,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-gtm',
       options: {
-        id: process.env.GTM,
+        id: 'GTM-WH2RFDV',
         enabled: true,
         debug: true
       }
