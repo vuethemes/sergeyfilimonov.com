@@ -2,7 +2,7 @@
   <Layout>
     <div class="container section">
       <div class="mt-4 mb-4">
-        <h1 class="text-3xl lg:text-6xl mb-4 leading-none"><span class="font-bold">Разработка сайта:</span><br>качественно, в срок, без ТЗ</h1>
+        <h1 class="text-3xl lg:text-6xl mb-4 leading-none"><span class="font-bold">Разработка сайта:</span><br>хорошо, в срок, без ТЗ</h1>
         <div class="text-lg lg:text-2xl max-w-4xl">
           Сайт — точка сборки всего бренда не только для клиентов, но и для вас самих. При прочих равных бренд с хорошим сайтом всегда смотрится выигрышнее.
         </div>
