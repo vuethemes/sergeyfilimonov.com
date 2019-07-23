@@ -1,10 +1,10 @@
 <template lang="html">
   <div id="plans" class="container section mt-16">
-    <h2 class="text-3xl lg:text-5xl mb-4">
+    <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
       Тарифы
     </h2>
     <div class="grid-cols">
-      <div class="p-6 bg-gray-100" v-for="plan in plans">
+      <div class="p-6 bg-theme-backgroundGray" v-for="plan in plans">
         <img :src="`/icons/${plan.icon}.svg`" alt="" class="w-24">
         <div class="mt-4 text-2xl lg:text-3xl">
           {{ plan.name }}

@@ -1,11 +1,11 @@
 <template lang="html">
   <div id="testimonials" class="container section mt-16">
-    <h2 class="text-3xl lg:text-5xl mb-4">
+    <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
       Отзывы
     </h2>
     <div class="grid-cols grid-cols--2">
-      <div class="bg-gray-100 p-6 rounded" v-for="item in array">
-        <div class="text-lg lg:text-2xl">
+      <div class="bg-theme-backgroundGray p-6 rounded" v-for="item in array">
+        <div class="">
           {{ item.text }}
         </div>
         <div class="mt-4 flex justify-between items-center">

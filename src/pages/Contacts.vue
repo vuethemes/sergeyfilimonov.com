@@ -5,16 +5,19 @@
         Мои соцсети
       </div>
       <Social class="lg:text-4xl"/>
+      <Contacts class="mt-8"/>
     </div>
   </Layout>
 </template>
 
 <script>
 import Social from '@/components/Social'
+import Contacts from '@/components/sections/Contacts'
 
 export default {
   components: {
-    Social
+    Social,
+    Contacts
   }
 }
 </script>

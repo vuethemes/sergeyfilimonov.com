@@ -107,7 +107,12 @@
 </template>
 
 <script>
+import Contacts from '@/components/sections/Contacts'
+
 export default {
+  components: {
+    Contacts
+  },
   data() {
     return {
       meta: {
