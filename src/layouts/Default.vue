@@ -34,8 +34,8 @@ export default {
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'yandex-verification', content: '' },
-        { name: 'google-site-verification', content: '' },
+        { name: 'yandex-verification', content: '476dfb11a869a822' },
+        { name: 'google-site-verification', content: 'h5T7xM4N3wa9YaCGOmzQufGBVdCTmnjx-ODI8bhG7Cc' },
         { property: "og:type", content: 'website' },
         { property: "og:url", content: this.canonical },
       ],
