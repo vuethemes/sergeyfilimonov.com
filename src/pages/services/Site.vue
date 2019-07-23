@@ -20,7 +20,10 @@
     <Contacts class="lg:my-8"/>
     <Showcase/>
     <Plans class="lg:mt-12"/>
-    <Reviews id="reviews" class="lg:mt-12"/>
+    <div id="reviews" class="lg:mt-12 section container">
+      <h2 class="text-3xl lg:text-5xl mb-4 font-bold">Отзывы клиентов</h2>
+      <Reviews/>
+    </div>
     <Stack class="lg:mt-12"/>
     <FAQ class="lg:mt-12"/>
     <Contacts id="contacts" class="mt-8"/>

@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <div class="container section pt-4 pb-8">
-      <div class="markdown">
+    <div class="container pt-4 pb-8">
+      <div class="section markdown">
         <g-image src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="w-40 h-40 rounded-lg mb-4 border border-theme-borderGray"/>
         <div class="max-w-4xl">
           <div class="text-lg lg:text-3xl mb-4">Привет, я Сергей Филимонов.</div>
@@ -18,6 +18,8 @@
             <li>Продюсировал канал на YouTube <a href="https://svoybrend.ru/svoy/youtube" target="_blank" class="link" rel="nofollow noreferrer noopener">Максима Спиридонова</a></li>
           </ul>
         </div>
+      </div>
+      <div class="section markdown">
         <h2>Мои выступления</h2>
         <div class="grid-cols grid-cols--2">
           <div class="video-container">
@@ -27,9 +29,12 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/fs9jyO7ehQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
+      </div>
+      <div class="section markdown">
         <h2>Отзывы клиентов</h2>
         <Reviews/>
-        <div class="">
+      </div>
+      <div class="section markdown">
           <h2>Отзывы сотрудников, коллег, подрядчиков</h2>
           <div class="grid-cols grid-cols--2">
             <div class="p-6 bg-theme-backgroundGray">
@@ -64,7 +69,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
   </Layout>
 </template>
