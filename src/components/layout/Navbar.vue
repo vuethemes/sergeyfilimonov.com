@@ -42,13 +42,18 @@ export default {
           to: '/about'
         },
         {
-          text: 'Все посты',
-          to: '/posts',
+          text: 'Блог',
+          to: '/blog',
           mobileHidden: true
         },
         {
           text: 'Разработка сайта',
           to: '/services/site',
+          mobileHidden: true
+        },
+        {
+          text: 'Инструменты',
+          to: '/tools',
           mobileHidden: true
         }
       ]
