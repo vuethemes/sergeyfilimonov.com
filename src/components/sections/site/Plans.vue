@@ -10,7 +10,7 @@
           {{ plan.name }}
         </div>
         <ul class="mt-4">
-          <li v-for="feature in plan.features" :class="!feature.active ? 'text-gray-300' : ''">– {{ feature.name }}</li>
+          <li v-for="feature in plan.features" :class="!feature.active ? 'text-theme-textBlack200' : ''">– {{ feature.name }}</li>
         </ul>
         <div class="mt-4 text-2xl lg:text-3xl">
           {{ plan.price }}

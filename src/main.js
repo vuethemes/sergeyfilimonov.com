@@ -56,8 +56,8 @@ export default function (Vue, {router, head, isClient, appOptions}) {
     href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css'
   })
 
-  head.script.push({
-    src: '/scripts/teletype.js',
-    body: true
-  })
+  // head.script.push({
+  //   src: '/scripts/teletype.js',
+  //   body: true
+  // })
 }

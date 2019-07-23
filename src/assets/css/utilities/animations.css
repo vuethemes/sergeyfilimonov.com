@@ -6,6 +6,7 @@
 @import 'animations/invert.css';
 @import 'animations/pulseAnim.css';
 @import 'animations/scale.css';
+@import 'animations/transform.css';
 
 .animate-zoom {
   &-xs {

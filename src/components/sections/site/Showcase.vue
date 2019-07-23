@@ -4,17 +4,17 @@
       Работы
     </h2>
     <div class="grid-cols grid-cols--3">
-      <div class="bg-theme-backgroundGray rounded overflow-hidden" v-for="item in showcase">
+      <a class="bg-theme-backgroundGray rounded overflow-hidden hover:shadow-lg transform--move-top transition-all" v-for="item in showcase" :href="item.website.url">
         <div class="bg-gray-200 h-48 bg-cover" :style="`background-image: url(/images/showcase/websites/${item.image}.jpg);`"/>
-        <div class="p-6">
-          <div class="text-xl lg:text-xl lg:font-bold mb-1">
+        <div class="p-4 lg:p-6">
+          <div class="text-xl lg:text-xl font-bold mb-1">
             {{ item.name }}
           </div>
-          <a class="link" :href="item.website.url" target="_blank">
+          <div class="link" target="_blank">
             {{ item.website.name }} →
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -105,7 +105,7 @@ export default {
           field: 'Услуги'
         },
         {
-          name: 'Максим Спиридонов & Нетология',
+          name: 'Максим Спиридонов',
           website: {
             name: 'ms.netology.ru',
             url: 'https://ms.netology.ru/',
@@ -114,16 +114,16 @@ export default {
           type: 'Личный бренд',
           field: 'Онлайн-обучение'
         },
-        {
-          name: 'Максим Спиридонов',
-          website: {
-            name: 'm.spiridonov.ru',
-            url: 'https://m.spiridonov.ru/',
-          },
-          image: 'mspiridonov',
-          type: 'Личный бренд',
-          field: 'Онлайн-обучение'
-        },
+        // {
+        //   name: 'Максим Спиридонов',
+        //   website: {
+        //     name: 'm.spiridonov.ru',
+        //     url: 'https://m.spiridonov.ru/',
+        //   },
+        //   image: 'mspiridonov',
+        //   type: 'Личный бренд',
+        //   field: 'Онлайн-обучение'
+        // },
         {
           name: 'Ацетилен',
           website: {

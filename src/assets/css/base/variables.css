@@ -19,6 +19,7 @@
   --border-gray: #eaeaea;
   --text-color-primary: #000;
   --text-color-secondary: rgba(0,0,0,0.5);
+  --text-color-black-200: rgba(0,0,0,0.2);
 }
 
 .theme-dark {
@@ -28,4 +29,5 @@
   --border-gray: #4b4f63;
   --text-color-primary: #fff;
   --text-color-secondary: rgba(255,255,255,0.5);
+  --text-color-black-200: rgba(255,255,255,0.2);
 }

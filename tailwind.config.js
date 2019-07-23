@@ -45,6 +45,7 @@ module.exports = {
         theme: {
           text: 'var(--text-color-primary)',
           textSecondary: 'var(--text-color-secondary)',
+          textBlack200: 'var(--text-color-black-200)',
           background: 'var(--bg-primary)',
           backgroundGray: 'var(--bg-gray)',
           borderGray: 'var(--border-gray)',
