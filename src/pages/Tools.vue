@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="container section">
-      <div class="mt-6 mb-4">
+      <div class="mt-5 mb-4 h-screen">
         <h1 class="text-3xl lg:text-6xl mb-4 leading-none font-bold">Инструменты</h1>
         <div class="text-lg lg:text-2xl max-w-3xl lg:my-8">
           Простые и эффективные инструменты, которые упрощают работу маркетологам и разработчикам сайтов и онлайн-сервисов.

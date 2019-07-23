@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="container section">
-      <div class="mt-6 mb-4 grid-cols grid-cols--3-1">
+      <div class="mt-5 mb-4 grid-cols grid-cols--3-1">
         <div class="">
           <h1 class="text-3xl lg:text-6xl mb-4 leading-none"><span class="font-bold">Разработка сайта:</span><br>хорошо, в срок, без ТЗ</h1>
           <div class="text-lg lg:text-2xl max-w-4xl mb-4 lg:my-8">

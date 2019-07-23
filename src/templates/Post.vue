@@ -2,7 +2,7 @@
   <Layout>
     <!-- <vue-scroll-progress-bar height="2px" backgroundColor="#3273dc"/> -->
     <div class="container section max-w-3xl mx-auto">
-      <article class="mt-6 markdown">
+      <article class="mt-5 markdown">
         <div class="lg:mb-4 mb-1 text-xs lg:text-base" v-html="formattedPublishDate"/>
         <h1 class="" v-html="$page.post.title"/>
         <div class="text-lg lg:text-2xl mb-4" v-html="$page.post.excerpt"/>
