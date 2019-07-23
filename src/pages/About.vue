@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container pt-4 pb-8">
+    <div class="container mt-6 pb-8">
       <div class="section markdown">
         <g-image src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="w-40 h-40 rounded-lg mb-4 border border-theme-borderGray"/>
         <div class="max-w-4xl">
