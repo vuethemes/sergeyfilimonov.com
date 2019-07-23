@@ -90,7 +90,7 @@ export default {
       meta: [
         { property: "og:title", content: this.meta.title },
         { property: "og:description", content: this.meta.description },
-        { property: "og:image", content: 'https://sergeyfilimonov.com/og/index.jpg' }
+        { property: "og:image", content: 'https://sergeyfilimonov.com/images/og/about.jpg' }
       ]
     }
   }
