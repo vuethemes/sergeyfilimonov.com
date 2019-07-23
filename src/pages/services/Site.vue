@@ -1,23 +1,29 @@
 <template>
   <Layout>
     <div class="container section">
-      <div class="mt-6 mb-4">
-        <h1 class="text-3xl lg:text-6xl mb-4 leading-none"><span class="font-bold">Разработка сайта:</span><br>хорошо, в срок, без ТЗ</h1>
-        <div class="text-lg lg:text-2xl max-w-4xl lg:my-8">
-          Сайт — точка сборки всего бренда не только для клиентов, но и для вас самих. При прочих равных бренд с хорошим сайтом всегда смотрится выигрышнее.
+      <div class="mt-6 mb-4 grid-cols grid-cols--3-1">
+        <div class="">
+          <h1 class="text-3xl lg:text-6xl mb-4 leading-none"><span class="font-bold">Разработка сайта:</span><br>хорошо, в срок, без ТЗ</h1>
+          <div class="text-lg lg:text-2xl max-w-4xl mb-4 lg:my-8">
+            Сайт — отличная возможность собрать всё самое главное о вашем бренде в максимально концентрированном, структурированном и доступном виде. Для каждого сайта я составляю карту смыслов, рисую прототип, затем — дизайн и в самом конце — программирование. Сайт получается продуманным, красивым и <g-link to="/blog/wordpress-vs-static" class="link inline">быстрым за счёт статического фреймворка</g-link>.
+          </div>
+          <div class="lg:mb-10">
+            <ul class="flex text-lg lg:text-2xl flex-wrap">
+              <li class="mr-4 mb-2 lg:mb-0 font-bold">Подробнее:</li>
+              <li><a href="#" v-scroll-to="'#showcase'" class="link mr-4 mb-2 lg:mb-0">Работы</a></li>
+              <li><a href="#" v-scroll-to="'#plans'" class="link mr-4 mb-2 lg:mb-0">Цены и сроки</a></li>
+              <li><a href="#" v-scroll-to="'#reviews'" class="link mr-4 mb-2 lg:mb-0">Отзывы</a></li>
+              <li><a href="#" v-scroll-to="'#stack'" class="link mr-4 mb-2 lg:mb-0">Технологии</a></li>
+              <li><a href="#" v-scroll-to="'#faq'" class="link mr-4 mb-2 lg:mb-0">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <img src="@/assets/images/dev.svg">
         </div>
       </div>
-      <div class="lg:mb-10">
-        <ul class="flex text-lg lg:text-2xl flex-wrap">
-          <li><a href="#" v-scroll-to="'#showcase'" class="link mr-4 mb-2 lg:mb-0">Работы</a></li>
-          <li><a href="#" v-scroll-to="'#plans'" class="link mr-4 mb-2 lg:mb-0">Цены и сроки</a></li>
-          <li><a href="#" v-scroll-to="'#reviews'" class="link mr-4 mb-2 lg:mb-0">Отзывы</a></li>
-          <li><a href="#" v-scroll-to="'#stack'" class="link mr-4 mb-2 lg:mb-0">Технологии</a></li>
-          <li><a href="#" v-scroll-to="'#faq'" class="link mr-4 mb-2 lg:mb-0">FAQ</a></li>
-        </ul>
-      </div>
     </div>
-    <Contacts class="lg:my-8"/>
+    <Contacts class="my-6 lg:mt-2"/>
     <Showcase/>
     <Plans class="lg:mt-12"/>
     <div id="reviews" class="lg:mt-12 section container">

@@ -14,6 +14,7 @@
   &--7 { grid-template-columns: repeat(1, 1fr); }
   &--8 { grid-template-columns: repeat(1, 1fr); }
   &--2-1-1 { grid-template-columns: repeat(1, 1fr); }
+  &--3-1 { grid-template-columns: repeat(1, 1fr); }
 }
 
 @screen lg {
@@ -32,5 +33,6 @@
     &--7 { grid-template-columns: repeat(7, 1fr); }
     &--8 { grid-template-columns: repeat(8, 1fr); }
     &--2-1-1 { grid-template-columns: 2fr 1fr 1fr; }
+    &--3-1 { grid-template-columns: 2fr 1fr; }
   }
 }
