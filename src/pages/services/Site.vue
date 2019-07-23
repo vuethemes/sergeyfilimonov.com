@@ -10,7 +10,7 @@
       <div class="lg:mb-10">
         <ul class="flex text-lg lg:text-2xl flex-wrap">
           <li><a href="#" v-scroll-to="'#showcase'" class="link mr-4 mb-2 lg:mb-0">Работы</a></li>
-          <li><a href="#" v-scroll-to="'#plans'" class="link mr-4 mb-2 lg:mb-0">Тарифы</a></li>
+          <li><a href="#" v-scroll-to="'#plans'" class="link mr-4 mb-2 lg:mb-0">Цены и сроки</a></li>
           <li><a href="#" v-scroll-to="'#testimonials'" class="link mr-4 mb-2 lg:mb-0">Отзывы</a></li>
           <li><a href="#" v-scroll-to="'#stack'" class="link mr-4 mb-2 lg:mb-0">Технологии</a></li>
           <li><a href="#" v-scroll-to="'#faq'" class="link mr-4 mb-2 lg:mb-0">FAQ</a></li>

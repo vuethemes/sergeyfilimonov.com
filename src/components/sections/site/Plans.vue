@@ -1,7 +1,7 @@
 <template lang="html">
   <div id="plans" class="container section">
     <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
-      Тарифы
+      Цены и сроки
     </h2>
     <div class="grid-cols">
       <div class="p-6 bg-theme-backgroundGray" v-for="plan in plans">
