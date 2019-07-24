@@ -43,12 +43,12 @@ export default {
           icon: 'fab fa-whatsapp',
           color: 'social-whatsapp'
         },
-        {
-          name: 'Email',
-          link: 'mailto:email@sergeyfilimonov.com',
-          icon: 'fa fa-envelope',
-          color: 'gray-500'
-        },
+        // {
+        //   name: 'Email',
+        //   link: 'mailto:email@sergeyfilimonov.com',
+        //   icon: 'fa fa-envelope',
+        //   color: 'gray-500'
+        // },
       ]
     }
   }
