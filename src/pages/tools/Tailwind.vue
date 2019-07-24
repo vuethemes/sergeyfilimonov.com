@@ -8,8 +8,6 @@
             This is an author library of <a href="https://tailwindcss.com" target="_blank" class="link">Tailwind CSS</a> components which can be used in any website or web app. Note that many components use <g-link to="/blog/grid-tailwind" class="link">my own grid system</g-link> — you need to include it.
           </div>
         </div>
-        <div class="">
-        </div>
         <div class="lg:mb-10">
           <ul class="flex text-lg lg:text-2xl flex-wrap">
             <li><a href="#" v-scroll-to="'#footers'" class="link mr-4 mb-2 lg:mb-0">Footers</a></li>

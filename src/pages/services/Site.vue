@@ -57,7 +57,7 @@ export default {
     return {
       meta: {
         title: 'Разработка сайта: хорошо, в срок, без ТЗ',
-        description: 'Перейдите и увидите работы, цены и сроки, отзывы, технологии, частые вопросы и все удобные каналы для связи.'
+        description: 'Сайт — отличная возможность собрать всё самое главное о вашем бренде в максимально концентрированном, структурированном и доступном виде. Для каждого сайта я составляю карту смыслов, рисую прототип, затем — дизайн и в самом конце — программирование. Сайт получается продуманным, красивым и быстрым за счёт статического фреймворка.'
       }
     }
   },
@@ -67,7 +67,7 @@ export default {
       description: this.meta.description,
       meta: [
         { property: "og:title", content: this.meta.title },
-        { property: "og:description", content: this.meta.title },
+        { property: "og:description", content: this.meta.description },
         { property: "og:image", content: 'https://sergeyfilimonov.com/images/og/site.jpg' }
       ]
     }
