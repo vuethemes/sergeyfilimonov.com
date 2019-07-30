@@ -51,11 +51,6 @@ export default {
           to: '/services/site',
           mobileHidden: true
         },
-        {
-          text: 'Инструменты',
-          to: '/tools',
-          mobileHidden: true
-        }
       ]
     }
   }
