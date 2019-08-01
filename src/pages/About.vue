@@ -6,8 +6,8 @@
         <div class="max-w-4xl">
           <div class="text-lg lg:text-3xl mb-4 font-bold">Привет, я Сергей Филимонов</div>
           <ul>
-            <li>Создаю удобные и стильные <g-link to="/services/site" class="link">сайты</g-link>, используя современные технологии вроде статических фреймворков, чат-ботов, авторассылок, использую авторские иллюстрации, профессиональные фото для создания уникальности сайтов. К слову, я участвую в официальной <a href="https://github.com/orgs/gridsome/teams/maintainers" target="_blank" class="inline">команде развития фреймворка Gridsome</a>.</li>
-            <li>Создаю <a href="https://platforma.pw/" target="_blank" class="link">платформу для прохождения онлайн-курсов</a>.</li>
+            <li>Создаю удобные и стильные <g-link to="/services/site" class="link">сайты</g-link>, используя современные технологии вроде статических фреймворков, чат-ботов, авторассылок, использую авторские иллюстрации, профессиональные фото для создания уникальности сайтов. К слову, я участвую в официальной <a href="https://github.com/orgs/gridsome/teams/maintainers" target="_blank" class="inline">команде</a> развития фреймворка Gridsome.</li>
+            <li>Создаю <a href="https://platforma.pw/" target="_blank" class="link">платформу</a> для прохождения онлайн-курсов.</li>
             <li>Веду <g-link to="/blog" class="link">блог</g-link> для маркетологов и разработчиков русско- и англоговорящих стран.</li>
           </ul>
           <h2>Мои проекты</h2>
