@@ -50,7 +50,7 @@ export default {
               active: false,
             }
           ],
-          price: '75 000 ₽ & 1 месяц',
+          price: '~ 50 000 ₽ & 1 месяц',
           icon: 'edit'
         },
         {
@@ -74,7 +74,7 @@ export default {
               active: false,
             }
           ],
-          price: '150 000 ₽ & 1,5 месяца',
+          price: '~ 100 000 ₽ & 1,5 месяца',
           icon: 'home'
         },
         {
@@ -98,7 +98,7 @@ export default {
               active: true,
             }
           ],
-          price: '250 000 ₽ & 3 месяца',
+          price: '~ 150 000 ₽ & 3 месяца',
           icon: 'shop'
         }
       ]
