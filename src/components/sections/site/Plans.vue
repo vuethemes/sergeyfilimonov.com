@@ -74,7 +74,7 @@ export default {
               active: false,
             }
           ],
-          price: '~ 100 000 ₽ & 1,5 месяца',
+          price: '~ 75 000 ₽ & 1,5 месяца',
           icon: 'home'
         },
         {
@@ -98,7 +98,7 @@ export default {
               active: true,
             }
           ],
-          price: '~ 150 000 ₽ & 3 месяца',
+          price: '~ 100 000 ₽ & 2 месяца',
           icon: 'shop'
         }
       ]
