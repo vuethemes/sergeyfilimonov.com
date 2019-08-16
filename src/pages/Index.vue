@@ -11,10 +11,10 @@
           <WidgetMarketing/>
           <WidgetManagement/>
           <WidgetSvoybrend/>
+          <WidgetLessons/>
         </div>
         <div class="">
           <WidgetTelegram/>
-          <WidgetLessons/>
         </div>
       </div>
     </div>

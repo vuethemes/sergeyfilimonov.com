@@ -6,7 +6,7 @@
           <g-link to="/" class="group mr-6">
             <div class="text-lg lg:text-2xl font-bold">Сергей Филимонов</div>
             <div class="text-xs">
-              О&nbsp;сайтах, продуктивности и&nbsp;всём&nbsp;таком
+              О&nbsp;сайтах, сервисах <br class="lg:hidden">и&nbsp;всём&nbsp;таком
             </div>
           </g-link>
         </div>
@@ -14,6 +14,9 @@
           <ul class="flex items-center mr-2">
             <li class="lg:mr-6" v-for="page in pages">
               <g-link :to="page.to" :class="['text-base leading-none hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]">{{ page.text }}</g-link>
+            </li>
+            <li class="lg:mr-6">
+              <a href="https://tele.click/sergeyfilimonov_com" class="text-base leading-none hidden lg:block button button--xl rounded py-3" target="_blank">Telegram-канал</a>
             </li>
             <li class="lg:hidden block text-xl ml-2" style="margin-right: -1px;"><ToggleTheme/></li>
           </ul>
