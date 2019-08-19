@@ -1,20 +1,24 @@
 <template>
   <Layout>
     <div class="container section mt-5">
-      <div class="grid-cols grid-cols--2-1-1">
+      <div class="grid-cols grid-cols--2">
         <div class="">
           <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" currentPage="index"/>
           <g-link to="/posts" class="link mt-2">Все посты</g-link>
         </div>
         <div class="">
-          <WidgetStack/>
-          <WidgetMarketing/>
-          <WidgetManagement/>
-          <WidgetSvoybrend/>
-          <WidgetLessons/>
-        </div>
-        <div class="">
-          <WidgetTelegram/>
+          <WidgetLessons class="mb-8"/>
+          <div class="grid-cols grid-cols--2">
+            <div class="">
+              <WidgetStack/>
+              <WidgetMarketing/>
+              <WidgetManagement/>
+              <WidgetSvoybrend/>
+            </div>
+            <div class="">
+              <WidgetTelegram/>
+            </div>
+          </div>
         </div>
       </div>
     </div>

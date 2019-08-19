@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary text-white p-4 lg:p-6 mt-5">
+  <div class="bg-theme-backgroundGray text-white p-4 lg:p-4 mt-5">
     <div class="">
       <div class="text-sm font-bold mb-1">
         Разработка сайта под вас
