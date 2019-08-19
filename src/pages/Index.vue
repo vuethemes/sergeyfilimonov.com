@@ -4,7 +4,7 @@
       <div class="grid-cols grid-cols--2">
         <div class="">
           <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" currentPage="index"/>
-          <g-link to="/posts" class="link mt-2">Все посты</g-link>
+          <g-link to="/blog" class="link mt-2">Все посты</g-link>
         </div>
         <div class="">
           <WidgetLessons class="mb-8"/>
@@ -27,7 +27,7 @@
 
 <page-query>
 query Posts {
-  posts: allPost {
+  posts: allPost(limit: 10) {
     edges {
       node {
         id
