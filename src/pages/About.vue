@@ -56,6 +56,15 @@
               <span class="opacity-50 mr-1">—</span><a href="https://www.instagram.com/linoroy/" rel="nofollow noreferrer noopener" target="_blank" class="link">Алина Роенко</a>, иллюстратор
             </div>
           </div>
+          <div class="p-6 bg-theme-backgroundGray">
+            <div class="relative">
+              <span class="opacity-50">«</span>
+              Работать с Сергеем было действительно приятно. Мне как дизайнеру логотипов, важно четко понимать поставленную задачу. Сергей профессионально подходит к своим проектам и грамотно составляет задание, что делает рабочий процесс эффективнее и быстрее.  Общение и сотрудничество с ними были легким и интересным. Я с нетерпением жду следующей возможности посотрудничать.
+              <span class="opacity-50">»,</span>
+            </div>
+            <div class="mt-4 text-sm">
+              <span class="opacity-50 mr-1">—</span><a href="https://www.instagram.com/sergiimanakov/" rel="nofollow noreferrer noopener" target="_blank" class="link">Сергей Манаков</a>, дизайнер логотипов
+            </div>
           </div>
         </div>
       </div>
