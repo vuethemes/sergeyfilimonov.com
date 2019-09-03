@@ -18,21 +18,6 @@ export default function (Vue, {router, head, isClient, appOptions}) {
   Vue.component('Layout', DefaultLayout)
 
   Vue.use(Vuex)
-  appOptions.store = new Vuex.Store({
-    state: {
-      theme: 'theme-light'
-    },
-    mutations: {
-      changeTheme(state, payload) {
-        state.theme = payload
-      }
-    },
-    getters: {
-      theme(state) {
-        return state.theme
-      }
-    }
-  })
 
   Vue.use(VueDisqus)
 
@@ -51,13 +36,24 @@ export default function (Vue, {router, head, isClient, appOptions}) {
     }
   })
 
+  appOptions.store = new Vuex.Store({
+    state: {
+      theme: 'theme-light'
+    },
+    mutations: {
+      changeTheme(state, payload) {
+        state.theme = payload
+      }
+    },
+    getters: {
+      theme(state) {
+        return state.theme
+      }
+    }
+  })
+
   head.link.push({
     rel: 'stylesheet',
     href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css'
-  })
-
-  head.script.push({
-    src: '/scripts/teletype.js',
-    body: true
   })
 }

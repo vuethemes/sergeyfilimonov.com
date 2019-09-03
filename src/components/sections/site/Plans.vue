@@ -12,12 +12,12 @@
         <ul class="mt-4">
           <li v-for="feature in plan.features" :class="!feature.active ? 'text-theme-textBlack200' : ''">– {{ feature.name }}</li>
         </ul>
-        <div class="mt-4 text-2xl lg:text-3xl">
+        <div class="mt-4 text-xl lg:text-2xl">
           {{ plan.price }}
         </div>
         <a href="#" v-scroll-to="'#contacts'" class="button button--2xl rounded mt-4 w-full">Обсудить</a>
         <div class="mt-4 text-xs lg:text-sm">
-          {{ plan.description }}
+          <i class="fas fa-chart-pie mr-2"></i>{{ plan.description }}
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@ export default {
               active: true,
             },
             {
-              name: 'Блог на WordPress/Ghost',
+              name: 'Блог на любой CMS',
               active: true,
             },
             {
@@ -50,7 +50,7 @@ export default {
               active: false,
             }
           ],
-          price: '~ 50 000 ₽ & 1 месяц',
+          price: '~ 100 000 ₽ & 1 месяц',
           icon: 'edit'
         },
         {
@@ -62,7 +62,7 @@ export default {
               active: true,
             },
             {
-              name: 'Блог на WordPress/Ghost',
+              name: 'Блог на любой CMS',
               active: true,
             },
             {
@@ -74,7 +74,7 @@ export default {
               active: false,
             }
           ],
-          price: '~ 75 000 ₽ & 1,5 месяца',
+          price: '~ 150 000 ₽ & 1,5 месяца',
           icon: 'home'
         },
         {
@@ -86,7 +86,7 @@ export default {
               active: true,
             },
             {
-              name: 'Блог на WordPress/Ghost',
+              name: 'Блог на любой CMS',
               active: true,
             },
             {
@@ -98,7 +98,7 @@ export default {
               active: true,
             }
           ],
-          price: '~ 100 000 ₽ & 2 месяца',
+          price: '~ 200 000 ₽ & 2 месяца',
           icon: 'shop'
         }
       ]

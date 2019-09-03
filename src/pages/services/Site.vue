@@ -32,7 +32,17 @@
     </div>
     <Stack class="lg:mt-12 mt-8"/>
     <FAQ class="lg:mt-12 mt-8"/>
-    <Contacts id="contacts" class="mt-8"/>
+    <div id="contacts" class="mt-8">
+      <div class="container section ">
+        <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
+          Контакты
+        </h2>
+        <div class="mb-6 text-lg lg:text-xl">
+          Если вы согласны с порядками <a v-scroll-to="`#plans`" class="link">цен</a>, предлагаю обсудить проект в удобном мессенджере. 
+        </div>
+      </div>
+      <Contacts/>
+    </div>
   </Layout>
 </template>
 

@@ -8,7 +8,7 @@
         <div class="text-lg lg:text-2xl mb-4" v-html="$page.post.excerpt"/>
         <div v-html="$page.post.content"/>
       </article>
-      <ul class="mt-8 flex">
+      <ul class="mt-8 flex flex-wrap">
         <li v-for="tag in $page.post.tags" v-html="tag" class="rounded-full border-theme-backgroundGray border-2 border-solid px-4 py-2 mr-3"/>
       </ul>
       <!-- <vue-disqus class="mt-8" shortname="sergeyfilimonov-com" :identifier="$page.post.slug" :url="'https://sergeyfilimonov.com/' + $route.path">
