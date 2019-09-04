@@ -1,5 +1,3 @@
-require('dotenv').config({path: 'variables.env'})
-
 class TailwindExtractor {
   static extract(content) {
     return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
@@ -7,13 +5,10 @@ class TailwindExtractor {
 }
 
 module.exports = {
-  siteName: process.env.sitetName,
-  siteUrl: process.env.siteUrl,
+  siteName: 'Сергей Филимонов',
+  siteUrl: 'sergeyfilimonov.com',
   titleTemplate: '%s',
-  siteName: '',
-  siteUrl: process.env.siteUrl,
-  siteDescription: process.env.siteDescription,
-
+  siteDescription: 'Разрабатываю статичные сайты с помощью Vue и Gridsome для проектов из SaaS и EdTech. Также создаю навыки для голосового помощника Алиса от Яндекса',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',

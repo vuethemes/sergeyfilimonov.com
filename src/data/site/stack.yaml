@@ -10,6 +10,8 @@
   slug: 'post-css'
 - name: 'Apollo'
   slug: 'apollo'
+- name: 'Serverless'
+  slug: 'serverless'
 - name: 'GitHub'
   slug: 'github'
 - name: 'Figma'
