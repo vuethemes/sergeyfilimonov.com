@@ -5,20 +5,17 @@
     </h2>
     <div class="grid-cols">
       <div class="p-4 lg:p-6 bg-theme-backgroundGray" v-for="plan in plans">
-        <img :src="`/icons/${plan.icon}.svg`" alt="" class="w-24">
-        <div class="mt-4 text-2xl lg:text-3xl font-bold">
+        <div class="text-2xl lg:text-3xl font-bold">
           {{ plan.name }}
         </div>
-        <ul class="mt-4">
-          <li v-for="feature in plan.features" :class="!feature.active ? 'text-theme-textBlack200' : ''">– {{ feature.name }}</li>
+        <ul class="mt-2">
+          <li v-for="feature in plan.features" :class="!feature.active ? 'text-theme-textBlack200' : ''">→ {{ feature.name }}</li>
         </ul>
-        <div class="mt-4 text-xl lg:text-2xl">
-          {{ plan.price }}
+        <div class="mt-4">
+          <span class="font-bold">Результат:</span> {{ plan.description }}
         </div>
+        <div class="mt-2 text-xl lg:text-2xl" v-html="plan.price"/>
         <a href="#" v-scroll-to="'#contacts'" class="button button--2xl rounded mt-4 w-full">Обсудить</a>
-        <div class="mt-4 text-xs lg:text-sm">
-          <i class="fas fa-chart-pie mr-2"></i>{{ plan.description }}
-        </div>
       </div>
     </div>
   </div>
@@ -30,75 +27,99 @@ export default {
     return {
       plans: [
         {
-          name: 'Блог',
-          description: 'Для тех, кому нужен только первоклассный блог на любой платформе: WordPress, Ghost, Contentful и пр.',
+          name: 'Tilda Block',
+          description: 'сайт полностью собран из готовых блоков Tilda',
           features: [
             {
-              name: 'Свой дизайн',
+              name: 'Система управления контентом',
               active: true,
             },
             {
-              name: 'Блог на любой CMS',
+              name: 'Подготовка к SEO-продвижению',
               active: true,
             },
             {
-              name: 'Шаблон страницы продукта',
+              name: 'Тексты на сайт',
+              active: true,
+            },
+            {
+              name: 'Уникальный дизайн',
               active: false,
             },
             {
-              name: 'Широкий каталог продуктов',
+              name: 'Гибкая шаблонизация',
+              active: false,
+            },
+            {
+              name: 'Мультиязычность',
               active: false,
             }
           ],
-          price: '~ 100 000 ₽ & 1 месяц',
+          price: 'от 30&thinsp;000&nbsp;₽ и 2 недель',
           icon: 'edit'
         },
         {
-          name: 'Личный сайт',
-          description: 'Для тех, кому нужен не только блог, но и возможность продавать свои услуги/товары через сайт',
+          name: 'Tilda Zero',
+          description: 'уникальный, яркий сайт с анимацией и спецэффектами',
           features: [
             {
-              name: 'Свой дизайн',
+              name: 'Система управления контентом',
               active: true,
             },
             {
-              name: 'Блог на любой CMS',
+              name: 'Подготовка к SEO-продвижению',
               active: true,
             },
             {
-              name: 'Шаблон страницы продукта',
+              name: 'Тексты на сайт',
               active: true,
             },
             {
-              name: 'Широкий каталог продуктов',
+              name: 'Уникальный дизайн',
+              active: true,
+            },
+            {
+              name: 'Гибкая шаблонизация',
+              active: false,
+            },
+            {
+              name: 'Мультиязычность',
               active: false,
             }
           ],
-          price: '~ 150 000 ₽ & 1,5 месяца',
+          price: 'от 80&thinsp;000&nbsp;₽ и 1,5 месяцев',
           icon: 'home'
         },
         {
-          name: 'Продуктовый сайт',
-          description: 'Для компаний, которым нужен полноценный сайт для продвижения бренда в онлайне и продажи своих услуг/товаров',
+          name: 'Dev',
+          description: 'полностью самописный сайт, с шаблонами страниц и со своим API',
           features: [
             {
-              name: 'Свой дизайн',
+              name: 'Система управления контентом',
               active: true,
             },
             {
-              name: 'Блог на любой CMS',
+              name: 'Подготовка к SEO-продвижению',
               active: true,
             },
             {
-              name: 'Шаблоны страниц продуктов',
+              name: 'Тексты на сайт',
               active: true,
             },
             {
-              name: 'Широкий каталог продуктов',
+              name: 'Уникальный дизайн',
+              active: true,
+            },
+            {
+              name: 'Гибкая шаблонизация',
+              active: true,
+            },
+            {
+              name: 'Мультиязычность',
               active: true,
             }
           ],
-          price: '~ 200 000 ₽ & 2 месяца',
+          price: 'от 120&thinsp;000&nbsp;₽ и 2 месяцев',
           icon: 'shop'
         }
       ]
