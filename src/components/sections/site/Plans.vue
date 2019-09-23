@@ -55,7 +55,7 @@ export default {
               active: false,
             }
           ],
-          price: 'от 30&thinsp;000&nbsp;₽ и 2 недель',
+          price: 'от 20&thinsp;000&nbsp;₽ и 1 недели',
           icon: 'edit'
         },
         {

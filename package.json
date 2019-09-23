@@ -30,7 +30,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@gridsome/plugin-critical": "^0.1.0",
     "@gridsome/remark-prismjs": "0.0.4",
-    "@gridsome/source-filesystem": "^0.3.0",
+    "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.2.0",
     "moment": "^2.24.0",
     "node-sass": "^4.9.4",
