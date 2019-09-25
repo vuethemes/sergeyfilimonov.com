@@ -11,9 +11,9 @@
         <ul class="mt-2">
           <li v-for="feature in plan.features" :class="!feature.active ? 'text-theme-textBlack200' : ''">→ {{ feature.name }}</li>
         </ul>
-        <div class="mt-4">
+        <!-- <div class="mt-4">
           <span class="font-bold">Результат:</span> {{ plan.description }}
-        </div>
+        </div> -->
         <div class="mt-2 text-xl lg:text-2xl" v-html="plan.price"/>
         <a href="#" v-scroll-to="'#contacts'" class="button button--2xl rounded mt-4 w-full">Обсудить</a>
       </div>
@@ -36,11 +36,7 @@ export default {
             },
             {
               name: 'Подготовка к SEO-продвижению',
-              active: true,
-            },
-            {
-              name: 'Тексты на сайт',
-              active: true,
+              active: false,
             },
             {
               name: 'Уникальный дизайн',
@@ -53,14 +49,22 @@ export default {
             {
               name: 'Мультиязычность',
               active: false,
+            },
+            {
+              name: 'Свой API',
+              active: false,
+            },
+            {
+              name: 'Система аккаунтов',
+              active: false,
             }
           ],
           price: 'от 20&thinsp;000&nbsp;₽ и 1 недели',
           icon: 'edit'
         },
         {
-          name: 'Tilda Zero',
-          description: 'уникальный, яркий сайт с анимацией и спецэффектами',
+          name: 'Статика',
+          description: 'сайт с уникальным дизайном и готовый под все виды продвижения',
           features: [
             {
               name: 'Система управления контентом',
@@ -71,27 +75,31 @@ export default {
               active: true,
             },
             {
-              name: 'Тексты на сайт',
-              active: true,
-            },
-            {
               name: 'Уникальный дизайн',
               active: true,
             },
             {
               name: 'Гибкая шаблонизация',
-              active: false,
+              active: true,
             },
             {
               name: 'Мультиязычность',
+              active: true,
+            },
+            {
+              name: 'Свой API',
+              active: true,
+            },
+            {
+              name: 'Система аккаунтов',
               active: false,
             }
           ],
-          price: 'от 80&thinsp;000&nbsp;₽ и 1,5 месяцев',
+          price: 'от 50&thinsp;000&nbsp;₽ и 2 недель',
           icon: 'home'
         },
         {
-          name: 'Dev',
+          name: 'Веб-сервис',
           description: 'полностью самописный сайт, с шаблонами страниц и со своим API',
           features: [
             {
@@ -103,10 +111,6 @@ export default {
               active: true,
             },
             {
-              name: 'Тексты на сайт',
-              active: true,
-            },
-            {
               name: 'Уникальный дизайн',
               active: true,
             },
@@ -117,9 +121,17 @@ export default {
             {
               name: 'Мультиязычность',
               active: true,
+            },
+            {
+              name: 'Свой API',
+              active: true,
+            },
+            {
+              name: 'Система аккаунтов',
+              active: true,
             }
           ],
-          price: 'от 120&thinsp;000&nbsp;₽ и 2 месяцев',
+          price: 'от 150&thinsp;000&nbsp;₽ и 2 месяцев',
           icon: 'shop'
         }
       ]
