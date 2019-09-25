@@ -1,6 +1,5 @@
 {
   "name": "sergeyfilimonov.com",
-  "alias": "sergeyfilimonov.com",
   "version": 2,
   "github": {
     "enabled": true
@@ -17,7 +16,7 @@
     },
     {
       "src": "api/**/*.js",
-      "use": "@now/node" 
+      "use": "@now/node"
     }
   ]
 }

@@ -1,10 +1,7 @@
-// Global styles
 import '~/assets/css/main.css'
 
-//Layouts
 import DefaultLayout from '~/layouts/Default.vue'
 
-// Global components
 import Vuex from 'vuex'
 import VueMq from 'vue-mq'
 import VueScrollTo from 'vue-scrollto'
@@ -50,10 +47,5 @@ export default function (Vue, {router, head, isClient, appOptions}) {
         return state.theme
       }
     }
-  })
-
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css'
   })
 }

@@ -11,10 +11,13 @@ This repo represents the inside of my personal website [sergeyfilimonov.com](htt
 🚀 All websites I made with Gridsome:
 - [sergeyfilimonov.com](https://sergeyfilimonov.com)
 - [anastasiafilimonova.com](https://anastasiafilimonova.com)
+- [olgabalarama.com](https://olgabalarama.com)
+- [grafika.olgabalarama.com](https://grafika.olgabalarama.com)
+- [mariavyunova.com](https://mariavyunova.com)
 - [hr.netology.ru](https://hr.netology.ru)
 - [ms.netology.ru](https://ms.netology.ru)
 - [msp-moscow.ru](https://msp-moscow.ru)
-- [grafika.arttsapko.ru](https://grafika.arttsapko.ru)
+- [lms.edmarket.ru](https://lms.edmarket.ru)
 
 ## More
 
@@ -25,6 +28,6 @@ If you find a bug or a text mistake, please post it in [Issues](https://github.c
 ## Resources in Russian
 
 - [My blog](https://sergeyfilimonov.com/blog)
-- [Telegram channel on Fullstack Design](http://t-do.ru/fullstackdesign)
+- [Telegram channel on Fullstack Design](http://t-do.ru/sergeyfilimonov_com)
 - [Facebook](https://www.facebook.com/tunecatcher)
-- [Instagram](https://www.instagram.com/sergey_v_filimonov/)
+- [Instagram](https://www.instagram.com/sergeyfilimonov_com/)
