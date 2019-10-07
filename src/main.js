@@ -1,4 +1,5 @@
 import '~/assets/css/main.css'
+import 'prismjs/themes/prism.css'
 
 import DefaultLayout from '~/layouts/Default.vue'
 
@@ -9,7 +10,7 @@ import VueGtm from 'vue-gtm'
 
 export default function (Vue, {router, head, isClient, appOptions}) {
   Vue.component('Layout', DefaultLayout)
-  
+
   Vue.use(Vuex)
   Vue.use(VueScrollTo, { duration: 500, easing: 'ease' })
   Vue.use(VueMq, { breakpoints: { mobile: 540, desktop: 1024 } })

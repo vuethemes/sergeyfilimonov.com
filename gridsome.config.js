@@ -1,6 +1,6 @@
 class TailwindExtractor {
   static extract(content) {
-    return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
+    return content.match(/[A-Za-z0-9-_:\/]+/g) || []
   }
 }
 
@@ -15,9 +15,7 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
       plugins: [
-        ['gridsome-plugin-remark-shiki', {
-          theme: 'min-dark'
-        }]
+        '@gridsome/remark-prismjs'
       ]
     }
   },
@@ -103,7 +101,7 @@ module.exports = {
                 }
               ],
               whitelistPatterns: [/shiki/]
-            }),
+            })
           ])
         }
         return options
