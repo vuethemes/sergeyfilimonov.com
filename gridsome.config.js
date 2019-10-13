@@ -13,10 +13,7 @@ module.exports = {
     remark: {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-      plugins: [
-        '@gridsome/remark-prismjs'
-      ]
+      anchorClassName: 'icon icon-link'
     }
   },
   plugins: [
@@ -39,7 +36,7 @@ module.exports = {
         route: "blog/:slug",
         remark: {
           plugins: [
-            '@gridsome/remark-prismjs'
+            [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ]
           ]
         }
       }
