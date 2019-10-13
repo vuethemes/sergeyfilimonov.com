@@ -1,5 +1,5 @@
-import '~/assets/css/main.css'
 import 'prismjs/themes/prism.css'
+import '~/assets/css/main.css'
 
 import DefaultLayout from '~/layouts/Default.vue'
 

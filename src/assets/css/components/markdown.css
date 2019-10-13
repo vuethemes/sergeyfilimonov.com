@@ -17,7 +17,7 @@
   ul {
     @apply mb-5;
     li {
-      @apply list-disc ml-5 mb-1;
+      @apply list-disc ml-5 mb-2;
     }
   }
   table {
