@@ -2,8 +2,10 @@
   "name": "sergeyfilimonov.com",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
     "dev": "gridsome develop --port 5005",
+    "stage": "now",
+    "prod": "now --prod",
+    "build": "gridsome build",
     "explore": "gridsome explore",
     "now-build": "npm run build"
   },
