@@ -1,12 +1,13 @@
 {
   "scripts": {
-    "dev": "now dev --listen 5005",
+    "dev": "gridsome develop --port 5005",
     "stage": "now",
     "prod": "now --prod",
     "build": "gridsome build",
     "explore": "gridsome explore",
     "now-build-node": "node",
-    "now-build-static-build": "npm run build"
+    "now-build-static-build": "npm run build",
+    "postinstall": "cd api && yarn"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
@@ -44,5 +45,6 @@
     "tailwindcss": "^1.1.2",
     "tailwindcss-transitions": "^2.1.0",
     "webpack-node-externals": "^1.7.2"
-  }
+  },
+  "license": "UNLICENSED"
 }
