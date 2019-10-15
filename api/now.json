@@ -2,11 +2,11 @@
   "name": "api.sergeyfilimonov.com",
   "scope": "sfilimonov",
   "github": { "enabled": false },
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "status": 404, "dest": "404" }
-  ],
   "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    },
     {
       "src": "actions/**/*.js",
       "use": "@now/node"

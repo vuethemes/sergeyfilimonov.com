@@ -1,0 +1,14 @@
+{
+  "name": "www.sergeyfilimonov.com",
+  "alias": [ "www.sergeyfilimonov.com"],
+  "scope": "sfilimonov",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": {
+        "Location": "https://sergeyfilimonov.com/$1"
+      }
+    }
+  ]
+}
