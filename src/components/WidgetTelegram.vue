@@ -13,7 +13,7 @@
       </div>
       <a v-if="post.more" :href="post.more" class="text-xs link text-social-telegram border-social-telegram" target="_blank">Подробнее</a>
     </div>
-    <a href="https://tele.click/sfilimonov" rel="nofollow noreferrer noopener" class="link text-social-telegram border-social-telegram" target="_blank">Все посты в Telegram</a>
+    <a href="https://tele.click/sfilimonov" rel="nofollow noreferrer noopener" class="link text-social-telegram border-social-telegram" target="_blank">Все посты в Telegram →</a>
   </div>
 </template>
 

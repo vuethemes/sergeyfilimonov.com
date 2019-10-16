@@ -43,12 +43,12 @@ export default {
           icon: 'whatsapp',
           color: 'social-whatsapp'
         },
-        // {
-        //   name: 'Email',
-        //   link: 'mailto:email@sergeyfilimonov.com',
-        //   icon: 'fa fa-envelope',
-        //   color: 'gray-500'
-        // },
+        {
+          name: 'GitHub',
+          link: 'https://github.com/sergeyfilimonov/sergeyfilimonov.com',
+          icon: 'github',
+          color: 'gray-500'
+        }
       ]
     }
   }

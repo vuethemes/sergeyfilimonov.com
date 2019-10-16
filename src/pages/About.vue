@@ -2,20 +2,29 @@
   <Layout>
     <div class="container mt-5">
       <div class="section markdown">
-        <g-image src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="w-40 h-40 rounded-lg mb-4 border border-theme-borderGray"/>
-        <div class="max-w-4xl">
-          <div class="text-lg lg:text-3xl mb-4 font-bold">Привет, я Сергей Филимонов</div>
-          <ul>
-            <li>Создаю удобные и стильные <g-link to="/services/site" class="link">сайты</g-link>, используя современные технологии вроде статических фреймворков, чат-ботов, авторассылок, использую авторские иллюстрации, профессиональные фото для создания уникальности сайтов. К слову, я участвую в официальной <a href="https://github.com/orgs/gridsome/teams/maintainers" target="_blank" class="inline">команде</a> развития фреймворка Gridsome.</li>
-            <li>Создаю <a href="https://platforma.pw/" target="_blank" class="link">платформу</a> для прохождения онлайн-курсов.</li>
-            <li>Веду <g-link to="/blog" class="link">блог</g-link> для маркетологов и разработчиков русско- и англоговорящих стран.</li>
-          </ul>
-          <h2>Мои проекты</h2>
-          <ul>
-            <li>Я создал более 20 сайтов, в том числе для <a href="https://edmarket.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">EdMarket</a>, <a href="https://hr.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Нетология HR</a>, <a href="https://ms.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Максим Спиридонов</a>.</li>
-            <li>Соосновал онлайн-школу рисования <a href="https://arttsapko.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">arttsapko.ru</a>, отвечаю за системность развития и онлайн-платформу для обучения.</li>
-            <li>Продюсировал канал на YouTube <a href="https://svoybrend.ru/svoy/youtube" target="_blank" class="link" rel="nofollow noreferrer noopener">Максима Спиридонова</a></li>
-          </ul>
+        <div class="max-w-xl">
+          <div class="mb-6">
+            <div class="flex items-center">
+              <g-image src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="lg:h-24 lg:w-24 h-12 w-12 rounded-full shadow-lg border border-theme-borderGray mr-2 lg:mr-4"/>
+              <div class="">
+                <div class="text-lg lg:text-3xl font-bold mb-0 leading-tight">Привет, я Сергей Филимонов</div>
+                <div class="text-xs lg:text-base">
+                  Здесь — коротко о том, что интересного я сделал и какими проектам занят в данный момент
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <ul class="">
+              <li>Создаю современные и быстрые <g-link to="/services/site" class="link">статичные сайты</g-link> на Vue, GraphQL, Tailwind и Now. Участвую в официальной <a href="https://github.com/orgs/gridsome/teams/maintainers" target="_blank" class="link inline">команде</a> развития фреймворка Gridsome.</li>
+              <li>Создаю <a href="https://platforma.pw/" target="_blank" class="link">платформу</a> для авторов онлайн-курсов.</li>
+              <li>Веду <g-link to="/blog" class="link">блог</g-link> для маркетологов и разработчиков русско- и англоговорящих стран.</li>
+              <li>Веду <a href="https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber" class="link">канал на YouTube</a> и <a href="https://tele.click/sergeyfilimonov_com" class="link">канал в Telegram</a>.</li>
+              <li>Я создал более 20 сайтов, в том числе для <a href="https://edmarket.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">EdMarket</a>, <a href="https://hr.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Нетология HR</a>, <a href="https://ms.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Максим Спиридонов</a>.</li>
+              <li>Соосновал онлайн-школу рисования <a href="https://arttsapko.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">arttsapko.ru</a>, отвечаю за системность развития и онлайн-платформу для обучения.</li>
+              <li>Продюсировал канал на YouTube <a href="https://www.youtube.com/channel/UCfhY78Qw1PeWLphcaA7PcNQ" target="_blank" class="link" rel="nofollow noreferrer noopener">Максима Спиридонова</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="section markdown">

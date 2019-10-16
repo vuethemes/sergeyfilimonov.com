@@ -3,10 +3,8 @@
     <div class="container section flex items-center lg:justify-between flex-wrap leading-none">
       <ul class="flex flex-wrap items-center lg:relative" style="top: 1px;">
         <li class="mr-4 mt-1 lg:mt-0">© Сергей Филимонов 2019</li>
-        <!-- <li class="mr-6 mt-3 lg:mt-0"><a href="#"><i class="fa fa-envelope mr-2"></i>Email-подписка</a></li> -->
-        <li class="mr-4 mt-1 lg:mt-0"><a href="/feed.xml" target="_blank"><i class="fa fa-rss mr-2"></i>RSS</a></li>
-        <li class="mr-4 mt-1 lg:mt-0"><a href="/sitemap.xml" target="_blank"><i class="fa fa-sitemap mr-2"></i>Карта сайта</a></li>
-        <!-- <li class="mr-6 mt-3 lg:mt-0"><g-link to="/contacts"><i class="fab fa-whatsapp mr-2"></i>Контакты</g-link></li> -->
+        <li class="mr-4 mt-1 lg:mt-0"><a href="/feed.xml" target="_blank"><fa :icon="['fa', 'rss']" class="mr-1"/>RSS</a></li>
+        <li class="mr-4 mt-1 lg:mt-0"><a href="/sitemap.xml" target="_blank"><fa :icon="['fa', 'sitemap']" class="mr-1"/>Карта сайта</a></li>
       </ul>
       <Social class="text-base mt-3 lg:mt-0"/>
     </div>

@@ -4,21 +4,11 @@
       <div class="grid-cols grid-cols--2">
         <div class="">
           <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" currentPage="index"/>
-          <g-link to="/blog" class="link mt-2">Все посты</g-link>
+          <g-link to="/blog" class="link mt-2">Все посты →</g-link>
         </div>
         <div class="">
           <WidgetLessons class="mb-8"/>
-          <div class="grid-cols grid-cols--2">
-            <div class="">
-              <WidgetStack/>
-              <WidgetMarketing/>
-              <WidgetManagement/>
-              <WidgetSvoybrend/>
-            </div>
-            <div class="">
-              <WidgetTelegram/>
-            </div>
-          </div>
+          <WidgetTelegram/>
         </div>
       </div>
     </div>
@@ -27,7 +17,7 @@
 
 <page-query>
 query Posts {
-  posts: allPost(limit: 10) {
+  posts: allPost(limit: 6) {
     edges {
       node {
         id

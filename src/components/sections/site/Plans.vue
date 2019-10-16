@@ -4,18 +4,19 @@
       Цены и сроки
     </h2>
     <div class="grid-cols">
-      <div class="p-4 lg:p-6 bg-theme-backgroundGray" v-for="plan in plans">
-        <div class="text-2xl lg:text-3xl font-bold">
-          {{ plan.name }}
+      <div class="p-4 lg:p-6 bg-theme-backgroundGray flex flex-col justify-between lg:h-24rem" v-for="plan in plans">
+        <div class="">
+          <div class="text-2xl lg:text-3xl font-bold">
+            {{ plan.name }}
+          </div>
+          <ul class="mt-2">
+            <li v-for="feature in plan.features" :class="!feature.active ? 'text-theme-textBlack200' : ''">→ {{ feature.name }}</li>
+          </ul>
         </div>
-        <ul class="mt-2">
-          <li v-for="feature in plan.features" :class="!feature.active ? 'text-theme-textBlack200' : ''">→ {{ feature.name }}</li>
-        </ul>
-        <!-- <div class="mt-4">
-          <span class="font-bold">Результат:</span> {{ plan.description }}
-        </div> -->
-        <div class="mt-2 text-xl lg:text-2xl" v-html="plan.price"/>
-        <a href="#" v-scroll-to="'#contacts'" class="button button--2xl rounded mt-4 w-full">Обсудить</a>
+        <div class="">
+          <div class="mt-2 text-xl lg:text-2xl" v-html="plan.price"/>
+          <a href="#" v-scroll-to="'#contacts'" class="button button--2xl rounded mt-4 w-full">Обсудить</a>
+        </div>
       </div>
     </div>
   </div>
@@ -27,111 +28,71 @@ export default {
     return {
       plans: [
         {
-          name: 'Tilda Block',
-          description: 'сайт полностью собран из готовых блоков Tilda',
+          name: 'Нешаблонный',
+          description: 'сайт с уникальным дизайном и готовый под все виды продвижения',
           features: [
             {
-              name: 'Система управления контентом',
+              name: 'Уникальный дизайн',
               active: true,
             },
             {
-              name: 'Подготовка к SEO-продвижению',
-              active: false,
+              name: 'Любая CMS',
+              active: true,
             },
             {
-              name: 'Уникальный дизайн',
-              active: false,
+              name: 'Интеграции с любыми сервисами',
+              active: true,
             },
             {
-              name: 'Гибкая шаблонизация',
-              active: false,
+              name: 'Максимальная скорость загрузки',
+              active: true,
             },
             {
-              name: 'Мультиязычность',
-              active: false,
+              name: 'Бесплатный CDN-хостинг',
+              active: true,
             },
             {
-              name: 'Свой API',
-              active: false,
+              name: 'Можно продвигать в SEO',
+              active: true,
+            }
+          ],
+          price: 'от 120&thinsp;000&nbsp;₽ и 6 недель',
+          icon: 'home'
+        },
+        {
+          name: 'Шаблонный',
+          description: 'сайт полностью собран из готовых блоков Tilda',
+          features: [
+            {
+              name: 'Стандартные блоки Tilda',
+              active: true,
             },
             {
-              name: 'Система аккаунтов',
-              active: false,
+              name: 'Интеграции с партнёрами Tilda',
+              active: true,
             }
           ],
           price: 'от 20&thinsp;000&nbsp;₽ и 1 недели',
           icon: 'edit'
         },
         {
-          name: 'Статика',
-          description: 'сайт с уникальным дизайном и готовый под все виды продвижения',
-          features: [
-            {
-              name: 'Система управления контентом',
-              active: true,
-            },
-            {
-              name: 'Подготовка к SEO-продвижению',
-              active: true,
-            },
-            {
-              name: 'Уникальный дизайн',
-              active: true,
-            },
-            {
-              name: 'Гибкая шаблонизация',
-              active: true,
-            },
-            {
-              name: 'Мультиязычность',
-              active: true,
-            },
-            {
-              name: 'Свой API',
-              active: true,
-            },
-            {
-              name: 'Система аккаунтов',
-              active: false,
-            }
-          ],
-          price: 'от 50&thinsp;000&nbsp;₽ и 2 недель',
-          icon: 'home'
-        },
-        {
-          name: 'Веб-сервис',
+          name: 'Отдельные задачи',
           description: 'полностью самописный сайт, с шаблонами страниц и со своим API',
           features: [
             {
-              name: 'Система управления контентом',
+              name: 'Связка двух сервисов по API',
               active: true,
             },
             {
-              name: 'Подготовка к SEO-продвижению',
+              name: 'Настройка email-рассылок',
               active: true,
             },
             {
-              name: 'Уникальный дизайн',
-              active: true,
-            },
-            {
-              name: 'Гибкая шаблонизация',
-              active: true,
-            },
-            {
-              name: 'Мультиязычность',
-              active: true,
-            },
-            {
-              name: 'Свой API',
-              active: true,
-            },
-            {
-              name: 'Система аккаунтов',
+              name: 'И другие похожие задачи',
               active: true,
             }
           ],
-          price: 'от 150&thinsp;000&nbsp;₽ и 2 месяцев',
+          price: 'от 3&thinsp;000&nbsp;₽ и 1 дня',
           icon: 'shop'
         }
       ]

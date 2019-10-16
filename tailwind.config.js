@@ -81,8 +81,9 @@ module.exports = {
         }
       },
       spacing: {
-        '96': '24rem',
-        '128': '32rem',
+        '24rem': '24rem',
+        '28rem': '28rem',
+        '32rem': '32rem'
       }
     },
     container: {
