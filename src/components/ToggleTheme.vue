@@ -1,16 +1,12 @@
 <template>
   <a class="" @click.prevent="toggleTheme">
-    <i v-if="this.$store.getters.theme == 'theme-light'" class="far fa-moon"></i>
-    <i v-else class="far fa-sun"></i>
+    <fa :icon="['fa', 'moon']" v-if="this.$store.getters.theme == 'theme-light'"/>
+    <fa :icon="['fa', 'sun']" v-else/>
   </a>
 </template>
 
 <script>
 export default {
-  mounted() {
-    let theme = localStorage.getItem('theme') || 'theme-light'
-    this.$store.commit('changeTheme', theme)
-  },
   methods: {
     toggleTheme() {
       let theme = this.$store.getters.theme === 'theme-light' ? 'theme-dark' : 'theme-light'

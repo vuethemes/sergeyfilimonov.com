@@ -1,15 +1,1 @@
-<svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M2.3783 32.4911C1.61172 20.7588 -2.21617 14.1362 18.024 6.76935C38.2641 -0.597455 59.5195 -4.94708 50.2379 22.181C40.9563 49.309 45.9314 49.8207 31.4566 56.8312C16.9817 63.8416 3.34384 47.2686 2.3783 32.4911Z" fill="#3179E8" fill-opacity="0.1"/>
-<path d="M27 42V39C27 36.2386 29.2386 34 32 34V34C34.7614 34 37 36.2386 37 39V42" stroke="#679CEF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M49 25V45C49 47.7614 46.7614 50 44 50H19" stroke="#3179E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15 25V42" stroke="#679CEF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M43 36C44.1046 36 45 35.1046 45 34C45 32.8954 44.1046 32 43 32C41.8954 32 41 32.8954 41 34C41 35.1046 41.8954 36 43 36Z" fill="#3179E8"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M17.426 10.595C17.7902 10.2093 18.298 10 18.8284 10H45.1716C45.702 10 46.2098 10.2093 46.574 10.595C48.0748 12.1844 52 16.5735 52 19C52 22.866 48.866 26 45 26C42.0539 26 39.5329 24.18 38.5 21.6031C37.4671 24.18 34.9461 26 32 26C29.0539 26 26.5329 24.18 25.5 21.6031C24.4671 24.18 21.9461 26 19 26C15.134 26 12 22.866 12 19C12 16.5735 15.9252 12.1844 17.426 10.595Z" stroke="#3179E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="61" height="61" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg width="61" height="61" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M2.378 32.491C1.612 20.76-2.216 14.136 18.024 6.77 38.264-.597 59.519-4.947 50.238 22.181c-9.282 27.128-4.307 27.64-18.781 34.65-14.475 7.01-28.113-9.562-29.079-24.34z" fill="#3179E8" fill-opacity=".1"/><path d="M27 42v-3a5 5 0 0 1 10 0v3" stroke="#679CEF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M49 25v20a5 5 0 0 1-5 5H19" stroke="#3179E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 25v17" stroke="#679CEF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M43 36a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="#3179E8"/><path clip-rule="evenodd" d="M17.426 10.595A1.92 1.92 0 0 1 18.828 10h26.344c.53 0 1.038.21 1.402.595C48.074 12.185 52 16.573 52 19a7 7 0 0 1-13.5 2.603 7.002 7.002 0 0 1-13 0A7.002 7.002 0 0 1 12 19c0-2.427 3.925-6.816 5.426-8.405z" stroke="#3179E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0H61V61H0z"/></clipPath></defs></svg>

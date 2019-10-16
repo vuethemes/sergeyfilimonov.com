@@ -31,9 +31,5 @@ export default function (Vue, {router, head, isClient, appOptions}) {
   })
 
   head.htmlAttrs = { lang: 'ru', class: 'h-full' }
-  head.bodyAttrs = { class: 'antialiased font-sans' }
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css'
-  })
+  head.bodyAttrs = { class: 'font-sans' }
 }

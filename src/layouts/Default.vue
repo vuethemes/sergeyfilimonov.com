@@ -24,9 +24,23 @@ export default {
       if (this.$route.path === '/') {
         canonical = SITE_URL
       } else {
-        canonical = SITE_URL + '/' + this.$route.path
+        canonical = SITE_URL + this.$route.path
       }
       return canonical
+    }
+  },
+  mounted() {
+    const currentDateTime = new Date()
+    const currentTime = currentDateTime.getHours()
+
+    if (!localStorage.getItem('theme')) {
+      if (currentTime >= 10 && currentTime <= 22) {
+        this.$store.commit('changeTheme', 'theme-light')
+      } else {
+        this.$store.commit('changeTheme', 'theme-dark')
+      }
+    } else {
+      this.$store.commit('changeTheme', localStorage.getItem('theme'))
     }
   },
   metaInfo() {

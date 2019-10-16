@@ -16,7 +16,7 @@
               <g-link :to="page.to" :class="['text-base leading-none hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]">{{ page.text }}</g-link>
             </li>
             <li class="lg:mr-6">
-              <a href="https://tele.click/sergeyfilimonov_com" class="text-base leading-none hidden lg:block button button--xl rounded py-3" target="_blank"><i class="fab fa-telegram mr-2"></i>Telegram-канал</a>
+              <a href="https://tele.click/sergeyfilimonov_com" class="text-base leading-none hidden lg:block button button--xl rounded py-3" target="_blank"><fa :icon="['fab', 'telegram']" class="mr-1"/>Telegram-канал</a>
             </li>
             <li class="lg:hidden block text-xl ml-2" style="margin-right: -1px;"><ToggleTheme/></li>
           </ul>

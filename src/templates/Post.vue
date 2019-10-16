@@ -5,7 +5,7 @@
       <article class="mt-5 markdown">
         <div class="lg:mb-4 mb-1 text-xs lg:text-base" v-html="formattedPublishDate"/>
         <h1 class="" v-html="$page.post.title"/>
-        <div class="text-lg lg:text-2xl mb-4" v-html="$page.post.excerpt"/>
+        <div class="text-lg lg:text-xl mb-4" v-html="$page.post.excerpt"/>
         <div v-html="$page.post.content"/>
       </article>
       <ul class="mt-8 flex flex-wrap">
