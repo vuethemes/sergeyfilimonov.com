@@ -21,7 +21,7 @@ export default {
         },
         {
           name: 'Telegram',
-          link: 'https://tele.click/sfilimonov',
+          link: 'https://tglink.ru/sfilimonov',
           icon: 'telegram',
           color: 'social-telegram'
         },
@@ -39,7 +39,7 @@ export default {
         },
         {
           name: 'WhatsApp',
-          link: 'https://api.whatsapp.com/send?phone=79261118328',
+          link: 'https://api.whatsapp.com/send?phone=79959232515',
           icon: 'whatsapp',
           color: 'social-whatsapp'
         },

@@ -4,23 +4,23 @@
       <div class="flex items-center justify-between lg:flex-row">
         <div class="flex items-center">
           <g-link to="/" class="group mr-6">
-            <div class="text-lg lg:text-2xl font-bold">Сергей Филимонов</div>
-            <div class="text-xs">
-              О&nbsp;сайтах, сервисах <br class="lg:hidden">и&nbsp;всём&nbsp;таком
+            <div class="text-base lg:text-2xl font-bold leading-tight">Сергей Филимонов</div>
+            <div class="mt-1 lg:mt-0 text-xs leading-tight">
+            Персональный сайт
             </div>
           </g-link>
         </div>
         <div class="flex items-end lg:items-center lg:mt-0 flex-col lg:flex-row leading-none -mb-1 lg:mb-0">
-          <ul class="flex items-center mr-2">
-            <li class="lg:mr-6" v-for="page in pages">
-              <g-link :to="page.to" :class="['text-base leading-none hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]">{{ page.text }}</g-link>
+          <ul class="flex items-center mr-2 leading-none">
+            <li class="mr-2 lg:mr-6 mb-1" v-for="page in pages">
+              <g-link :to="page.to" :class="['text-xs lg:text-base hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]">{{ page.text }}</g-link>
             </li>
             <li class="lg:mr-6">
               <a href="https://tele.click/sergeyfilimonov_com" class="text-base leading-none hidden lg:block button button--xl rounded py-3" target="_blank"><fa :icon="['fab', 'telegram']" class="mr-1"/>Telegram-канал</a>
             </li>
-            <li class="lg:hidden block text-xl ml-2" style="margin-right: -1px;"><ToggleTheme/></li>
+            <li class="lg:hidden block text-md lg:text-xl lg:ml-2" style="margin-right: -1px;"><ToggleTheme/></li>
           </ul>
-          <Social class="text-xl lg:text-xl mt-3 lg:mt-0"/>
+          <Social class="text-md lg:text-xl mt-1 lg:mt-0"/>
           <ToggleTheme class="ml-4 hidden lg:block text-2xl hover:bg-theme-backgroundGray lg:p-2 rounded-full lg:-mr-2"/>
         </div>
       </div>
@@ -41,18 +41,19 @@ export default {
     return {
       pages: [
         {
-          text: 'Обо мне',
-          to: '/about'
+          text: 'О себе',
+          to: '/about',
+          mobileHidden: false
         },
         {
           text: 'Блог',
           to: '/blog',
-          mobileHidden: true
+          mobileHidden: false
         },
         {
-          text: 'Разработка сайта',
+          text: 'Сайты',
           to: '/services/site',
-          mobileHidden: true
+          mobileHidden: false
         },
       ]
     }
