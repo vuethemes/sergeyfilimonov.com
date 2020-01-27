@@ -4,17 +4,17 @@
       Цены и сроки
     </h2>
     <div class="grid-cols">
-      <div class="p-4 lg:p-6 bg-theme-backgroundGray flex flex-col justify-between lg:h-24rem" v-for="plan in plans">
+      <div class="p-4 lg:p-6 bg-theme-backgroundGray flex flex-col justify-between lg:h-22rem" v-for="plan in plans">
         <div class="">
-          <div class="text-2xl lg:text-3xl font-bold">
+          <h3 class="text-2xl lg:text-3xl font-bold">
             {{ plan.name }}
-          </div>
+          </h3>
           <ul class="mt-2">
-            <li v-for="feature in plan.features" :class="!feature.active ? 'text-theme-textBlack200' : ''">→ {{ feature.name }}</li>
+            <li v-for="feature in plan.features" :class="!feature.active ? 'text-theme-textBlack200' : ''">■  {{ feature.name }}</li>
           </ul>
         </div>
         <div class="">
-          <div class="mt-2 text-xl lg:text-2xl" v-html="plan.price"/>
+          <div class="mt-2 text-lg lg:text-xl font-mono" v-html="plan.price"/>
           <a href="#" v-scroll-to="'#contacts'" class="button button--2xl rounded mt-4 w-full">Обсудить</a>
         </div>
       </div>

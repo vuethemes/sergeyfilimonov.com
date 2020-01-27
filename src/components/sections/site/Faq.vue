@@ -5,9 +5,9 @@
     </h2>
     <div class="grid-cols">
       <div class="p-4 lg:p-6 bg-theme-backgroundGray rounded" v-for="item in faq">
-        <div class="text-xl mb-4 font-bold">
+        <h3 class="text-xl mb-4">
           {{ item.q }}
-        </div>
+        </h3>
         <div class="">
           {{ item.a }}
         </div>

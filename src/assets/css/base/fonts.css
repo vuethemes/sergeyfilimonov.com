@@ -1,5 +1,13 @@
 @font-face {
   font-family: 'JetBrains';
-  src:  url('~@/assets/fonts/JetBrains/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
-        url('~@/assets/fonts/JetBrains/woff/JetBrainsMono-Regular.woff') format('woff');
+  src: url('~@/assets/fonts/JetBrains/woff2/JetBrainsMono-Regular.woff2') format('woff2'), url('~@/assets/fonts/JetBrains/woff/JetBrainsMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains';
+  src: url('~@/assets/fonts/JetBrains/woff2/JetBrainsMono-Bold.woff2') format('woff2'), url('~@/assets/fonts/JetBrains/woff/JetBrainsMono-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }

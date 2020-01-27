@@ -3,7 +3,7 @@ a {
 }
 
 h1, h2, h3 {
-  @apply leading-snug font-display;
+  @apply leading-snug font-display font-bold;
 }
 
 h1 {
