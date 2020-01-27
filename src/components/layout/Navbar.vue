@@ -6,7 +6,7 @@
           <div class="group">
             <g-link to="/" class="text-base lg:text-2xl leading-tight font-mono font-bold" style="word-spacing: -6px;">Сергей Филимонов</g-link>
             <div class="mt-1 lg:mt-0 text-xs leading-tight">
-              О статичных сайтах, serverless и <g-link class="link" to="/about/">всём таком</g-link>
+              О&nbsp;статичных сайтах, serverless и&nbsp;<g-link class="link" to="/about/">всём таком</g-link>
             </div>
           </div>
         </div>
