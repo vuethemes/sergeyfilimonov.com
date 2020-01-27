@@ -41,7 +41,7 @@ export default {
     return {
       pages: [
         {
-          text: 'О себе',
+          text: 'О&nbsp;себе',
           to: '/about/',
           mobileHidden: false
         },
