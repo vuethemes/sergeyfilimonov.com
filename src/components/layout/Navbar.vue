@@ -3,7 +3,7 @@
     <div class="container">
       <div class="flex items-center justify-between lg:flex-row">
         <div class="flex items-center">
-          <div class="group mr-6">
+          <div class="group">
             <g-link to="/" class="text-base lg:text-2xl leading-tight font-mono font-bold" style="word-spacing: -6px;">Сергей Филимонов</g-link>
             <div class="mt-1 lg:mt-0 text-xs leading-tight">
               О статичных сайтах, serverless и <g-link class="link" to="/about/">всём таком</g-link>
