@@ -3,7 +3,7 @@
     <div class="container section">
       <div class="mt-5 lg:mt-8 mb-4 grid-cols grid-cols--3-1">
         <div class="">
-          <h1 class="text-3xl lg:text-5xl mb-4 leading-none font-bold">Разработка сайта</h1>
+          <h1 class="text-3xl lg:text-5xl mb-4 leading-none">Разработка сайта</h1>
           <div class="text-lg lg:text-2xl max-w-4xl mb-4 lg:my-8">
             Сайт — отличная возможность собрать всё самое главное о вашем бренде в максимально концентрированном, структурированном и доступном виде. Для каждого сайта я составляю карту смыслов, рисую прототип, затем — дизайн и в самом конце — программирование. Сайт получается продуманным, красивым и <g-link to="/blog/wordpress-vs-static" class="link inline">быстрым за счёт статического фреймворка</g-link>.
           </div>

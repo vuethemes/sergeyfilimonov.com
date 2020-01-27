@@ -7,7 +7,7 @@
             <div class="flex items-center">
               <g-image src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="lg:h-24 lg:w-24 h-12 w-12 rounded-full shadow-lg border border-theme-borderGray mr-2 lg:mr-4"/>
               <div class="">
-                <div class="text-lg lg:text-3xl font-bold mb-0 leading-tight font-mono" style="word-spacing: -0.4rem;">Привет, я Сергей Филимонов</div>
+                <div class="text-lg lg:text-3xl mb-0 leading-tight font-mono" style="word-spacing: -0.4rem;">Привет, я Сергей Филимонов</div>
                 <div class="text-xs lg:text-base">
                   Здесь — коротко о том, что интересного я сделал и какими проектам занят в данный момент
                 </div>
