@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between lg:flex-row">
         <div class="flex items-center">
           <div class="group">
-            <g-link to="/" class="text-base lg:text-2xl leading-tight font-mono font-bold" style="word-spacing: -2px;">Сергей Филимонов</g-link>
+            <g-link to="/" class="text-base lg:text-2xl leading-tight font-mono font-bold" style="word-spacing: -5px;">Сергей Филимонов</g-link>
             <div class="mt-1 text-xs leading-tight">
               О&nbsp;JAMstack<span class="hidden lg:inline">, Gridsome, Serverless</span>&nbsp;и&nbsp;<g-link class="link" to="/about/">всём таком</g-link>
             </div>
