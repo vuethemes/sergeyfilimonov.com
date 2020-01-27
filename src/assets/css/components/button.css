@@ -1,5 +1,5 @@
 .button {
-  @apply inline-flex items-center justify-center text-white bg-primary w-full text-center;
+  @apply inline-flex items-center justify-center text-white bg-primary w-full text-center font-mono;
   transition: .2s;
   &--lg {
     @apply text-xl py-2 px-4;
