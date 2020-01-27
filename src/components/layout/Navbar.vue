@@ -13,7 +13,7 @@
         <div class="flex items-end lg:items-center lg:mt-0 flex-col lg:flex-row leading-none -mb-1 lg:mb-0">
           <ul class="flex items-center mr-2 leading-none font-mono" style="word-spacing: -6px;">
             <li class="mr-2 lg:mr-6 mb-1" v-for="page in pages">
-              <g-link :to="page.to" :class="['text-xs lg:text-base hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]">{{ page.text }}</g-link>
+              <g-link :to="page.to" :class="['text-xs lg:text-base hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]"><span v-html="page.text"/></g-link>
             </li>
             <li class="lg:mr-6">
               <a href="https://tele.click/sergeyfilimonov_com" class="text-base leading-none hidden lg:block button button--xl rounded py-3" target="_blank"><fa :icon="['fab', 'telegram']" class="mr-1"/>Telegram-канал</a>
