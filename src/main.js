@@ -7,7 +7,7 @@ import VueMq from 'vue-mq'
 import VueScrollTo from 'vue-scrollto'
 import VueGtm from 'vue-gtm'
 
-export default function (Vue, {router, head, isClient, appOptions}) {
+export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.component('Layout', DefaultLayout)
 
   Vue.use(Vuex)
@@ -31,5 +31,5 @@ export default function (Vue, {router, head, isClient, appOptions}) {
   })
 
   head.htmlAttrs = { lang: 'ru', class: 'h-full' }
-  head.bodyAttrs = { class: 'font-sans' }
+  head.bodyAttrs = { class: 'font-body antialiased' }
 }

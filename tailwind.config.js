@@ -7,9 +7,10 @@ module.exports = {
       xl: '1180px',
     },
     fontFamily: {
-      display: ['Arial', 'sans-serif'],
+      display: ['JetBrains', 'sans-serif'],
       body: ['Arial', 'sans-serif'],
       mono: [
+        'JetBrains',
         'SFMono-Regular',
         'Menlo',
         'Monaco',

@@ -3,15 +3,15 @@
     <div class="container">
       <div class="flex items-center justify-between lg:flex-row">
         <div class="flex items-center">
-          <g-link to="/" class="group mr-6">
-            <div class="text-base lg:text-2xl font-bold leading-tight">Сергей Филимонов</div>
+          <div class="group mr-6">
+            <g-link to="/" class="text-base lg:text-2xl font-bold leading-tight font-mono" style="word-spacing: -6px;">Сергей Филимонов</g-link>
             <div class="mt-1 lg:mt-0 text-xs leading-tight">
-            Персональный сайт
+              О статичных сайтах, serverless и <g-link class="link" to="/about/">всём таком</g-link>
             </div>
-          </g-link>
+          </div>
         </div>
         <div class="flex items-end lg:items-center lg:mt-0 flex-col lg:flex-row leading-none -mb-1 lg:mb-0">
-          <ul class="flex items-center mr-2 leading-none">
+          <ul class="flex items-center mr-2 leading-none font-mono" style="word-spacing: -6px;">
             <li class="mr-2 lg:mr-6 mb-1" v-for="page in pages">
               <g-link :to="page.to" :class="['text-xs lg:text-base hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]">{{ page.text }}</g-link>
             </li>

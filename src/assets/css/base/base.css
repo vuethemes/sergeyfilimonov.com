@@ -1,13 +1,21 @@
-* {
-
-}
-
 a {
   cursor: pointer !important;
 }
 
 h1, h2, h3 {
-  @apply leading-snug;
+  @apply leading-snug font-display;
+}
+
+h1 {
+  word-spacing: -0.7rem;
+}
+
+h2 {
+  word-spacing: -0.4rem;
+}
+
+h3 {
+  word-spacing: -0.4rem;
 }
 
 *:disabled {

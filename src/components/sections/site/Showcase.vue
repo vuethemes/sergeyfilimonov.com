@@ -7,9 +7,9 @@
       <a class="bg-theme-backgroundGray overflow-hidden hover:shadow-lg transform--move-top transition-all" v-for="item in showcase" :href="item.website.url" target="_blank">
         <div class="bg-gray-200 h-48 bg-cover" :style="`background-image: url(/images/showcase/websites/${item.image}.jpg);`"/>
         <div class="p-4 lg:p-6">
-          <div class="text-xl lg:text-xl font-bold mb-1">
+          <h3 class="text-xl lg:text-xl font-bold mb-1">
             {{ item.name }}
-          </div>
+          </h3>
           <div class="link" target="_blank">
             {{ item.website.name }} →
           </div>

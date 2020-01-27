@@ -1,8 +1,8 @@
 .link {
-  @apply inline-block text-primary border-b border-primary;
+  @apply inline-block text-primary underline;
   transition: border .2s ease;
   &:hover {
-    @apply border-transparent;
+    @apply no-underline;
   }
   &--white {
     @apply text-white border-white;
