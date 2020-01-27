@@ -27,14 +27,14 @@
     <Showcase class="mt-8"/>
     <Plans class="lg:mt-12 mt-8"/>
     <div id="reviews" class="lg:mt-12 mt-8 section container">
-      <h2 class="text-3xl lg:text-5xl mb-4 font-bold">Отзывы клиентов</h2>
+      <h2 class="text-3xl lg:text-5xl mb-4">Отзывы клиентов</h2>
       <Reviews/>
     </div>
     <Stack class="lg:mt-12 mt-8"/>
     <FAQ class="lg:mt-12 mt-8"/>
     <div id="contacts" class="mt-8">
       <div class="container section ">
-        <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
+        <h2 class="text-3xl lg:text-5xl mb-4">
           Контакты
         </h2>
         <div class="mb-6 text-lg lg:text-xl">

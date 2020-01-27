@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="plans" class="container section">
-    <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
+    <h2 class="text-3xl lg:text-5xl mb-4">
       Цены и сроки
     </h2>
     <div class="grid-cols">

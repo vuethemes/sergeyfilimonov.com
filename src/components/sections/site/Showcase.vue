@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="showcase" class="container section">
-    <h2 class="text-3xl lg:text-5xl mb-4 font-bold">
+    <h2 class="text-3xl lg:text-5xl mb-4">
       Работы
     </h2>
     <div class="grid-cols grid-cols--3">
