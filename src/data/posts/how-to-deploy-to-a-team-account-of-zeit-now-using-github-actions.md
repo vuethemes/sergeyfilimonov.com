@@ -19,14 +19,16 @@ You have two options — either subscribe to a private team account on GitHub wi
 If you are ready to pay for a private team account, you just have to make a one-click configuration of your Now team and your team on GitHub. If you are not, you can use a third-party package [ZEIT Now Deployment](https://github.com/amondnet/now-deployment) from GitHub Actions Marketplace.
 
 ## How to configure deployment using the third-party package
+
 ### Step 1
-Go to https://zeit.co/account/tokens and create an access token. Copy it, go to https://github.com/sergeyfilimonov/YOUR_REPO/settings/secrets, and create a new secret named ZEIT_TOKEN with the access token from ZEIT Now you have just create.
+
+Go to [ZEIT Now > Account > Tokens](https://zeit.co/account/tokens) and create an access token. Copy it, go to GitHub > YOUR__EPO > Settings > Secrets, and create a new secret named ZEIT_OKEN with the access token from ZEIT Now you have just create_
 
 ### Step 2
-Go to your repo and click Actions. Then click _Set up workflow yourself_ and paste the code below:
+
+Go to your repo and click _Actions_. Then click _Set up workflow yourself_ and paste the code below:
 
 ```yaml
-
 name: Deploy
 on: [push]
 jobs:
@@ -40,4 +42,4 @@ jobs:
         now-args: '--prod'
 ```
 
-Click _Start commit_ and then _Commit new file_. This is going to create a new file named main.yml (you can rename it as you like) in .github/workflows/ inside of your repo. The commit will start the proccess of deploying your app to ZEIT Now. To check it go to Actions again. 
+Click _Start commit_ and then _Commit new file_. This is going to create a new file named `main.yml` (you can rename it as you like) in `.github/workflows/` inside of your repo. The commit will start the proccess of deploying your app to ZEIT Now. To check it go to Actions again.
