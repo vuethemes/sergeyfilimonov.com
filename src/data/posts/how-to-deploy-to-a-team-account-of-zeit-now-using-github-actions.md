@@ -22,7 +22,7 @@ If you are ready to pay for a private team account, you just have to make a one-
 
 ### Step 1
 
-Go to [ZEIT Now > Account > Tokens](https://zeit.co/account/tokens) and create an access token. Copy it, go to GitHub > YOUR__EPO > Settings > Secrets, and create a new secret named ZEIT_OKEN with the access token from ZEIT Now you have just create_
+Go to [ZEIT Now > Account > Tokens](https://zeit.co/account/tokens) and create an access token. Copy it, go to GitHub > YOUR__REPO > Settings > Secrets, and create a new secret named ZEIT_OKEN with the access token from ZEIT Now you have just create_
 
 ### Step 2
 
