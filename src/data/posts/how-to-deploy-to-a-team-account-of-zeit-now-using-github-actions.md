@@ -4,7 +4,7 @@ slug: deploy-team-zeit-now
 excerpt: If you need to deploy to a team account of ZEIT Now by committing changes
   to your repo, you'll find out that standard integration of Now and GitHub tied to
   your private account won't work.
-date: 2020-01-27T21:00:00Z
+date: 2020-01-26T21:00:00Z
 tags:
 - GitHub
 - ZEIT Now

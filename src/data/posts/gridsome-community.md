@@ -1,7 +1,7 @@
 ---
 title: Русскоязычное сообщество Gridsome в&nbsp;Telegram
 slug: gridsome-community
-date: 2019-11-28T00:01:00.196+0300
+date: 2019-11-28T00:01:00Z
 category: article
 action: Подробнее
 excerpt: 'Вступайте в русскоязычное сообщество Gridsome в Telegram: спрашивайте, если не получается решить задачу, и делитесь своими знаниями с другими.'

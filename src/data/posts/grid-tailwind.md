@@ -1,7 +1,7 @@
 ---
 title: A grid system for Tailwind CSS
 slug: grid-tailwind
-date: 2019-06-23T00:01:00.196+0300
+date: 2019-06-23T00:01:00Z
 category: article
 action: More
 excerpt: A simple grid system which Tailwind definitely lacks for now.
