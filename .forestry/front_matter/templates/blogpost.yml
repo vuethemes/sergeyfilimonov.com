@@ -4,22 +4,26 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Заголовок
 - type: text
   name: slug
-  label: slug
+  label: Ярлык
+- type: textarea
+  name: excerpt
+  label: Анонс
 - type: datetime
   name: date
-  label: date
+  label: Дата
+- type: list
+  name: tags
+  label: Теги
+  config:
+    use_select: false
 - type: text
   name: category
   label: category
+  hidden: true
 - type: text
   name: action
   label: action
-- type: textarea
-  name: excerpt
-  label: excerpt
-- type: list
-  name: tags
-  label: tags
+  hidden: true
