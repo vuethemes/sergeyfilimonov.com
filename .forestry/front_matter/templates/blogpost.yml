@@ -28,3 +28,5 @@ fields:
   name: action
   label: action
   hidden: true
+pages:
+- src/data/posts/how-to-deploy-to-a-team-account-of-zeit-now-using-github-actions.md
