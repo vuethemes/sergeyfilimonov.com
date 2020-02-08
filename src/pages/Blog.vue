@@ -2,8 +2,9 @@
   <Layout>
     <div class="container section mt-5">
       <div class="">
-        <div class="max-w-xl mx-auto">
-          <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" currentPage="index"/>
+        <div class="grid grid-cols-2 gap-3">
+          <PostCard
+            v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" currentPage="index"/>
         </div>
       </div>
     </div>

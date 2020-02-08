@@ -1,5 +1,5 @@
 <template>
-  <div class="grid-cols grid-cols--2">
+  <div class="grid lg:grid-cols-2 gap-6">
     <div class="p-4 lg:p-6 bg-theme-backgroundGray">
       <div class="relative">
         <span class="opacity-50">«</span>

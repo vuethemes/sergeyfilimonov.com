@@ -41,11 +41,6 @@ export default {
     return {
       pages: [
         {
-          text: 'О&nbsp;себе',
-          to: '/about/',
-          mobileHidden: false
-        },
-        {
           text: 'Блог',
           to: '/blog/',
           mobileHidden: false
@@ -54,6 +49,16 @@ export default {
           text: 'Сайты',
           to: '/services/site/',
           mobileHidden: false
+        },
+        {
+          text: 'Отзывы',
+          to: '/reviews/',
+          mobileHidden: false
+        },
+        {
+          text: 'Выступления',
+          to: '/talks/',
+          mobileHidden: true
         },
       ]
     }

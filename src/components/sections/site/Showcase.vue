@@ -3,7 +3,7 @@
     <h2 class="text-3xl lg:text-5xl mb-4">
       Работы
     </h2>
-    <div class="grid-cols grid-cols--3">
+    <div class="grid lg:grid-cols-3 gap-6">
       <a class="bg-theme-backgroundGray overflow-hidden hover:shadow-lg transform--move-top transition-all" v-for="item in showcase" :href="item.website.url" target="_blank">
         <div class="bg-gray-200 h-48 bg-cover" :style="`background-image: url(/images/showcase/websites/${item.image}.jpg);`"/>
         <div class="p-4 lg:p-6">

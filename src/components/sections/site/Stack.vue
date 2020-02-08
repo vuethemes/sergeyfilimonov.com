@@ -3,7 +3,7 @@
     <h2 class="text-3xl lg:text-5xl mb-4">
       Технологии
     </h2>
-    <div class="grid-cols grid-cols--2m4d">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="p-4 lg:p-6 bg-theme-backgroundGray flex items-center" v-for="item in stack">
         <div class="">
           <img :src="`/images/stack/${item.slug}.png`" :alt="item.name" class="w-8 lg:w-12 mr-4"/>

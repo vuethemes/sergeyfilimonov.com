@@ -3,7 +3,7 @@
     <h2 class="text-3xl lg:text-5xl mb-4">
       Цены и сроки
     </h2>
-    <div class="grid-cols">
+    <div class="grid lg:grid-cols-3 gap-6">
       <div class="p-4 lg:p-6 bg-theme-backgroundGray flex flex-col justify-between lg:h-22rem" v-for="plan in plans">
         <div class="">
           <h3 class="text-2xl lg:text-3xl font-bold">

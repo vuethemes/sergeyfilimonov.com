@@ -1,9 +1,9 @@
 <template>
   <div id="posts" class="section">
     <div class="container">
-      <div class="max-w-xl mx-auto">
-        <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="currentPage"/>
-        <g-link to="/posts" class="link mt-2">Все посты</g-link>
+      <h2 class="text-center text-2xl mb-6">Другие посты...</h2>
+      <div class="grid lg:grid-cols-2 gap-4">
+        <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node" :currentPage="currentPage" class="mb-4 lg:mb-0"/>
       </div>
     </div>
   </div>

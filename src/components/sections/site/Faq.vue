@@ -3,7 +3,7 @@
     <h2 class="text-3xl lg:text-5xl mb-4">
       FAQ
     </h2>
-    <div class="grid-cols">
+    <div class="grid lg:grid-cols-2 gap-6">
       <div class="p-4 lg:p-6 bg-theme-backgroundGray rounded" v-for="item in faq">
         <h3 class="text-xl mb-4">
           {{ item.q }}

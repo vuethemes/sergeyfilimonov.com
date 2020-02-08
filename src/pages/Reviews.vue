@@ -2,49 +2,12 @@
   <Layout>
     <div class="container mt-5">
       <div class="section markdown">
-        <div class="max-w-xl">
-          <div class="mb-6">
-            <div class="flex items-center">
-              <g-image src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="lg:h-24 lg:w-24 h-12 w-12 rounded-full shadow-lg border border-theme-borderGray mr-2 lg:mr-4"/>
-              <div class="">
-                <div class="text-lg lg:text-3xl mb-0 leading-tight font-mono" style="word-spacing: -0.4rem;">Привет, я Сергей Филимонов</div>
-                <div class="text-xs lg:text-base">
-                  Здесь — коротко о том, что интересного я сделал и какими проектам занят в данный момент
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <ul class="">
-              <li>Создаю современные и быстрые <g-link to="/services/site" class="link">статичные сайты</g-link> на Vue, GraphQL, Tailwind и Now. Участвую в официальной <a href="https://github.com/orgs/gridsome/teams/maintainers" target="_blank" class="link inline">команде</a> развития фреймворка Gridsome.</li>
-              <li>Создаю <a href="https://platforma.pw/" target="_blank" class="link">платформу</a> для авторов онлайн-курсов.</li>
-              <li>Веду <g-link to="/blog" class="link">блог</g-link> для маркетологов и разработчиков русско- и англоговорящих стран.</li>
-              <li>Веду <a href="https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber" class="link">канал на YouTube</a> и <a href="https://tele.click/sergeyfilimonov_com" class="link">канал в Telegram</a>.</li>
-              <li>Я создал более 20 сайтов, в том числе для <a href="https://edmarket.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">EdMarket</a>, <a href="https://hr.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Нетология HR</a>, <a href="https://ms.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Максим Спиридонов</a>.</li>
-              <li>Соосновал онлайн-школу рисования <a href="https://arttsapko.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">arttsapko.ru</a>, отвечаю за системность развития и онлайн-платформу для обучения.</li>
-              <li>Продюсировал канал на YouTube <a href="https://www.youtube.com/channel/UCfhY78Qw1PeWLphcaA7PcNQ" target="_blank" class="link" rel="nofollow noreferrer noopener">Максима Спиридонова</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="section markdown">
-        <h2>Мои выступления</h2>
-        <div class="grid-cols grid-cols--2">
-          <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MpaTFNpFzBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fs9jyO7ehQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="section markdown">
-        <h2>Отзывы клиентов</h2>
+        <h1>Отзывы клиентов</h1>
         <Reviews/>
       </div>
       <div class="section markdown">
         <h2>Отзывы сотрудников, коллег, подрядчиков</h2>
-        <div class="grid-cols grid-cols--2">
+        <div class="grid lg:grid-cols-2 gap-6">
           <div class="p-6 bg-theme-backgroundGray">
             <div class="relative">
               <span class="opacity-50">«</span>

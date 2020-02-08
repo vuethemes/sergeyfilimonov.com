@@ -1,8 +1,8 @@
 <template>
   <Layout>
     <div class="container section">
-      <div class="mt-5 lg:mt-8 mb-4 lg:mb-12 grid-cols grid-cols--3-1">
-        <div class="flex flex-col justify-center">
+      <div class="mt-5 lg:mt-8 mb-4 lg:mb-12 flex">
+        <div class="lg:w-2/3 flex flex-col justify-center">
           <h1 class="text-3xl lg:text-5xl mb-4 lg:mb-0 leading-tight">Не время для громких слов — время для хорошего сайта</h1>
           <div class="text-lg lg:text-2xl max-w-4xl mb-4 lg:my-8">
             Сайт — отличная возможность собрать всё самое главное о вашем бренде в максимально концентрированном, структурированном и доступном виде. Для каждого сайта я составляю карту смыслов, рисую прототип, затем — дизайн и в самом конце — программирование. Сайт получается продуманным, красивым и <g-link to="/blog/wordpress-vs-static" class="link inline">быстрым за счёт статического фреймворка</g-link>.
@@ -18,7 +18,7 @@
             </ul>
           </div>
         </div>
-        <div class="hidden lg:block">
+        <div class="lg:w-1/3 hidden lg:block">
           <img src="@/assets/images/dev.svg" class="">
         </div>
       </div>

@@ -2,12 +2,12 @@
   "name": "sergeyfilimonov.com",
   "version": "1.0.0",
   "engines": {
-    "node": "12.x" 
+    "node": "12.x"
   },
   "private": true,
   "scripts": {
-    "dev": "concurrently \"gridsome develop --port 5005\" \"cd api && now dev --listen 3004\"",
-    "dev-site": "gridsome develop --port 5005",
+    "dev": "gridsome develop --port 5005",
+    "dev-con": "concurrently \"gridsome develop --port 5005\" \"cd api && now dev --listen 3004\"",
     "stage": "now",
     "prod": "concurrently \"now --prod\" \"cd api && now --prod\"",
     "prod-site": "now --prod",
@@ -50,7 +50,7 @@
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.2",
     "sass-loader": "^8.0.0",
-    "tailwindcss": "^1.1.2",
+    "tailwindcss": "^1.2.0",
     "tailwindcss-transitions": "^2.1.0",
     "webpack-node-externals": "^1.7.2"
   },

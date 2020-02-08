@@ -17,7 +17,6 @@
 
 /* start utilities */
 @import 'tailwindcss/utilities';
-@import 'utilities/grid';
 @import 'utilities/animations';
 @import 'utilities/glow';
 /* end utilities */
