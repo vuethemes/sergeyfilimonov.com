@@ -14,18 +14,21 @@
               </div>
             </div>
           </div>
-          <div class="markdown">
-            <p>
+          <div>
+            <p class="mb-4">
               Я занимаюсь маркетингом и специализируюсь на создании <g-link to="/services/site/" class="link">статичных сайтов</g-link>. В частности использую фреймоворк <g-link to="/blog/wordpress-vs-static/" class="link">Gridsome</g-link> (основанный на использовании Vue) и Tailwind CSS для построения фронтенда, <g-link to="/blog/headless-cms/" class="link">headless CMS</g-link> (WordPress, Forestry и пр.) для управления контентом и <g-link to="/blog/serverless/" class="link">serveless-подход</g-link> для создания API.
             </p>
-            <p>
-              Помимо этого я выступаю в роли координатора маркетинга на проекте: подбираю команды для продвижения в поиске (SEO), нахожу фотографов и видеографов для съёмок и помогаю <g-link to="/blog/edmarket-lms/" class="link">автоматизировать процессы</g-link> с помощью Airtable и прочее.
+            <p class="mb-4">
+              Помимо этого я выступаю в роли координатора маркетинга на проекте: подбираю команды для продвижения в поиске (SEO), нахожу фотографов и видеографов для съёмок и помогаю <g-link to="/blog/edmarket-lms/" class="link">автоматизировать процессы</g-link> с помощью, например, Airtable.
             </p>
-            <p>
+            <p class="mb-4">
               Веду <g-link to="/blog/" class="link">блог</g-link> на этом сайте на русском и английском (английский — для тем, связанных с разработкой, так как 95% информации приходится получать из иностранных источников и делиться своим опытом есть смысл также на английском). Также веду <a href="https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber" class="link">канал на YouTube</a> и <a href="https://tele.click/sergeyfilimonov_com" class="link">канал в Telegram</a>.
             </p>
-            <p>
-              В прошлом писал статьи и заметки на тему IT. <g-link to="/blog/apple-ibook/">Кое-что перенёс в свой блог</g-link>.
+            <p class="mb-4">
+              Разрабатываю платформу для онлайн-образования <a href="https://platforma.pw" target="_blank" class="link">Platforma.pw</a>.
+            </p>
+            <p class="mb-4">
+              В прошлом писал статьи и заметки на тему IT. <g-link to="/blog/apple-ibook/" class="link">Кое-что перенёс в свой блог</g-link>.
             </p>
           </div>
         </div>
@@ -40,7 +43,7 @@
 
 <page-query>
 query Posts {
-  posts: allPost(limit: 3) {
+  posts: allPost(limit: 2) {
     edges {
       node {
         id
