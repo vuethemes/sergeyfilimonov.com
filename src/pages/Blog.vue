@@ -2,7 +2,7 @@
   <Layout>
     <div class="container section mt-5">
       <div class="">
-        <div class="grid grid-cols-2 gap-3">
+        <div class="grid lg:grid-cols-2 gap-3">
           <PostCard
             v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" currentPage="index"/>
         </div>

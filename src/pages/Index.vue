@@ -1,29 +1,32 @@
 <template>
   <Layout>
     <div class="container section mt-5">
-      <div class="grid grid-cols-2 gap-6">
+      <div class="grid lg:grid-cols-2 gap-6">
         <div class="">
           <div class="mb-6">
             <div class="flex items-center">
               <g-image src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="lg:h-24 lg:w-24 h-12 w-12 rounded-full border border-theme-borderGray mr-2 lg:mr-4"/>
               <div class="">
-                <div class="text-lg lg:text-3xl mb-0 leading-tight font-mono" style="word-spacing: -0.4rem;">Привет, я Сергей Филимонов</div>
+                <div class="text-lg lg:text-2xl font-bold mb-1 leading-tight font-mono" style="word-spacing: -0.4rem;">👋</div>
                 <div class="text-xs lg:text-base">
-                  Здесь — коротко о том, что интересного я сделал и какими проектам занят в данный момент
+                  Коротко расскажу о том, что интересного я сделал и какими проектам занят в данный момент.
                 </div>
               </div>
             </div>
           </div>
           <div class="markdown">
-            <ul class="">
-              <li>Создаю современные и быстрые <g-link to="/services/site" class="link">статичные сайты</g-link> на Vue, GraphQL, Tailwind и Now. Участвую в официальной <a href="https://github.com/orgs/gridsome/teams/maintainers" target="_blank" class="link inline">команде</a> развития фреймворка Gridsome.</li>
-              <li>Создаю <a href="https://platforma.pw/" target="_blank" class="link">платформу</a> для авторов онлайн-курсов.</li>
-              <li>Веду <g-link to="/blog" class="link">блог</g-link> для маркетологов и разработчиков русско- и англоговорящих стран.</li>
-              <li>Веду <a href="https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber" class="link">канал на YouTube</a> и <a href="https://tele.click/sergeyfilimonov_com" class="link">канал в Telegram</a>.</li>
-              <li>Я создал более 20 сайтов, в том числе для <a href="https://edmarket.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">EdMarket</a>, <a href="https://hr.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Нетология HR</a>, <a href="https://ms.netology.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">Максим Спиридонов</a>.</li>
-              <li>Соосновал онлайн-школу рисования <a href="https://arttsapko.ru" target="_blank" class="link" rel="nofollow noreferrer noopener">arttsapko.ru</a>, отвечаю за системность развития и онлайн-платформу для обучения.</li>
-              <li>Продюсировал канал на YouTube <a href="https://www.youtube.com/channel/UCfhY78Qw1PeWLphcaA7PcNQ" target="_blank" class="link" rel="nofollow noreferrer noopener">Максима Спиридонова</a></li>
-            </ul>
+            <p>
+              Я занимаюсь маркетингом и специализируюсь на создании <g-link to="/services/site/" class="link">статичных сайтов</g-link>. В частности использую фреймоворк Gridsome (основанный на использовании Vue) и Tailwind CSS для построения фронтенда, <g-link to="/blog/headless-cms/" class="link">headless CMS</g-link> (WordPress, Forestry и пр.) для управления контентом и serveless-подход для создания API.
+            </p>
+            <p>
+              Помимо этого я иногда выступаю в роли координатора маркетинга на проекте: подбираю команды для продвижения в поиске (SEO), нахожу фотографов и видеографов для съёмок и помогаю <g-link to="/blog/edmarket-lms/" class="link">автоматизировать процессы</g-link> с помощью Airtable.
+            </p>
+            <p>
+              Веду <g-link to="/blog/" class="link">блог</g-link> на этом сайте на русском и английском (английский — для тем, связанных с разработкой, так как 95% информации приходится получать из иностранных источников и делиться своим опытом есть смысл также на английском). Также веду <a href="https://www.youtube.com/channel/UCoj3nHKZm6r2acowfEwSFww?view_as=subscriber" class="link">канал на YouTube</a> и <a href="https://tele.click/sergeyfilimonov_com" class="link">канал в Telegram</a>.
+            </p>
+            <p>
+              В прошлом писал статьи и заметки на тему IT. <g-link to="/blog/apple-ibook/">Кое-что перенёс в свой блог</g-link>.
+            </p>
           </div>
         </div>
         <div class="">
