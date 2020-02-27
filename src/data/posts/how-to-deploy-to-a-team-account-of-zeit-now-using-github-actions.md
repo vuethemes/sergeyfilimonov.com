@@ -4,7 +4,7 @@ slug: deploy-team-zeit-now
 excerpt: If you need to deploy to a team account of ZEIT Now by committing changes
   to your repo, you'll find out that standard integration of Now and GitHub tied to
   your private account won't work.
-date: 2020-01-26T21:00:00.000Z
+date: 2020-01-26T21:00:00.000+00:00
 tags:
 - GitHub
 - ZEIT Now
@@ -22,24 +22,30 @@ If you are ready to pay for a private team account, you just have to make a one-
 
 ### Step 1
 
-Go to [ZEIT Now > Account > Tokens](https://zeit.co/account/tokens) and create an access token. Copy it, go to GitHub > YOUR__REPO > Settings > Secrets, and create a new secret named ZEIT_OKEN with the access token from ZEIT Now you have just create_
+Go to [ZEIT Now > Account > Tokens](https://zeit.co/account/tokens) and create an access token. Copy it, go to GitHub > YOUR__REPO > Settings > Secrets, and create a new secret named ZEIT_OKEN with the access token from ZEIT Now you have just created.
 
 ### Step 2
+
+Deploy your app using Now CLI from you local machine. After the first deployment is finished go to `.now` folder where you will find `package.json` file containing `orgId` and `projectId` for the Step 3.
+
+### Step 3
 
 Go to your repo and click _Actions_. Then click _Set up workflow yourself_ and paste the code below:
 
 ```yaml
-name: Deploy
+name: deploy website
 on: [push]
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: amondnet/now-deployment@v1
-      with:
-        zeit-token: ${{ secrets.ZEIT_TOKEN }}
-        now-args: '--prod'
+      - uses: actions/checkout@v2
+      - uses: amondnet/now-deployment@v2
+        with:
+          zeit-token: ${{ secrets.ZEIT_TOKEN }} # Required
+          now-args: '--prod'
+          now-org-id: 'ORG_ID'
+          now-project-id: 'PROJECT_ID'
 ```
 
 Click _Start commit_ and then _Commit new file_. This is going to create a new file named `main.yml` (you can rename it as you like) in `.github/workflows/` inside of your repo. The commit will start the proccess of deploying your app to ZEIT Now. To check it go to Actions again.
