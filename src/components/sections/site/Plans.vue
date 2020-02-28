@@ -88,7 +88,7 @@ export default {
               active: true,
             }
           ],
-          price: 'от 4&thinsp;000&nbsp;₽ и 10 дней',
+          price: 'от 40&thinsp;000&nbsp;₽ и 10 дней',
           icon: 'shop'
         },
         {
