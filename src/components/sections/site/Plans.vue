@@ -28,7 +28,7 @@ export default {
     return {
       plans: [
         {
-          name: 'Нешаблонный',
+          name: 'Полноценный сайт',
           description: 'сайт с уникальным дизайном и готовый под все виды продвижения',
           features: [
             {
@@ -60,7 +60,39 @@ export default {
           icon: 'home'
         },
         {
-          name: 'Шаблонный',
+          name: 'Лендинг',
+          description: 'полностью самописный сайт, с шаблонами страниц и со своим API',
+          features: [
+            {
+              name: 'Уникальный дизайн',
+              active: true,
+            },
+            {
+              name: 'Статика / Tilda',
+              active: true,
+            },
+            {
+              name: 'Интеграции с любыми сервисами',
+              active: true,
+            },
+            {
+              name: 'Максимальная скорость загрузки',
+              active: true,
+            },
+            {
+              name: 'Бесплатный CDN-хостинг',
+              active: true,
+            },
+            {
+              name: 'Можно продвигать в SEO',
+              active: true,
+            }
+          ],
+          price: 'от 4&thinsp;000&nbsp;₽ и 10 дней',
+          icon: 'shop'
+        },
+        {
+          name: 'Шаблонный на Tilda',
           description: 'сайт полностью собран из готовых блоков Tilda',
           features: [
             {
@@ -74,26 +106,6 @@ export default {
           ],
           price: 'от 20&thinsp;000&nbsp;₽ и 1 недели',
           icon: 'edit'
-        },
-        {
-          name: 'Отдельные задачи',
-          description: 'полностью самописный сайт, с шаблонами страниц и со своим API',
-          features: [
-            {
-              name: 'Связка двух сервисов по API',
-              active: true,
-            },
-            {
-              name: 'Настройка email-рассылок',
-              active: true,
-            },
-            {
-              name: 'И другие похожие задачи',
-              active: true,
-            }
-          ],
-          price: 'от 3&thinsp;000&nbsp;₽ и 1 дня',
-          icon: 'shop'
         }
       ]
     }
