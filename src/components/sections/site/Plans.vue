@@ -92,7 +92,7 @@ export default {
           icon: 'shop'
         },
         {
-          name: 'Шаблонный на Tilda',
+          name: 'Из шаблонов Тильды',
           description: 'сайт полностью собран из готовых блоков Tilda',
           features: [
             {
