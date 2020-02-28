@@ -1,5 +1,4 @@
 {
-  "name": "sergeyfilimonov.com",
   "scope": "sfilimonov",
   "github": { "enabled": true },
   "trailingSlash": true,
