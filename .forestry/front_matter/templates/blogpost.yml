@@ -30,25 +30,5 @@ fields:
   name: action
   label: action
   hidden: true
-- name: '123'
-  type: field_group_list
-  fields:
-  - name: '123'
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: 49025536-faa9-44a1-8b9a-117b042fc1ae
-        file: 
-        path: 
-    label: '123'
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: '123'
 pages:
 - src/data/posts/how-to-deploy-to-a-team-account-of-zeit-now-using-github-actions.md
