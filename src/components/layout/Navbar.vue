@@ -4,25 +4,20 @@
       <div class="flex items-center justify-between lg:flex-row">
         <div class="flex items-center">
           <div class="group">
-            <g-link to="/" class="text-base lg:text-2xl leading-tight font-mono font-bold" style="word-spacing: -5px;">Сергей Филимонов</g-link>
-            <div class="mt-1 text-xs leading-tight">
-              О&nbsp;JAMstack<span class="hidden lg:inline">, Gridsome, Serverless</span>&nbsp;и&nbsp;всём таком
-            </div>
+            <g-link to="/" class="text-base lg:text-2xl leading-tight font-mono font-bold hover:text-primary" style="word-spacing: -5px;" :class="{ 'text-primary' : $route.path == '/' }">Сергей Филимонов</g-link>
           </div>
         </div>
-        <div class="flex items-end lg:items-center lg:mt-0 flex-col lg:flex-row leading-none -mb-1 lg:mb-0">
-          <ul class="flex items-center mr-2 leading-none font-mono" style="word-spacing: -6px;">
-            <li class="mr-2 lg:mr-6 mb-1" v-for="page in pages">
-              <g-link :to="page.to" :class="['text-xs lg:text-base hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]"><span v-html="page.text"/></g-link>
-            </li>
-            <li class="lg:mr-6">
-              <a href="https://tele.click/sergeyfilimonov_com" class="text-base leading-none hidden lg:block button button--xl rounded py-3" target="_blank"><fa :icon="['fab', 'telegram']" class="mr-1"/>Telegram-канал</a>
-            </li>
-            <li class="lg:hidden block text-md lg:text-xl lg:ml-2" style="margin-right: -1px;"><ToggleTheme/></li>
-          </ul>
-          <Social class="text-md lg:text-xl mt-1 lg:mt-0"/>
-          <ToggleTheme class="ml-4 hidden lg:block text-2xl hover:bg-theme-backgroundGray lg:p-2 rounded-full lg:-mr-2"/>
+        <div class="flex items-center lg:items-centerleading-none lg:mb-0">
+          <Social class="text-md lg:text-xl"/>
+          <ToggleTheme class="lg:ml-4 ml-2 lg:block lg:text-2xl hover:bg-theme-backgroundGray rounded-full lg:-mr-2"/>
         </div>
+      </div>
+      <div class="leading-none mt-2">
+        <ul class="flex flex-wrap items-center mr-2 leading-none font-mono" style="word-spacing: -6px;">
+          <li class="mr-3 lg:mr-4 mb-1" v-for="page in pages">
+            <g-link :to="page.to" :class="['text-sm lg:text-base hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]"><span v-html="page.text"/></g-link>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -41,13 +36,23 @@ export default {
     return {
       pages: [
         {
-          text: 'Блог',
-          to: '/blog/',
+          text: 'Статичные сайты',
+          to: '/static-site',
           mobileHidden: false
         },
         {
-          text: 'Сайты',
-          to: '/services/site/',
+          text: 'Airtable',
+          to: '/airtable/',
+          mobileHidden: false
+        },
+        {
+          text: 'Intercom',
+          to: '/intercom/',
+          mobileHidden: false
+        },
+        {
+          text: 'Блог',
+          to: '/blog/',
           mobileHidden: false
         },
         {

@@ -93,7 +93,7 @@ export default {
         },
         {
           name: 'Из блоков Тильды',
-          description: 'сайт полностью собран из готовых блоков Tilda',
+          description: 'сайт полностью собранный из готовых блоков Tilda',
           features: [
             {
               name: 'Стандартные блоки Tilda',

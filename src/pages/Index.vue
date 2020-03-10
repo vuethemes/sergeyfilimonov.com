@@ -3,7 +3,7 @@
     <div class="container section mt-5">
       <div class="grid lg:grid-cols-2 gap-6">
         <div class="">
-          <div class="mb-6">
+          <!-- <div class="mb-6">
             <div class="flex items-center">
               <g-image src="@/assets/images/sergeyfilimonov.jpg" alt="Сергей Филимонов" class="lg:h-24 lg:w-24 h-12 w-12 rounded-full border border-theme-borderGray mr-2 lg:mr-4"/>
               <div class="">
@@ -13,11 +13,17 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <div>
-            <p class="mb-4">
-              Я занимаюсь маркетингом и специализируюсь на создании <g-link to="/services/site/" class="link">статичных сайтов</g-link>. В частности использую фреймоворк <g-link to="/blog/wordpress-vs-static/" class="link">Gridsome</g-link> (основанный на использовании Vue) и Tailwind CSS для построения фронтенда, <g-link to="/blog/headless-cms/" class="link">headless CMS</g-link> (WordPress, Forestry и пр.) для управления контентом и <g-link to="/blog/serverless/" class="link">serveless-подход</g-link> для создания API.
-            </p>
+            <h1 class="text-2xl mb-4">Это блог о статичных сайтах и практике внедрения Airtable, Intercom, Notion и других сервисов в реальную работу</h1>
+            <div class="grid lg:grid-cols-2 gap-4 mb-4">
+              <div class="">
+                <g-image src="@/assets/images/sergey.jpg" alt="Сергей Филимонов" class="rounded"/>
+              </div>
+              <div class="lg:text-xl">
+                Привет, меня зовут Сергей Филимонов. Я занимаюсь маркетингом и специализируюсь на создании <g-link to="/services/site/" class="link">статичных сайтов</g-link>. В частности использую <g-link to="/blog/wordpress-vs-static/" class="link">Gridsome</g-link> и Tailwind CSS для построения фронтенда, <g-link to="/blog/headless-cms/" class="link">headless CMS</g-link> (WordPress, Forestry и пр.) для управления контентом и <g-link to="/blog/serverless/" class="link">serveless-подход</g-link> для создания API.
+              </div>
+            </div>
             <p class="mb-4">
               Помимо этого я выступаю в роли координатора маркетинга на проекте: подбираю команды для продвижения в поиске (SEO), нахожу фотографов и видеографов для съёмок и помогаю <g-link to="/blog/edmarket-lms/" class="link">автоматизировать процессы</g-link> с помощью, например, Airtable.
             </p>
@@ -43,7 +49,7 @@
 
 <page-query>
 query Posts {
-  posts: allPost(limit: 2) {
+  posts: allPost(limit: 3) {
     edges {
       node {
         id

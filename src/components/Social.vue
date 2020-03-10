@@ -25,18 +25,18 @@ export default {
           icon: 'telegram',
           color: 'social-telegram'
         },
-        {
-          name: 'Instagram',
-          link: 'https://instagram.com/sergeyfilimonov_com',
-          icon: 'instagram',
-          color: 'pink-500'
-        },
-        {
-          name: 'Facebook',
-          link: 'https://facebook.com/tunecatcher',
-          icon: 'facebook',
-          color: 'social-facebook'
-        },
+        // {
+        //   name: 'Instagram',
+        //   link: 'https://instagram.com/sergeyfilimonov_com',
+        //   icon: 'instagram',
+        //   color: 'pink-500'
+        // },
+        // {
+        //   name: 'Facebook',
+        //   link: 'https://facebook.com/tunecatcher',
+        //   icon: 'facebook',
+        //   color: 'social-facebook'
+        // },
         {
           name: 'WhatsApp',
           link: 'https://api.whatsapp.com/send?phone=79959232515',
