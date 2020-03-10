@@ -4,7 +4,7 @@
   "trailingSlash": true,
   "rewrites": [
     { "source": "/(.*)", "destination": "404" },
-    { "source": "/services/site/", "destination": "/static-site" },
+    { "source": "/services/site/", "destination": "/static-site" }
   ],
   "builds": [
     {
