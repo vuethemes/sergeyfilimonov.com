@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="container section">
-      <div class="mt-5 lg:mt-8 mb-4 lg:mb-12 flex flex-col lg:flex-row">
+      <div class="mt-5 lg:mt-8 mb-4 lg:mb-6 flex flex-col lg:flex-row">
         <div class="lg:w-1/2 flex flex-col justify-center">
           <h1 class="text-3xl lg:text-5xl mb-2 lg:mb-0 leading-tight">Intercom — это дорого, но лучше бизнес-мессенджера вам&nbsp;не&nbsp;найти</h1>
           <div class="text-lg lg:text-2xl max-w-4xl mb-4 lg:my-8">
@@ -9,7 +9,7 @@
           </div>
         </div>
         <div class="lg:w-1/2 w-full">
-          <g-image src="@/assets/images/intercom.jpg" class=""/>
+          <g-image src="@/assets/images/intercom.png" class=""/>
         </div>
       </div>
     </div>
