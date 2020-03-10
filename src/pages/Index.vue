@@ -15,13 +15,13 @@
             </div>
           </div> -->
           <div>
-            <h1 class="text-2xl mb-4">Это блог о статичных сайтах и практике внедрения Airtable, Intercom, Notion и других сервисов в реальную работу</h1>
+            <h1 class="text-4xl lg:mb-6 mb-4">Это блог о статичных сайтах, Airtable, Intercom, Notion и других сервисов в действии</h1>
             <div class="grid lg:grid-cols-2 gap-4 mb-4">
               <div class="">
                 <g-image src="@/assets/images/sergey.jpg" alt="Сергей Филимонов" class="rounded"/>
               </div>
               <div class="lg:text-xl">
-                Привет, меня зовут Сергей Филимонов. Я занимаюсь маркетингом и специализируюсь на создании <g-link to="/services/site/" class="link">статичных сайтов</g-link>. В частности использую <g-link to="/blog/wordpress-vs-static/" class="link">Gridsome</g-link> и Tailwind CSS для построения фронтенда, <g-link to="/blog/headless-cms/" class="link">headless CMS</g-link> (WordPress, Forestry и пр.) для управления контентом и <g-link to="/blog/serverless/" class="link">serveless-подход</g-link> для создания API.
+                Меня зовут Сергей Филимонов. Я занимаюсь маркетингом и специализируюсь на создании <g-link to="/services/site/" class="link">статичных сайтов</g-link>. В частности использую <g-link to="/blog/wordpress-vs-static/" class="link">Gridsome</g-link> (основанный на Vue) и Tailwind CSS для построения фронтенда, <g-link to="/blog/headless-cms/" class="link">headless CMS</g-link> (WordPress, Forestry и пр.) для управления контентом и <g-link to="/blog/serverless/" class="link">serveless-подход</g-link> для создания API.
               </div>
             </div>
             <p class="mb-4">
@@ -49,7 +49,7 @@
 
 <page-query>
 query Posts {
-  posts: allPost(limit: 3) {
+  posts: allPost(limit: 4) {
     edges {
       node {
         id
