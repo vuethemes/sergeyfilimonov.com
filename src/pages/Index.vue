@@ -15,7 +15,7 @@
             </div>
           </div> -->
           <div>
-            <h1 class="text-4xl lg:mb-6 mb-4">Это блог о статичных сайтах, Airtable, Intercom, Notion и других сервисов в действии</h1>
+            <h1 class="text-3xl lg:text-4xl lg:mb-6 mb-4">Это блог о статичных сайтах, Airtable, Intercom, Notion и других сервисов в действии</h1>
             <div class="grid lg:grid-cols-2 gap-4 mb-4">
               <div class="">
                 <g-image src="@/assets/images/sergey.jpg" alt="Сергей Филимонов" class="rounded"/>
