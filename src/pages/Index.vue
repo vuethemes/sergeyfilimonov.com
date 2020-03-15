@@ -68,15 +68,13 @@ query Posts {
 </page-query>
 
 <script>
-import PostCard from '@/components/PostCard'
+import PostCard from '@/components/cards/PostCard'
 import WidgetTelegram from '@/components/WidgetTelegram'
-import WidgetLessons from '@/components/WidgetLessons'
 
 export default {
   components: {
     PostCard,
-    WidgetTelegram,
-    WidgetLessons
+    WidgetTelegram
   },
   data() {
     return {
@@ -89,8 +87,8 @@ export default {
   metaInfo() {
     return {
       title: this.meta.title,
-      description: this.meta.description,
       meta: [
+        { name: 'description', content: this.meta.description },
         { property: "og:title", content: this.meta.title },
         { property: "og:description", content: this.meta.description },
         { property: "og:image", content: 'https://sergeyfilimonov.com/images/og/about.jpg' }

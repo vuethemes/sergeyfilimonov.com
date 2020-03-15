@@ -30,7 +30,7 @@ query Posts {
 </static-query>
 
 <script>
-import PostCard from '@/components/PostCard.vue'
+import PostCard from '@/components/cards/PostCard'
 
 export default {
   props: ['headingText', 'currentPage'],

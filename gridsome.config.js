@@ -42,6 +42,19 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Course',
+        path: "src/data/courses/*.md",
+        route: "courses/:slug",
+        remark: {
+          plugins: [
+            [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ]
+          ]
+        }
+      }
+    },
+    {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000,
@@ -53,7 +66,7 @@ module.exports = {
       options: {
         contentTypeName: 'Post',
         feedOptions: {
-          title: 'Сергей Филимонов о сайтах, продутикности и всём таком',
+          title: 'Сергей Филимонов о сайтах, продутивности и всём таком',
           feed_url: 'https://sergeyfilimonov.com/feed.xml',
           site_url: 'https://sergeyfilimonov.com'
         },

@@ -14,8 +14,12 @@
       </div>
       <div class="leading-none mt-2">
         <ul class="flex flex-wrap items-center mr-2 leading-none font-mono" style="word-spacing: -6px;">
-          <li class="mr-3 lg:mr-4 mb-1" v-for="page in pages">
-            <g-link :to="page.to" :class="['text-sm lg:text-base hover:text-primary', ($route.path == page.to ? 'text-primary' : ''), (page.mobileHidden ? 'hidden lg:block' : '')]"><span v-html="page.text"/></g-link>
+          <li class="mr-3 lg:mr-4 mb-1 lg:mb-0" v-for="page in pages" v-if="page.type == 'theme'">
+            <g-link :to="page.to" :class="['text-sm lg:text-base hover:text-primary', ($route.path == page.to ? 'text-primary' : '')]"><span v-html="page.text"/></g-link>
+          </li>
+          <li class="mr-4">|</li>
+          <li class="mr-3 lg:mr-4 mb-1 lg:mb-0" v-for="page in pages" v-if="page.type == 'category'">
+            <g-link :to="page.to" :class="['text-sm lg:text-base hover:text-primary', ($route.path == page.to ? 'text-primary' : '')]"><span v-html="page.text"/></g-link>
           </li>
         </ul>
       </div>
@@ -38,32 +42,37 @@ export default {
         {
           text: 'Статичные сайты',
           to: '/static-site',
-          mobileHidden: false
+          type: 'theme'
         },
         {
           text: 'Airtable',
           to: '/airtable/',
-          mobileHidden: false
+          type: 'theme'
         },
         {
           text: 'Intercom',
           to: '/intercom/',
-          mobileHidden: false
+          type: 'theme'
+        },
+        {
+          text: 'Онлайн-курсы',
+          to: '/courses/',
+          type: 'category'
         },
         {
           text: 'Блог',
           to: '/blog/',
-          mobileHidden: false
+          type: 'category'
         },
         {
           text: 'Отзывы',
           to: '/reviews/',
-          mobileHidden: false
+          type: 'category'
         },
         {
           text: 'Выступления',
           to: '/talks/',
-          mobileHidden: true
+          type: 'category'
         },
       ]
     }

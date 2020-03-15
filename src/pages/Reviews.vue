@@ -64,8 +64,8 @@ export default {
   metaInfo() {
     return {
       title: this.meta.title,
-      description: this.meta.description,
       meta: [
+        { name: 'description', content: this.meta.description },
         { property: "og:title", content: this.meta.title },
         { property: "og:description", content: this.meta.description },
         { property: "og:image", content: 'https://sergeyfilimonov.com/images/og/about.jpg' }
