@@ -45,8 +45,8 @@ export default {
   data() {
     return {
       meta: {
-        title: 'Онлайн-курс | Сергей Филимонов',
-        description: ''
+        title: 'Онлайн-курсы | Сергей Филимонов',
+        description: 'Онлайн-курс по статичным сайтам, Airtable, Intercom'
       }
     }
   },

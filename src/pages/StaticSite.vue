@@ -1,11 +1,11 @@
 <template>
   <Layout>
     <div class="container section">
-      <div class="mt-5 lg:mt-8 mb-4 lg:mb-12 flex">
-        <div class="lg:w-2/3 flex flex-col justify-center">
-          <h1 class="text-3xl lg:text-5xl mb-4 lg:mb-0 leading-tight">Зачем сегодня нужен сайт? И&nbsp;что такого в этих «статичных» сайтах?</h1>
+      <div class="mt-5 lg:mt-8 mb-4 grid lg:grid-cols-2 gap-6">
+        <div class="flex-col justify-center">
+          <h1 class="text-3xl lg:text-5xl mb-4 lg:mb-0 leading-tight">Зачем сегодня нужен сайт? И&nbsp;что такое «статичные» сайты?</h1>
           <div class="text-lg lg:text-2xl max-w-4xl mb-4 lg:my-8">
-            Начнём с того, что сайт — отличная возможность собрать всё самое главное о вашем бренде в максимально концентрированном, структурированном и доступном виде. Для каждого сайта я составляю карту смыслов, рисую прототип, затем — дизайн и в самом конце — программирование. Сайт получается продуманным, красивым и быстрым именно за счёт <g-link to="/blog/wordpress-vs-static" class="link inline">статического фреймворка</g-link>.
+            Начнём с того, что сайт — отличная возможность собрать всё самое главное о вашем бренде в максимально концентрированном, структурированном и доступном виде. Сайт получается продуманным, красивым и быстрым именно за счёт <g-link to="/blog/wordpress-vs-static" class="link inline">статического фреймворка</g-link>.
           </div>
           <div class="lg:mb-10">
             <ul class="flex text-lg lg:text-2xl flex-wrap">
@@ -18,7 +18,7 @@
             </ul>
           </div>
         </div>
-        <div class="lg:w-1/3 hidden lg:block">
+        <div class="flex justify-between items-center">
           <g-image src="@/assets/images/dev.svg" class=""/>
         </div>
       </div>

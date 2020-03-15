@@ -12,7 +12,5 @@ program:
   - title: 'Как поделиться данными со всеми, но не выдать лишнего'
   - title: 'Права и ограничения для участников'
 tags: ['Airtable']
-cover: '/uploads/airtable.png'
+cover: '/uploads/airtable-basics.jpg'
 ---
-
-sda
