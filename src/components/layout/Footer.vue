@@ -32,7 +32,7 @@
         <ul>
           <li><a class="hover:text-primary" href="https://tglink.ru/sfilimonov">Telegram</a></li>
           <li><a class="hover:text-primary" href="https://api.whatsapp.com/send?phone=79959232515">WhatsApp</a></li>
-          <li><a class="hover:text-primary" href="mailto:email@sergeyfilimonov.com">email@sergeyfilimonov.com</a></li>
+          <li><a class="hover:text-primary" href="mailto:email@sergeyfilimonov.com">Email</a></li>
         </ul>
       </div>
     </div>

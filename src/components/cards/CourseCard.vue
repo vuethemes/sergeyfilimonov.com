@@ -2,7 +2,7 @@
   <g-link
     :to="course.path"
     v-if="course.slug != currentPage"
-    class="block grid lg:grid-cols-2 gap-6 p-4 lg:p-6 border-theme-backgroundGray border hover:shadow-lg bg-theme-background transform--move-top border-theme-borderGray">
+    class="block grid lg:grid-cols-2 lg:gap-6 gap-4 p-4 lg:p-6 border-theme-backgroundGray border hover:shadow-lg bg-theme-background transform--move-top border-theme-borderGray">
     <img :src="course.cover" class="rounded border">
     <div class="">
       <div class="mb-2 font-mono">Онлайн-курс</div>
