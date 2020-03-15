@@ -30,9 +30,9 @@
       <div class="">
         <h4 class="font-mono lg:text-xl text-lg font-bold mb-2">Контакты</h4>
         <ul>
-          <li><a class="hover:text-primary" href="https://tglink.ru/sfilimonov">Telegram</a></li>
-          <li><a class="hover:text-primary" href="https://api.whatsapp.com/send?phone=79959232515">WhatsApp</a></li>
-          <li><a class="hover:text-primary" href="mailto:email@sergeyfilimonov.com">Email</a></li>
+          <li><a class="hover:text-primary" href="https://tglink.ru/sfilimonov" target="_blank">Telegram</a></li>
+          <li><a class="hover:text-primary" href="https://api.whatsapp.com/send?phone=79959232515" target="_blank">WhatsApp</a></li>
+          <li><a class="hover:text-primary" href="mailto:email@sergeyfilimonov.com" target="_blank">Email</a></li>
         </ul>
       </div>
     </div>
