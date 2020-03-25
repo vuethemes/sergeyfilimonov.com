@@ -1,14 +1,24 @@
 {
-  "name": "api.sergeyfilimonov.com",
-  "scope": "sfilimonov",
   "github": { "enabled": false },
+  "routes": [
+    {
+      "src": "/get/(.*)",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  ],
   "builds": [
     {
-      "src": "index.js",
+      "src": "index.ts",
       "use": "@now/node"
     },
     {
       "src": "actions/**/*.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "get/**/*.ts",
       "use": "@now/node"
     }
   ]
