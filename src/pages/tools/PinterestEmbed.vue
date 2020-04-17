@@ -1,9 +1,15 @@
 <template>
   <Layout>
-    <div class="container my-16">
-      <input class="mb-4 p-4 border-2 border-black w-full" type="text" name="" v-model="url" placeholder="URL">
+    <div class="container my-8">
+      <h1 class="mb-4 lg:text-5xl text-3xl">Pinterest Embed</h1>
 
-      <div class="">
+      <div class="text-lg mb-4">
+        Pinterst не работает в десктопной версии на iPad Pro, поэтому получить код встройки невозможно. Этот инструмент решает проблему.
+      </div>
+
+      <input class="mb-4 p-4 border-2 border-black w-full" type="text" name="" v-model="url" placeholder="Ссылка на пост в Pinterest">
+
+      <div v-if="url" class="">
         <div class="">
           Код, который нужно вставить в блог:
         </div>
@@ -12,7 +18,7 @@
           {{ code }}
         </div>
 
-        <div v-if="url" class="button button--2xl cursor-pointer" @click="handleCopy()">
+        <div class="button button--2xl cursor-pointer mt-4" @click="handleCopy()">
           Скопировать код
         </div>
       </div>

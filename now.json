@@ -1,6 +1,7 @@
 {
-  "scope": "sfilimonov",
-  "github": { "enabled": true },
+  "github": {
+    "enabled": true
+  },
   "trailingSlash": true,
   "rewrites": [
     { "source": "/(.*)", "destination": "404" },

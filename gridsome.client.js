@@ -4,7 +4,8 @@ import { faPlus, faMoon, faSun, faEnvelope, faSitemap, faRss } from '@fortawesom
 import { faInstagram, faWhatsapp, faTelegram, faYoutube, faFacebook, faVk, faGithub } from '@fortawesome/free-brands-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
-config.autoAddCss = false;
+config.autoAddCss = false
+
 library.add(faInstagram, faWhatsapp, faTelegram, faFacebook, faVk, faYoutube, faMoon, faSun, faEnvelope, faSitemap, faRss, faGithub)
 
 export default function (Vue) {

@@ -74,6 +74,11 @@ export default {
           to: '/talks/',
           type: 'category'
         },
+        {
+          text: 'Инструменты',
+          to: '/tools/',
+          type: 'category'
+        }
       ]
     }
   }
