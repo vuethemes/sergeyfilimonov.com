@@ -21,7 +21,7 @@
                 <g-image src="@/assets/images/sergey.jpg" alt="Сергей Филимонов" class="rounded"/>
               </div>
               <div class="lg:text-xl">
-                Меня зовут Сергей Филимонов. Я занимаюсь маркетингом и специализируюсь на создании <g-link to="/services/site/" class="link">статичных сайтов</g-link>. В частности использую <g-link to="/blog/wordpress-vs-static/" class="link">Gridsome</g-link> (основанный на Vue) и Tailwind CSS для построения фронтенда, <g-link to="/blog/headless-cms/" class="link">headless CMS</g-link> (WordPress, Forestry и пр.) для управления контентом и <g-link to="/blog/serverless/" class="link">serveless-подход</g-link> для создания API.
+                Меня зовут Сергей Филимонов. Я занимаюсь маркетингом и специализируюсь на создании <g-link to="/static-site" class="link">статичных сайтов</g-link>. В частности использую <g-link to="/blog/wordpress-vs-static/" class="link">Gridsome</g-link> (основанный на Vue) и Tailwind CSS для построения фронтенда, <g-link to="/blog/headless-cms/" class="link">headless CMS</g-link> (WordPress, Forestry и пр.) для управления контентом и <g-link to="/blog/serverless/" class="link">serveless-подход</g-link> для создания API.
               </div>
             </div>
             <p class="mb-4">
