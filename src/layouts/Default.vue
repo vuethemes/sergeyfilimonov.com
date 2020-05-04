@@ -49,8 +49,6 @@ export default {
 
     this.$intercom.boot({ app_id: "uh3auh95" })
 
-    this.$intercom.show()
-
     this.$intercom.update()
   },
 
