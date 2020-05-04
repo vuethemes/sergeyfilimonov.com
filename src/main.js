@@ -18,7 +18,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
 
   appOptions.store = new Vuex.Store({
     state: {
-      theme: 'theme-dark'
+      theme: 'theme-light'
     },
     mutations: {
       changeTheme(state, payload) {

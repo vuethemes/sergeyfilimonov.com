@@ -36,7 +36,7 @@ module.exports = {
         route: "blog/:slug",
         remark: {
           plugins: [
-            [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ]
+            [ 'gridsome-plugin-remark-shiki', { theme: 'min-light' } ]
           ]
         }
       }
