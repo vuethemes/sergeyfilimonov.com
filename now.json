@@ -8,5 +8,19 @@
   ],
   "redirects": [
     { "source": "/services/site", "destination": "/static-site" }
+  ],
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "api/actions/**/*.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "api/get/**/*.ts",
+      "use": "@now/node"
+    }
   ]
 }
