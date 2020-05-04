@@ -10725,6 +10725,11 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
 
+vue-intercom@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/vue-intercom/-/vue-intercom-1.0.14.tgz#faa80335b43cb17e9913a2951182e98e057dd2c0"
+  integrity sha512-Cv9TT/REVdI9UAydDA5NLacKktrQcwwuCjR6KoZ1SwXwx7sBDzE3+Ge6uvgL/WKqq7fEqKqjA4jMnaVwIHDveg==
+
 vue-js-modal@^1.3.28:
   version "1.3.31"
   resolved "https://registry.yarnpkg.com/vue-js-modal/-/vue-js-modal-1.3.31.tgz#fdece823d4f2816c8b1075c1fd8f667df11f5a42"
