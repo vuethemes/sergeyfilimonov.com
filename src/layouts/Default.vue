@@ -44,6 +44,8 @@ export default {
     } else {
       this.$store.commit('changeTheme', localStorage.getItem('theme'))
     }
+
+    window.Intercom('update')
   },
 
   metaInfo() {
