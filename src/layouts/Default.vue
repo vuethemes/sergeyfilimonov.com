@@ -21,7 +21,9 @@ export default {
   computed: {
     canonical() {
       const SITE_URL = 'https://sergeyfilimonov.com'
+
       let canonical
+
       if (this.$route.path === '/') {
         canonical = SITE_URL
       } else {
@@ -45,7 +47,11 @@ export default {
       this.$store.commit('changeTheme', localStorage.getItem('theme'))
     }
 
-    window.Intercom('update')
+    this.$intercom.boot({ app_id: "uh3auh95" })
+
+    this.$intercom.show()
+
+    this.$intercom.update()
   },
 
   metaInfo() {

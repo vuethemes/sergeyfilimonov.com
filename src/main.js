@@ -6,7 +6,7 @@ import Vuex from 'vuex'
 import VueMq from 'vue-mq'
 import VueScrollTo from 'vue-scrollto'
 import VueGtm from 'vue-gtm'
-// import VueIntercom from 'vue-intercom'
+import VueIntercom from 'vue-intercom'
 
 export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.component('Layout', DefaultLayout)
@@ -14,7 +14,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.use(Vuex)
   Vue.use(VueScrollTo, { duration: 500, easing: 'ease' })
   Vue.use(VueMq, { breakpoints: { mobile: 540, desktop: 1024 } })
-  // Vue.use(VueIntercom, { appId: 'uh3auh95' })
+  Vue.use(VueIntercom, { appId: 'uh3auh95' })
 
   appOptions.store = new Vuex.Store({
     state: {
