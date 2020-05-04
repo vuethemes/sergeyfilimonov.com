@@ -16,6 +16,7 @@ module.exports = {
       anchorClassName: 'icon icon-link'
     }
   },
+
   plugins: [
     {
       use: 'gridsome-plugin-modal'
@@ -84,6 +85,7 @@ module.exports = {
       }
     },
   ],
+  
   chainWebpack: config => {
     config.module
       .rule('css')

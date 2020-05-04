@@ -12,8 +12,11 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.component('Layout', DefaultLayout)
 
   Vue.use(Vuex)
+
   Vue.use(VueScrollTo, { duration: 500, easing: 'ease' })
+
   Vue.use(VueMq, { breakpoints: { mobile: 540, desktop: 1024 } })
+
   Vue.use(VueIntercom, { appId: 'uh3auh95' })
 
   appOptions.store = new Vuex.Store({
@@ -33,5 +36,6 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   })
 
   head.htmlAttrs = { lang: 'ru', class: 'h-full' }
+  
   head.bodyAttrs = { class: 'font-body antialiased' }
 }
