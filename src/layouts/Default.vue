@@ -17,6 +17,7 @@ export default {
     Navbar,
     Footer,
   },
+
   computed: {
     canonical() {
       const SITE_URL = 'https://sergeyfilimonov.com'
@@ -29,6 +30,7 @@ export default {
       return canonical
     }
   },
+
   mounted() {
     const currentDateTime = new Date()
     const currentTime = currentDateTime.getHours()
@@ -43,6 +45,7 @@ export default {
       this.$store.commit('changeTheme', localStorage.getItem('theme'))
     }
   },
+
   metaInfo() {
     return {
       meta: [
