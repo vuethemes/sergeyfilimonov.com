@@ -8,6 +8,7 @@ module.exports = {
       lg: '1024px',
       xl: '1180px',
     },
+
     fontFamily: {
       display: ['JetBrains', 'sans-serif'],
       body: ['Arial', 'sans-serif'],
@@ -22,13 +23,16 @@ module.exports = {
         'monospace',
       ],
     },
+
     fontSize,
+
     borderWidth: {
       default: '1px',
       '0': '0',
       '2': '2px',
       '4': '4px',
     },
+
     extend: {
       colors: {
         theme: {
@@ -39,14 +43,17 @@ module.exports = {
           backgroundGray: 'var(--bg-gray)',
           borderGray: 'var(--border-gray)',
         },
+
         primary: {
           default: 'var(--primary-color)',
           lighter: 'var(--primary-color-ligther)',
         },
+
         secondary: {
           lighter: '#b3bcf5',
           default: '#5c6ac4',
         },
+
         social: {
           youtube: 'var(--youtube-color)',
           whatsapp: 'var(--whatsapp-color)',
@@ -56,6 +63,7 @@ module.exports = {
           telegram: 'var(--telegram-color)',
           vk: 'var(--vk-color)',
         },
+
         gray: {
           '100': '#fbfbfb',
           '200': '#eeeeee',
@@ -69,6 +77,7 @@ module.exports = {
           'codeblock': '#fbfcfd',
         }
       },
+
       spacing: {
         '24rem': '24rem',
         '28rem': '28rem',
@@ -77,6 +86,7 @@ module.exports = {
     },
     container: {
       center: true,
-    }
+      padding: "1rem",
+    },
   }
 }
