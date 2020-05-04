@@ -12,16 +12,12 @@ This repo represents the inside of my personal website [sergeyfilimonov.com](htt
 - [sergeyfilimonov.com](https://sergeyfilimonov.com)
 - [anastasiafilimonova.com](https://anastasiafilimonova.com)
 - [olgabalarama.com](https://olgabalarama.com)
-- [grafika.olgabalarama.com](https://grafika.olgabalarama.com)
-- [mariavyunova.com](https://mariavyunova.com)
 - [hr.netology.ru](https://hr.netology.ru)
 - [ms.netology.ru](https://ms.netology.ru)
 - [msp-moscow.ru](https://msp-moscow.ru)
 - [lms.edmarket.ru](https://lms.edmarket.ru)
 
 ## More
-
-For more information about this repo, go to [Wiki](https://github.com/sergeyfilimonov/sergeyfilimonov.com/wiki).
 
 If you find a bug or a text mistake, please post it in [Issues](https://github.com/sergeyfilimonov/sergeyfilimonov.com/issues).
 

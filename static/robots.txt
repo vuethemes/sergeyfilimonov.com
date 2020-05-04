@@ -3,3 +3,4 @@ Allow: *
 Disallow: /*utm_
 
 Host: https://sergeyfilimonov.com
+Sitemap: https://sergeyfilimonov.com/sitemap.xml

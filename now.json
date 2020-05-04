@@ -8,12 +8,5 @@
   ],
   "redirects": [
     { "source": "/services/site", "destination": "/static-site" }
-  ],
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": { "distDir": "dist" }
-    }
   ]
 }
