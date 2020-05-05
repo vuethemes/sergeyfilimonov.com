@@ -9,6 +9,7 @@
         <div class="markdown">
           <ul>
             <li><g-link to="/tools/text-length" class="link">Измеритель длины текста</g-link></li>
+            <li><g-link to="/tools/ppi" class="link">Калькулятор PPI</g-link></li>
             <li><g-link to="/tools/utm" class="link">UTM-генератор ссылок</g-link></li>
             <li><g-link to="/tools/pinterest-embed" class="link">Pinterest Embed</g-link></li>
           </ul>
