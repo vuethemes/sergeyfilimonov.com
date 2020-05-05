@@ -74,6 +74,11 @@ export default {
     width: '1920',
     height: '1080',
     diagonal: '27',
+
+    meta: {
+      title: 'Калькулятор PPI для дисплея',
+      description: "This PPI calculator (pixels per inch calculator) finds the resolution of your display based on its dimensions and the pixel count. In this text, we will teach you what is PPI, explore the differences between PPI vs DPI through the DPI definition. Also, you can find some comments on the dot pitch definition and its decline in usage. Of course, this is a calculator so we'll show you how to calculate PPI and how to categorize resolution based on PPI."
+    }
   }),
 
   computed: {
@@ -81,6 +86,18 @@ export default {
       const numberOfPixels = Math.sqrt(Math.pow(this.width, 2) + Math.pow(this.height, 2))
 
       return Math.round(numberOfPixels / this.diagonal)
+    }
+  },
+
+  metaInfo() {
+    return {
+      title: this.meta.title,
+      meta: [
+        { name: 'description', content: this.meta.description },
+        { property: "og:title", content: this.meta.title },
+        { property: "og:description", content: this.meta.description },
+        { property: "og:image", content: 'https://sergeyfilimonov.com/images/og/about.jpg' }
+      ]
     }
   }
 }

@@ -32,6 +32,7 @@ export default {
       }
     }
   },
+  
   metaInfo() {
     return {
       title: this.meta.title,
