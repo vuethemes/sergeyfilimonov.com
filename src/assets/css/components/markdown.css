@@ -14,6 +14,12 @@
   a {
     @apply link;
   }
+  ol {
+    @apply mb-5;
+    li {
+      @apply list-decimal ml-5 mb-1;
+    }
+  }
   ul {
     @apply mb-5;
     li {
@@ -72,6 +78,11 @@
     }
     p {
       @apply text-lg;
+    }
+    ol {
+      li {
+        @apply text-lg;
+      }
     }
     ul {
       li {
