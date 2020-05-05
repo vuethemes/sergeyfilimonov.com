@@ -9,6 +9,14 @@
   "redirects": [
     { "source": "/services/site", "destination": "/static-site" }
   ],
+  "routes": [
+    {
+      "src": "/get/(.*)",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  ],
   "builds": [
     {
       "src": "package.json",
