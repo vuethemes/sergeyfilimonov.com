@@ -11,7 +11,7 @@
   ],
   "routes": [
     {
-      "src": "/get/(.*)",
+      "src": "api/get/(.*)",
       "headers": {
         "Access-Control-Allow-Origin": "*"
       }
