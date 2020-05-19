@@ -32,3 +32,4 @@ fields:
   hidden: true
 pages:
 - src/data/posts/how-to-deploy-to-a-team-account-of-zeit-now-using-github-actions.md
+- src/data/posts/оптимизация-изображений-на-сайте.md
