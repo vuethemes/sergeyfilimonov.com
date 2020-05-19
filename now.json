@@ -9,31 +9,11 @@
   "redirects": [
     { "source": "/services/site", "destination": "/static-site" }
   ],
-  "routes": [
-    {
-      "src": "api/get/(.*)",
-      "headers": {
-        "Access-Control-Allow-Origin": "*"
-      }
-    }
-  ],
   "builds": [
     {
       "src": "package.json",
       "use": "@now/static-build",
       "config": { "distDir": "dist" }
-    },
-    {
-      "src": "api/index.js",
-      "use": "@now/node"
-    },
-    {
-      "src": "api/actions/**/*.js",
-      "use": "@now/node"
-    },
-    {
-      "src": "api/get/**/*.ts",
-      "use": "@now/node"
     }
   ]
 }
