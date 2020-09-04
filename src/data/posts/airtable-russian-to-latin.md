@@ -12,43 +12,43 @@ tags: ['Airtable', 'markdown']
 
 Знаком ❗️ помечены буквы, с которыми, по моему опыту, чаще всего встречаются проблемы.
 
-а — a
-б — b
-в – v
-г – g
-д – d
-е – e
-ё – yo ❗️
-ж – zh ❗️
-з – z
-и – i
-й – j
-к – k
-л – l
-м – m
-н – n
-о – o
-п – p
-р – r
-с – s
-т – t
-у – u
-ф – f
-х – kh ❗️
-ц – ts ❗️
-ч – ch ❗️
-ш – sh ❗️
-щ – shh
-ъ – не транслитерируется ❗️
-ы – y
-ь – не транслитерируется ❗️
-э – e
-ю – yu
-я – ya
+- а — a
+- б — b
+- в – v
+- г – g
+- д – d
+- е – e
+- ё – yo ❗️
+- ж – zh ❗️
+- з – z
+- и – i
+- й – j
+- к – k
+- л – l
+- м – m
+- н – n
+- о – o
+- п – p
+- р – r
+- с – s
+- т – t
+- у – u
+- ф – f
+- х – kh ❗️
+- ц – ts ❗️
+- ч – ch ❗️
+- ш – sh ❗️
+- щ – shh
+- ъ – пропускается ❗️
+- ы – y
+- ь – пропускается ❗️
+- э – e
+- ю – yu
+- я – ya
 
 ## Полный ГОСТ Р 7.0.34–2014
 
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrwMS9IPZAFjTMTT?backgroundColor=orange&layout=card&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrwMS9IPZAFjTMTT?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 ## Аналог плагина WordPress Cyr-to-Latin для Airtable
 
